@@ -33,21 +33,52 @@ Regras:
 ```
 
 ### Ideia de contextualizar mais o prompt
-- Adicionar valores permitidos para atributos. Exemplos:
+- Adicionar valores permitidos para atributos. 
+- Valores enumerados por atributos auxiliam a delimitar as respostas dos modelos. O Llama e o Qwen tendem a inventar valores quando o espaço de saída é aberto. Restringir a valores fixos reduz as alucinações e facilita o pós processamento. 
+- Exemplos:
 ```
 Atributos e Valores Permitidos (Escolha ESTRITAMENTE desta lista):
-- tipo_projeto: ["Web Full-Stack", "Web Front-End", "API Back-End", "Mobile Nativo", "Mobile Híbrido", "Desktop", "CLI/Script", "Pipeline de Dados", "IoT", "Jogos"]
-- dominio_negocio: [Resuma o contexto em até 2 palavras]
-- persistencia: ["Relacional", "Documento (NoSQL)", "Chave-Valor", "Grafo", "Série Temporal", "Arquivo Local", "Nenhuma"]
-- escala: ["Local/Pessoal", "Pequena (Centenas de acessos)", "Média (Milhares de acessos)", "Alta (Escala Global)"]
-- integracao: ["Nenhuma", "APIs Externas", "Hardware/Sensores", "Sistemas Legados", "Mensageria/Filas"]
-- arquitetura_esperada: ["Monolito Simples", "Monolito Modular", "Microsserviços", "Serverless", "Event-Driven"]
-- requisitos_desempenho: ["Padrão (CRUD)", "Alto (Processamento pesado)", "Tempo Real (Streaming/WebSockets)", "Baixa Latência"]
-- experiencia_usuario: ["Iniciante", "Intermediário", "Avançado"]
-- requisitos_seguranca: ["Padrão", "Alta (Dados Sensíveis/LGPD)", "Crítica (Financeiro)"]
-
+- **tipo_projeto**: "web" | "mobile" | "desktop" | "api" | "embarcado" | "hibrido" 
+- **dominio_negocio**: "produtividade" | "financeiro" | "saude" | "educacao" | "ecommerce" | "logistica" | "entretenimento" | "outro"
+- **persistencia**: "sem_banco" | "sql" | "nosql" | "hibrido" 
+- **escala**: "pequena" | "media" | "grande" | "enterprise" 
+- **integracao**: "nenhuma" | "apis_externas" | "servicos_internos" | "ambos"
+- **arquitetura_esperada**: "monolito" | "microsservicos" | "serverless" | "event_driven" | "mvc" 
+- **requisitos_desempenho**: "baixo" | "medio" | "alto" | "critico" 
+- **experiencia_usuario**: "basica" | "intermediaria" | "avancada" | "acessivel" 
+- **requisitos_seguranca**: "nenhum" | "basico" | "intermediario" | "avancado"
 ```
 
+
+- O prompt sugerido poderia ser algo como: 
+```
+Você é um especialista em engenharia de requisitos de software. Analise a entrada do usuário e extraia exatamente 9 atributos, retornando **somente** um objeto JSON válido, sem texto adicional, sem markdown, sem explicações.
+
+### Atributos e valores permitidos:
+
+- **tipo_projeto**: "web" | "mobile" | "desktop" | "api" | "embarcado" | "hibrido"
+- **dominio_negocio**: "produtividade" | "financeiro" | "saude" | "educacao" | "ecommerce" | "logistica" | "entretenimento" | "outro"
+- **persistencia**: "sem_banco" | "sql" | "nosql" | "hibrido"
+- **escala**: "pequena" | "media" | "grande" | "enterprise"
+- **integracao**: "nenhuma" | "apis_externas" | "servicos_internos" | "ambos"
+- **arquitetura_esperada**: "monolito" | "microsservicos" | "serverless" | "event_driven" | "mvc"
+- **requisitos_desempenho**: "baixo" | "medio" | "alto" | "critico"
+- **experiencia_usuario**: "basica" | "intermediaria" | "avancada" | "acessivel"
+- **requisitos_seguranca**: "nenhum" | "basico" | "intermediario" | "avancado"
+
+### Regras de preenchimento:
+
+1. Use apenas os valores listados acima para cada atributo.
+2. Se um atributo não for mencionado ou puder ser inferido, escolha o valor mais **simples e comum** para o contexto descrito.
+3. **Nunca** retorne campos nulos, vazios ou fora da lista de valores permitidos.
+4. **Nunca** adicione texto fora do JSON.
+
+### Entrada do usuário:
+"{ENTRADA}"
+
+### Saída esperada (somente JSON):
+```
+  
 ### Preparando o ambiente
 #### Instalação do OLLAMA e modelos
 - O Ollama é o programa que funciona como um motor para rodar modelos LLMs localmente no computador. 
@@ -58,6 +89,10 @@ Atributos e Valores Permitidos (Escolha ESTRITAMENTE desta lista):
 ollama run llama3
 ```
 
-#### Configurar depois a Etapa 1 pra rodar com uma API na nuvem
+#### Configurar depois a Etapa 1 pra rodar com uma API na nuvem -> Ideia para fazer assim que ja tiver finalizado
+
+#### Resumo: 
+Atualmente o protótipo da etapa 1 de classificação de entrada do usuário utilizando modelos de LLM está pronto. 
+A ideia é testar essa etapa com 3 modelos de LLM selecionados: Llama3, qwen2.5 e o deepseek 
 
 
