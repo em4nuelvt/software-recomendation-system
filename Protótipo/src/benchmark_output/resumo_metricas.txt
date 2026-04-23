@@ -1,0 +1,176 @@
+Benchmark Etapa 1 - Resumo de Metricas
+Inicio: 2026-04-22 21:34:07
+Fim: 2026-04-22 21:49:07
+Modelos: qwen2.5, llama3, deepseek-r1:8b
+Casos de teste: 2
+Repeticoes por caso/modelo: 5
+
+Metricas:
+- tempo_medio_ms, tempo_mediano_ms, p95_ms, min_ms, max_ms
+- taxa_formato_valido, taxa_erro_execucao, taxa_sucesso
+- consistencia_total, consistencia_somente_validos, saidas_validas_distintas
+- cobertura_media_de_chaves
+==========================================================================================
+
+1) Resultado por modelo e caso de teste
+
+Modelo: qwen2.5 | Caso de teste: 1
+Entrada (resumo): Tecnologias para sistema de lista de tarefas web
+Total_execucoes: 5
+Tempo_medio_ms: 35302.62
+Tempo_mediano_ms: 33790.09
+Tempo_p95_ms: 41758.64
+Tempo_min_ms: 31338.39
+Tempo_max_ms: 43716.87
+Taxa_formato_valido: 100.00%
+Taxa_erro_execucao: 0.00%
+Taxa_sucesso: 100.00%
+Cobertura_media_de_chaves: 100.00%
+Saidas_validas_distintas: 4
+Consistencia_total: 40.00%
+Consistencia_somente_validos: 40.00%
+
+Modelo: qwen2.5 | Caso de teste: 2
+Entrada (resumo): Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas a...
+Total_execucoes: 5
+Tempo_medio_ms: 32613.13
+Tempo_mediano_ms: 32960.55
+Tempo_p95_ms: 33117.57
+Tempo_min_ms: 30953.69
+Tempo_max_ms: 33122.53
+Taxa_formato_valido: 100.00%
+Taxa_erro_execucao: 0.00%
+Taxa_sucesso: 100.00%
+Cobertura_media_de_chaves: 100.00%
+Saidas_validas_distintas: 3
+Consistencia_total: 40.00%
+Consistencia_somente_validos: 40.00%
+
+Modelo: llama3 | Caso de teste: 1
+Entrada (resumo): Tecnologias para sistema de lista de tarefas web
+Total_execucoes: 5
+Tempo_medio_ms: 33337.55
+Tempo_mediano_ms: 32185.60
+Tempo_p95_ms: 38343.04
+Tempo_min_ms: 29722.81
+Tempo_max_ms: 38986.29
+Taxa_formato_valido: 100.00%
+Taxa_erro_execucao: 0.00%
+Taxa_sucesso: 100.00%
+Cobertura_media_de_chaves: 100.00%
+Saidas_validas_distintas: 4
+Consistencia_total: 40.00%
+Consistencia_somente_validos: 40.00%
+
+Modelo: llama3 | Caso de teste: 2
+Entrada (resumo): Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas a...
+Total_execucoes: 5
+Tempo_medio_ms: 28747.43
+Tempo_mediano_ms: 28432.07
+Tempo_p95_ms: 30749.59
+Tempo_min_ms: 27307.12
+Tempo_max_ms: 31182.19
+Taxa_formato_valido: 80.00%
+Taxa_erro_execucao: 0.00%
+Taxa_sucesso: 80.00%
+Cobertura_media_de_chaves: 96.67%
+Saidas_validas_distintas: 4
+Consistencia_total: 20.00%
+Consistencia_somente_validos: 25.00%
+
+Modelo: deepseek-r1:8b | Caso de teste: 1
+Entrada (resumo): Tecnologias para sistema de lista de tarefas web
+Total_execucoes: 5
+Tempo_medio_ms: 25640.65
+Tempo_mediano_ms: 24036.68
+Tempo_p95_ms: 32459.62
+Tempo_min_ms: 21984.03
+Tempo_max_ms: 34555.40
+Taxa_formato_valido: 100.00%
+Taxa_erro_execucao: 0.00%
+Taxa_sucesso: 100.00%
+Cobertura_media_de_chaves: 100.00%
+Saidas_validas_distintas: 4
+Consistencia_total: 40.00%
+Consistencia_somente_validos: 40.00%
+
+Modelo: deepseek-r1:8b | Caso de teste: 2
+Entrada (resumo): Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas a...
+Total_execucoes: 5
+Tempo_medio_ms: 24224.31
+Tempo_mediano_ms: 24118.59
+Tempo_p95_ms: 25171.48
+Tempo_min_ms: 22997.72
+Tempo_max_ms: 25255.69
+Taxa_formato_valido: 100.00%
+Taxa_erro_execucao: 0.00%
+Taxa_sucesso: 100.00%
+Cobertura_media_de_chaves: 100.00%
+Saidas_validas_distintas: 2
+Consistencia_total: 80.00%
+Consistencia_somente_validos: 80.00%
+
+2) Resultado consolidado por modelo
+
+Modelo: qwen2.5
+Total_execucoes: 10
+Tempo_medio_ms: 33957.88
+Tempo_mediano_ms: 33110.13
+Tempo_p95_ms: 39310.87
+Tempo_min_ms: 30953.69
+Tempo_max_ms: 43716.87
+Taxa_formato_valido: 100.00%
+Taxa_erro_execucao: 0.00%
+Taxa_sucesso: 100.00%
+Cobertura_media_de_chaves: 100.00%
+Saidas_validas_distintas: 7
+Consistencia_total: 20.00%
+Consistencia_somente_validos: 20.00%
+
+Modelo: llama3
+Total_execucoes: 10
+Tempo_medio_ms: 31042.49
+Tempo_mediano_ms: 29872.90
+Tempo_p95_ms: 37538.99
+Tempo_min_ms: 27307.12
+Tempo_max_ms: 38986.29
+Taxa_formato_valido: 90.00%
+Taxa_erro_execucao: 0.00%
+Taxa_sucesso: 90.00%
+Cobertura_media_de_chaves: 98.33%
+Saidas_validas_distintas: 8
+Consistencia_total: 20.00%
+Consistencia_somente_validos: 22.22%
+
+Modelo: deepseek-r1:8b
+Total_execucoes: 10
+Tempo_medio_ms: 24932.48
+Tempo_mediano_ms: 24056.61
+Tempo_p95_ms: 30370.53
+Tempo_min_ms: 21984.03
+Tempo_max_ms: 34555.40
+Taxa_formato_valido: 100.00%
+Taxa_erro_execucao: 0.00%
+Taxa_sucesso: 100.00%
+Cobertura_media_de_chaves: 100.00%
+Saidas_validas_distintas: 6
+Consistencia_total: 40.00%
+Consistencia_somente_validos: 40.00%
+
+3) Resultado global de todos os modelos
+Total_execucoes: 30
+Tempo_medio_ms: 29977.62
+Tempo_mediano_ms: 30488.34
+Tempo_p95_ms: 37538.99
+Taxa_formato_valido: 96.67%
+Taxa_erro_execucao: 0.00%
+Taxa_sucesso: 96.67%
+Cobertura_media_de_chaves: 99.44%
+Consistencia_total: 13.33%
+Consistencia_somente_validos: 13.79%
+
+4) Ranking sugerido dos modelos
+Criterio: sucesso maior, depois consistencia maior, depois menor tempo medio
+1. deepseek-r1:8b | sucesso=100.00% | consistencia_validos=40.00% | tempo_medio_ms=24932.48
+2. qwen2.5 | sucesso=100.00% | consistencia_validos=20.00% | tempo_medio_ms=33957.88
+3. llama3 | sucesso=90.00% | consistencia_validos=22.22% | tempo_medio_ms=31042.49
