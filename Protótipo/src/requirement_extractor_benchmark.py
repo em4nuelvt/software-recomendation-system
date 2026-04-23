@@ -179,8 +179,22 @@ def shorten(text: str, limit: int = 120) -> str:
     return compact[: limit - 3] + "..."
 
 
+def format_duration(seconds: float) -> str:
+    total_seconds = int(round(seconds))
+    hours = total_seconds // 3600
+    minutes = (total_seconds % 3600) // 60
+    secs = total_seconds % 60
+    return f"{hours:02d}:{minutes:02d}:{secs:02d}"
+
+
 def run_benchmark() -> List[Dict[str, Any]]:
     records: List[Dict[str, Any]] = []
+    total_runs = len(MODELS) * len(TEST_INPUTS) * REPETITIONS
+    completed_runs = 0
+    progress_start = perf_counter()
+
+    if total_runs == 0:
+        return records
 
     for model in MODELS:
         extractor = RequirementExtractor(model=model)
@@ -225,6 +239,19 @@ def run_benchmark() -> List[Dict[str, Any]]:
                     }
                 )
 
+                completed_runs += 1
+                elapsed = perf_counter() - progress_start
+                percent = (completed_runs / total_runs) * 100.0
+                print(
+                    f"\rProgresso: {completed_runs}/{total_runs} ({percent:.1f}%) | "
+                    f"Decorrido: {elapsed:.1f}s | Modelo: {model} | "
+                    f"Caso: {case_id} | Iteracao: {iteration}",
+                    end="",
+                    flush=True,
+                )
+
+    print()
+
     return records
 
 
@@ -260,7 +287,7 @@ def write_detailed_report(records: List[Dict[str, Any]], started_at: datetime, e
             f.write("Entrada:\n")
             f.write(rec["input_text"].strip() + "\n")
             f.write("Resposta_JSON:\n")
-            f.write(json.dumps(rec["response"], ensure_ascii=False, ident=4, sort_keys=True))
+            f.write(json.dumps(rec["response"], ensure_ascii=False, indent=4, sort_keys=True))
             f.write("\n")
             f.write("-" * 90 + "\n")
 
@@ -277,15 +304,17 @@ def write_summary_report(records: List[Dict[str, Any]], started_at: datetime, en
         f.write("Benchmark Etapa 1 - Resumo de Metricas\n")
         f.write("Inicio: {}\n".format(started_at.strftime("%Y-%m-%d %H:%M:%S")))
         f.write("Fim: {}\n".format(ended_at.strftime("%Y-%m-%d %H:%M:%S")))
+        total_seconds = (ended_at - started_at).total_seconds()
+        f.write("Tempo total: {}\n".format(format_duration(total_seconds)))
         f.write("Modelos: {}\n".format(", ".join(MODELS)))
         f.write("Casos de teste: {}\n".format(len(TEST_INPUTS)))
         f.write("Repeticoes por caso/modelo: {}\n".format(REPETITIONS))
         f.write("\n")
         f.write("Metricas:\n")
-        f.write("- tempo_medio_ms, tempo_mediano_ms, p95_ms, min_ms, max_ms\n")
-        f.write("- taxa_formato_valido, taxa_erro_execucao, taxa_sucesso\n")
-        f.write("- consistencia_total, consistencia_somente_validos, saidas_validas_distintas\n")
-        f.write("- cobertura_media_de_chaves\n")
+        f.write("- Tempo medio (ms), tempo mediano (ms), tempo p95 (ms), tempo minimo (ms), tempo maximo (ms)\n")
+        f.write("- Taxa de formato valido, taxa de erro de execucao, taxa de sucesso\n")
+        f.write("- Consistencia total, consistencia somente validos, saidas validas distintas\n")
+        f.write("- Cobertura media de chaves\n")
         f.write("=" * 90 + "\n")
 
         f.write("\n1) Resultado por modelo e caso de teste\n")
@@ -298,19 +327,19 @@ def write_summary_report(records: List[Dict[str, Any]], started_at: datetime, en
                 metrics = aggregate_metrics(by_model_case[key])
                 f.write("\nModelo: {} | Caso de teste: {}\n".format(model, case_id))
                 f.write("Entrada (resumo): {}\n".format(shorten(TEST_INPUTS[case_id - 1])))
-                f.write("Total_execucoes: {}\n".format(metrics["total_runs"]))
-                f.write("Tempo_medio_ms: {:.2f}\n".format(metrics["mean_latency_ms"]))
-                f.write("Tempo_mediano_ms: {:.2f}\n".format(metrics["median_latency_ms"]))
-                f.write("Tempo_p95_ms: {:.2f}\n".format(metrics["p95_latency_ms"]))
-                f.write("Tempo_min_ms: {:.2f}\n".format(metrics["min_latency_ms"]))
-                f.write("Tempo_max_ms: {:.2f}\n".format(metrics["max_latency_ms"]))
-                f.write("Taxa_formato_valido: {}\n".format(pct(metrics["format_valid_rate"])))
-                f.write("Taxa_erro_execucao: {}\n".format(pct(metrics["error_rate"])))
-                f.write("Taxa_sucesso: {}\n".format(pct(metrics["success_rate"])))
-                f.write("Cobertura_media_de_chaves: {}\n".format(pct(metrics["avg_key_coverage"])))
-                f.write("Saidas_validas_distintas: {}\n".format(metrics["distinct_valid_outputs"]))
-                f.write("Consistencia_total: {}\n".format(pct(metrics["consistency_total_rate"])))
-                f.write("Consistencia_somente_validos: {}\n".format(pct(metrics["consistency_valid_rate"])))
+                f.write("Total de execucoes: {}\n".format(metrics["total_runs"]))
+                f.write("Tempo medio (ms): {:.2f}\n".format(metrics["mean_latency_ms"]))
+                f.write("Tempo mediano (ms): {:.2f}\n".format(metrics["median_latency_ms"]))
+                f.write("Tempo p95 (ms): {:.2f}\n".format(metrics["p95_latency_ms"]))
+                f.write("Tempo minimo (ms): {:.2f}\n".format(metrics["min_latency_ms"]))
+                f.write("Tempo maximo (ms): {:.2f}\n".format(metrics["max_latency_ms"]))
+                f.write("Taxa de formato valido: {}\n".format(pct(metrics["format_valid_rate"])))
+                f.write("Taxa de erro de execucao: {}\n".format(pct(metrics["error_rate"])))
+                f.write("Taxa de sucesso: {}\n".format(pct(metrics["success_rate"])))
+                f.write("Cobertura media de chaves: {}\n".format(pct(metrics["avg_key_coverage"])))
+                f.write("Saidas validas distintas: {}\n".format(metrics["distinct_valid_outputs"]))
+                f.write("Consistencia total: {}\n".format(pct(metrics["consistency_total_rate"])))
+                f.write("Consistencia somente validos: {}\n".format(pct(metrics["consistency_valid_rate"])))
 
         f.write("\n2) Resultado consolidado por modelo\n")
         model_ranking = []
@@ -322,32 +351,32 @@ def write_summary_report(records: List[Dict[str, Any]], started_at: datetime, en
             model_ranking.append((model, metrics))
 
             f.write("\nModelo: {}\n".format(model))
-            f.write("Total_execucoes: {}\n".format(metrics["total_runs"]))
-            f.write("Tempo_medio_ms: {:.2f}\n".format(metrics["mean_latency_ms"]))
-            f.write("Tempo_mediano_ms: {:.2f}\n".format(metrics["median_latency_ms"]))
-            f.write("Tempo_p95_ms: {:.2f}\n".format(metrics["p95_latency_ms"]))
-            f.write("Tempo_min_ms: {:.2f}\n".format(metrics["min_latency_ms"]))
-            f.write("Tempo_max_ms: {:.2f}\n".format(metrics["max_latency_ms"]))
-            f.write("Taxa_formato_valido: {}\n".format(pct(metrics["format_valid_rate"])))
-            f.write("Taxa_erro_execucao: {}\n".format(pct(metrics["error_rate"])))
-            f.write("Taxa_sucesso: {}\n".format(pct(metrics["success_rate"])))
-            f.write("Cobertura_media_de_chaves: {}\n".format(pct(metrics["avg_key_coverage"])))
-            f.write("Saidas_validas_distintas: {}\n".format(metrics["distinct_valid_outputs"]))
-            f.write("Consistencia_total: {}\n".format(pct(metrics["consistency_total_rate"])))
-            f.write("Consistencia_somente_validos: {}\n".format(pct(metrics["consistency_valid_rate"])))
+            f.write("Total de execucoes: {}\n".format(metrics["total_runs"]))
+            f.write("Tempo medio (ms): {:.2f}\n".format(metrics["mean_latency_ms"]))
+            f.write("Tempo mediano (ms): {:.2f}\n".format(metrics["median_latency_ms"]))
+            f.write("Tempo p95 (ms): {:.2f}\n".format(metrics["p95_latency_ms"]))
+            f.write("Tempo minimo (ms): {:.2f}\n".format(metrics["min_latency_ms"]))
+            f.write("Tempo maximo (ms): {:.2f}\n".format(metrics["max_latency_ms"]))
+            f.write("Taxa de formato valido: {}\n".format(pct(metrics["format_valid_rate"])))
+            f.write("Taxa de erro de execucao: {}\n".format(pct(metrics["error_rate"])))
+            f.write("Taxa de sucesso: {}\n".format(pct(metrics["success_rate"])))
+            f.write("Cobertura media de chaves: {}\n".format(pct(metrics["avg_key_coverage"])))
+            f.write("Saidas validas distintas: {}\n".format(metrics["distinct_valid_outputs"]))
+            f.write("Consistencia total: {}\n".format(pct(metrics["consistency_total_rate"])))
+            f.write("Consistencia somente validos: {}\n".format(pct(metrics["consistency_valid_rate"])))
 
         global_metrics = aggregate_metrics(records)
         f.write("\n3) Resultado global de todos os modelos\n")
-        f.write("Total_execucoes: {}\n".format(global_metrics["total_runs"]))
-        f.write("Tempo_medio_ms: {:.2f}\n".format(global_metrics["mean_latency_ms"]))
-        f.write("Tempo_mediano_ms: {:.2f}\n".format(global_metrics["median_latency_ms"]))
-        f.write("Tempo_p95_ms: {:.2f}\n".format(global_metrics["p95_latency_ms"]))
-        f.write("Taxa_formato_valido: {}\n".format(pct(global_metrics["format_valid_rate"])))
-        f.write("Taxa_erro_execucao: {}\n".format(pct(global_metrics["error_rate"])))
-        f.write("Taxa_sucesso: {}\n".format(pct(global_metrics["success_rate"])))
-        f.write("Cobertura_media_de_chaves: {}\n".format(pct(global_metrics["avg_key_coverage"])))
-        f.write("Consistencia_total: {}\n".format(pct(global_metrics["consistency_total_rate"])))
-        f.write("Consistencia_somente_validos: {}\n".format(pct(global_metrics["consistency_valid_rate"])))
+        f.write("Total de execucoes: {}\n".format(global_metrics["total_runs"]))
+        f.write("Tempo medio (ms): {:.2f}\n".format(global_metrics["mean_latency_ms"]))
+        f.write("Tempo mediano (ms): {:.2f}\n".format(global_metrics["median_latency_ms"]))
+        f.write("Tempo p95 (ms): {:.2f}\n".format(global_metrics["p95_latency_ms"]))
+        f.write("Taxa de formato valido: {}\n".format(pct(global_metrics["format_valid_rate"])))
+        f.write("Taxa de erro de execucao: {}\n".format(pct(global_metrics["error_rate"])))
+        f.write("Taxa de sucesso: {}\n".format(pct(global_metrics["success_rate"])))
+        f.write("Cobertura media de chaves: {}\n".format(pct(global_metrics["avg_key_coverage"])))
+        f.write("Consistencia total: {}\n".format(pct(global_metrics["consistency_total_rate"])))
+        f.write("Consistencia somente validos: {}\n".format(pct(global_metrics["consistency_valid_rate"])))
 
         model_ranking.sort(
             key=lambda x: (
@@ -361,7 +390,7 @@ def write_summary_report(records: List[Dict[str, Any]], started_at: datetime, en
         f.write("Criterio: sucesso maior, depois consistencia maior, depois menor tempo medio\n")
         for i, (model, metrics) in enumerate(model_ranking, start=1):
             f.write(
-                "{}. {} | sucesso={} | consistencia_validos={} | tempo_medio_ms={:.2f}\n".format(
+                "{}. {} | sucesso={} | consistencia validos={} | tempo medio (ms)={:.2f}\n".format(
                     i,
                     model,
                     pct(metrics["success_rate"]),
@@ -372,6 +401,7 @@ def write_summary_report(records: List[Dict[str, Any]], started_at: datetime, en
 
 
 def main() -> None:
+    print("Iniciando teste de benchmark para os modelos\n")
     started_at = datetime.now()
     records = run_benchmark()
     ended_at = datetime.now()
