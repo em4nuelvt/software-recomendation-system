@@ -1,0 +1,787 @@
+Benchmark Etapa 1 - Resultados Detalhados
+Inicio: 2026-04-22 23:11:30
+Fim: 2026-04-22 23:25:54
+Modelos: qwen2.5, llama3, deepseek-r1:8b
+Casos de teste: 2
+Repeticoes por caso/modelo: 5
+==========================================================================================
+Modelo: qwen2.5
+Caso de teste: 1
+Iteracao: 1
+Tempo_ms: 36967.94
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "produtividade",
+    "escala": "pequena",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sql",
+    "requisitos_seguranca": "nenhum",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: qwen2.5
+Caso de teste: 1
+Iteracao: 2
+Tempo_ms: 29528.93
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "produtividade",
+    "escala": "pequena",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sql",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: qwen2.5
+Caso de teste: 1
+Iteracao: 3
+Tempo_ms: 29852.97
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "longo_prazo",
+    "dominio_negocio": "produtividade",
+    "escala": "pequena",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "intermediario",
+    "persistencia": "sql",
+    "requisitos_seguranca": "nenhum",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: qwen2.5
+Caso de teste: 1
+Iteracao: 4
+Tempo_ms: 31298.35
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "produtividade",
+    "escala": "pequena",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "intermediario",
+    "persistencia": "sql",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: qwen2.5
+Caso de teste: 1
+Iteracao: 5
+Tempo_ms: 32067.77
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "produtividade",
+    "escala": "pequena",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "intermediario",
+    "persistencia": "sql",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: qwen2.5
+Caso de teste: 2
+Iteracao: 1
+Tempo_ms: 29566.12
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "educacao",
+    "escala": "media",
+    "experiencia_usuario": "intermediaria",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sql",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------
+Modelo: qwen2.5
+Caso de teste: 2
+Iteracao: 2
+Tempo_ms: 29452.69
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "educacao",
+    "escala": "pequena",
+    "experiencia_usuario": "intermediaria",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sql",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------
+Modelo: qwen2.5
+Caso de teste: 2
+Iteracao: 3
+Tempo_ms: 29128.20
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "educacao",
+    "escala": "pequena",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "intermediario",
+    "persistencia": "sql",
+    "requisitos_seguranca": "nenhum",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------
+Modelo: qwen2.5
+Caso de teste: 2
+Iteracao: 4
+Tempo_ms: 30114.22
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "educacao",
+    "escala": "pequena",
+    "experiencia_usuario": "intermediaria",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "intermediario",
+    "persistencia": "sql",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------
+Modelo: qwen2.5
+Caso de teste: 2
+Iteracao: 5
+Tempo_ms: 32152.85
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "educacao",
+    "escala": "media",
+    "experiencia_usuario": "intermediaria",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "intermediario",
+    "persistencia": "sql",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------
+Modelo: llama3
+Caso de teste: 1
+Iteracao: 1
+Tempo_ms: 43852.58
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "produtividade",
+    "escala": "pequena",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sem_banco",
+    "requisitos_seguranca": "nenhum",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: llama3
+Caso de teste: 1
+Iteracao: 2
+Tempo_ms: 30059.54
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "outro",
+    "escala": "media",
+    "experiencia_usuario": "intermediaria",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "intermediario",
+    "persistencia": "sem_banco",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: llama3
+Caso de teste: 1
+Iteracao: 3
+Tempo_ms: 27589.05
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "produtividade",
+    "escala": "media",
+    "experiencia_usuario": "intermediaria",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "intermediario",
+    "persistencia": "sem_banco",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: llama3
+Caso de teste: 1
+Iteracao: 4
+Tempo_ms: 27067.14
+Formato_valido: nao
+Cobertura_de_chaves: 83.33%
+Erro_execucao: nao
+Motivos_invalidacao: chave_ausente:tipo_autenticacao; chave_ausente:tipo_projeto; chave_extra:type_autenticacao; chave_extra:type_projeto
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "microsservicos",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "produtividade",
+    "escala": "media",
+    "experiencia_usuario": "intermediaria",
+    "integracao": "servicos_internos",
+    "maturidade_equipe": "intermediario",
+    "persistencia": "sql",
+    "requisitos_seguranca": "basico",
+    "type_autenticacao": "propria",
+    "type_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: llama3
+Caso de teste: 1
+Iteracao: 5
+Tempo_ms: 28794.55
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "produtividade",
+    "escala": "pequena",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sem_banco",
+    "requisitos_seguranca": "nenhum",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: llama3
+Caso de teste: 2
+Iteracao: 1
+Tempo_ms: 27093.91
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "educacao",
+    "escala": "media",
+    "experiencia_usuario": "basica",
+    "integracao": "servicos_internos",
+    "maturidade_equipe": "intermediario",
+    "persistencia": "sem_banco",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "propria",
+    "tipo_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------
+Modelo: llama3
+Caso de teste: 2
+Iteracao: 2
+Tempo_ms: 28918.13
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "microsservicos",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "educacao",
+    "escala": "media",
+    "experiencia_usuario": "intermediaria",
+    "integracao": "servicos_internos",
+    "maturidade_equipe": "intermediario",
+    "persistencia": "sem_banco",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "propria",
+    "tipo_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------
+Modelo: llama3
+Caso de teste: 2
+Iteracao: 3
+Tempo_ms: 28860.76
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "educacao",
+    "escala": "pequena",
+    "experiencia_usuario": "intermediaria",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "intermediario",
+    "persistencia": "sem_banco",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------
+Modelo: llama3
+Caso de teste: 2
+Iteracao: 4
+Tempo_ms: 25603.40
+Formato_valido: nao
+Cobertura_de_chaves: 83.33%
+Erro_execucao: nao
+Motivos_invalidacao: chave_ausente:tipo_autenticacao; chave_ausente:tipo_projeto; chave_extra:type_autenticacao; chave_extra:type_projeto
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "educacao",
+    "escala": "pequena",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sem_banco",
+    "requisitos_seguranca": "nenhum",
+    "type_autenticacao": "nenhuma",
+    "type_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------
+Modelo: llama3
+Caso de teste: 2
+Iteracao: 5
+Tempo_ms: 28642.65
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "microsservicos",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "educacao",
+    "escala": "media",
+    "experiencia_usuario": "intermediaria",
+    "integracao": "servicos_internos",
+    "maturidade_equipe": "intermediario",
+    "persistencia": "sql",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "propria",
+    "tipo_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------
+Modelo: deepseek-r1:8b
+Caso de teste: 1
+Iteracao: 1
+Tempo_ms: 35352.45
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "outro",
+    "escala": "pequena",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sql",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "propria",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: deepseek-r1:8b
+Caso de teste: 1
+Iteracao: 2
+Tempo_ms: 24718.45
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "outro",
+    "escala": "pequena",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sem_banco",
+    "requisitos_seguranca": "nenhum",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: deepseek-r1:8b
+Caso de teste: 1
+Iteracao: 3
+Tempo_ms: 26596.02
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "outro",
+    "escala": "pequena",
+    "experiencia_usuario": "intermediaria",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sem_banco",
+    "requisitos_seguranca": "basico",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: deepseek-r1:8b
+Caso de teste: 1
+Iteracao: 4
+Tempo_ms: 25281.75
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "outro",
+    "escala": "pequena",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sem_banco",
+    "requisitos_seguranca": "nenhum",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: deepseek-r1:8b
+Caso de teste: 1
+Iteracao: 5
+Tempo_ms: 26158.67
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Tecnologias para sistema de lista de tarefas web
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "outro",
+    "escala": "pequena",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sem_banco",
+    "requisitos_seguranca": "nenhum",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "web"
+}
+------------------------------------------------------------------------------------------
+Modelo: deepseek-r1:8b
+Caso de teste: 2
+Iteracao: 1
+Tempo_ms: 25861.13
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "educacao",
+    "escala": "media",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sql",
+    "requisitos_seguranca": "nenhum",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------
+Modelo: deepseek-r1:8b
+Caso de teste: 2
+Iteracao: 2
+Tempo_ms: 23604.47
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "educacao",
+    "escala": "media",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sql",
+    "requisitos_seguranca": "nenhum",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "hibrido"
+}
+------------------------------------------------------------------------------------------
+Modelo: deepseek-r1:8b
+Caso de teste: 2
+Iteracao: 3
+Tempo_ms: 23182.09
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "iterativo",
+    "dominio_negocio": "educacao",
+    "escala": "media",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sql",
+    "requisitos_seguranca": "nenhum",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------
+Modelo: deepseek-r1:8b
+Caso de teste: 2
+Iteracao: 4
+Tempo_ms: 23644.93
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "cloud",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "educacao",
+    "escala": "media",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sql",
+    "requisitos_seguranca": "nenhum",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------
+Modelo: deepseek-r1:8b
+Caso de teste: 2
+Iteracao: 5
+Tempo_ms: 22200.30
+Formato_valido: sim
+Cobertura_de_chaves: 100.00%
+Erro_execucao: nao
+Motivos_invalidacao: nenhum
+Entrada:
+Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+Resposta_JSON:
+{
+    "ambiente_implantacao": "local",
+    "arquitetura_esperada": "monolito",
+    "ciclo_desenvolvimento": "mvp",
+    "dominio_negocio": "educacao",
+    "escala": "media",
+    "experiencia_usuario": "basica",
+    "integracao": "nenhuma",
+    "maturidade_equipe": "iniciante",
+    "persistencia": "sql",
+    "requisitos_seguranca": "nenhum",
+    "tipo_autenticacao": "nenhuma",
+    "tipo_projeto": "mobile"
+}
+------------------------------------------------------------------------------------------

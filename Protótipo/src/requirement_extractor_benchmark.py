@@ -12,7 +12,7 @@ import user_input as ui
 
 
 MODELS = ["qwen2.5", "llama3", "deepseek-r1:8b"]
-REPETITIONS = 5
+REPETITIONS = 30
 TEST_INPUTS = ui.inputs
 
 OUTPUT_DIR = Path(__file__).resolve().parent / "benchmark_output"
@@ -401,7 +401,7 @@ def write_summary_report(records: List[Dict[str, Any]], started_at: datetime, en
 
 
 def main() -> None:
-    print("Iniciando teste de benchmark para os modelos\n")
+    print(f"Iniciando teste de benchmark para os modelos {MODELS}\n")
     started_at = datetime.now()
     records = run_benchmark()
     ended_at = datetime.now()
