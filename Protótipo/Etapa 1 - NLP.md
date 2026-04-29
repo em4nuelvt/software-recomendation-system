@@ -98,12 +98,39 @@ Você é um especialista em engenharia de requisitos de software. Analise a entr
 ollama run llama3
 ```
 
+
+
+### Relação de códigos desenvolvidos
+
+#### Classe RequirementExtractor.py
+Classe responsável por fazer a extração de requisitos.
+Ela recebe a entrada do usuário e pode receber o modelo a ser utilizado para construir o prompt completo passado para execução do modelo e retorna a resposta. 
+Foi modelada como classe para ser reaproveitada em outros scripts. 
+#### main.py
+Onde executa o sistema de recomendação principal. 
+#### requirement_extractor_benchmark.py
+Script criado para extrair dados de teste para variação de 5 entradas definidas, 30 vezes por modelo, para os 3 modelos escolhidos para teste.
+Explicado em detalhes em  [[Teste de modelos - Métricas utilizadas]].
+
+#### user_input.py
+Script criado para adicionar as entradas que serão utilizadas para testar os modelos.
+Cria uma lista de inputs. Os testes percorrem essa lista para serem executados. 
+
+#### compute_ground_truth
+Lê o arquivo gerado por requirement_extractor_benchmark e aplica _majority vote_: para cada par (caso de teste, atributo), soma os votos de todas as execuções válidas dos três modelos e elege o valor mais frequente como resposta sugerida. Gera o gabarito sugerido e uma distribuição dos votos para análise. 
+
+#### accuracy_report
+Lê o arquivo gerado por requirement_extractor_benchmark com os resultados de teste e também lê um gabarito de resultado esperado para os inputs para validar a acurácia da classificação de requisitos das entradas. Gera o arquivo `accuracy_report.txt` com acurácia por modelo/caso, por modelo consolidado, por atributo (indicando quais atributos os modelos mais erram) e ranking
+
+
 #### Configurar depois a Etapa 1 pra rodar com uma API na nuvem -> Ideia para fazer assim que ja tiver finalizado
 
 #### Resumo: 
 Atualmente o protótipo da etapa 1 de classificação de entrada do usuário utilizando modelos de LLM está pronto. 
 A ideia é testar essa etapa com 3 modelos de LLM selecionados: Llama3, qwen2.5 e o deepseek 
 Atualização: os testes foram executados, mas os modelos apresentaram muita variação. 
+
+
 
 
 

@@ -184,3 +184,81 @@ Uma execução é definida como uma chamada isolada ao método `extractRequireme
 
 ---
 
+## Métricas de Acurácia vs. Gabarito
+
+As métricas desta seção avaliam a **qualidade do conteúdo** das respostas dos modelos em relação a um gabarito de referência previamente definido. Enquanto as métricas de formato e consistência medem se o modelo responde de forma estruturada e estável, a acurácia mede se o modelo responde **corretamente**.
+
+Para a notação abaixo, considere adicionalmente:
+- $G$ = gabarito de referência, um conjunto de valores esperados para cada atributo de cada caso de teste
+- $A_i$ = número de atributos corretos na execução $i$, em comparação com o gabarito
+- $K$ = número de atributos esperados ($K = 12$)
+- $V_g$ = número de execuções válidas com caso de teste presente no gabarito
+
+### Acurácia por Execução
+
+Para cada execução válida $i$, a acurácia é a proporção de atributos cujo valor coincide exatamente com o gabarito:
+
+$$\text{acurácia}_i = \frac{A_i}{K}$$
+
+Um atributo é considerado correto quando o valor retornado pelo modelo é idêntico ao valor definido no gabarito para aquele caso de teste.
+
+**Interpretação:** uma acurácia de 100% significa que todos os 12 atributos estavam corretos. Uma acurácia de 83,33% significa que 10 dos 12 atributos estavam corretos.
+
+### Acurácia Média
+
+Média aritmética das acurácias individuais de todas as execuções válidas de um grupo (por modelo, por caso ou global):
+
+$$\text{acurácia média} = \frac{1}{V_g}\sum_{i=1}^{V_g} \text{acurácia}_i \times 100\%$$
+
+**Interpretação:** quanto maior, melhor. Representa o desempenho esperado do modelo em uma execução arbitrária.
+
+### Acurácia por Atributo
+
+Para um atributo específico $k$, a acurácia é a proporção de execuções válidas em que o modelo retornou o valor correto para esse atributo:
+
+$$\text{acurácia}_{k} = \frac{\sum_{i=1}^{V_g} \mathbf{1}[\text{resposta}_i[k] = G[k]]}{V_g} \times 100\%$$
+
+**Interpretação:** identifica quais atributos são sistematicamente mais difíceis para os modelos. Um atributo com baixa acurácia global pode indicar ambiguidade no prompt, dificuldade semântica no texto de entrada ou necessidade de revisão do gabarito.
+
+### Execuções 100% Corretas
+
+Contagem de execuções em que todos os 12 atributos estavam corretos simultaneamente:
+
+$$\text{execuções 100\% corretas} = \sum_{i=1}^{V_g} \mathbf{1}[\text{acurácia}_i = 1{,}0]$$
+
+**Interpretação:** uma execução 100% correta indica que o modelo reproduziu o gabarito de forma integral. Complementa a acurácia média ao capturar a frequência de respostas perfeitas versus respostas parcialmente corretas.
+
+---
+
+### Critério de Ranking por Acurácia
+
+Os modelos são rankeados por:
+
+1. **Acurácia média** (descendente): o modelo com maior proporção de atributos corretos vem primeiro.
+2. **Execuções 100% corretas** (descendente): em empate de acurácia média, o modelo com mais execuções perfeitas vem primeiro.
+
+---
+
+### Relação com as demais métricas
+
+| Métrica | Dimensão avaliada |
+|---|---|
+| Taxa de sucesso | Formato — se o modelo retorna JSON com schema válido |
+| Consistência | Estabilidade — se o modelo retorna sempre a mesma resposta |
+| **Acurácia vs. gabarito** | **Correção — se o conteúdo da resposta está certo** |
+
+As três dimensões são complementares. Um modelo pode ter alta taxa de sucesso (sempre retorna JSON válido), baixa consistência (varia muito entre execuções) e alta acurácia (mesmo variando, tende a acertar o valor correto). A acurácia é a única métrica que avalia a qualidade semântica da classificação.
+
+---
+
+### Como o gabarito é definido
+
+O gabarito é gerado em duas etapas:
+
+1. **Majority vote automático** — o script `compute_ground_truth.py` lê todos os resultados válidos do benchmark e, para cada par (caso de teste, atributo), escolhe o valor mais frequente entre as execuções dos três modelos somadas.
+2. **Revisão humana** — o majority vote é revisado atributo a atributo. Atributos mencionados explicitamente no texto de entrada são verificados contra o texto; atributos não mencionados são verificados contra a regra do prompt ("valor mais simples e comum para o contexto").
+
+O arquivo final `ground_truth.json` é o resultado dessa revisão e serve como referência para todos os cálculos de acurácia.
+
+---
+

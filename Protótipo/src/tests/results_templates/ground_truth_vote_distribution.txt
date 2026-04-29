@@ -1,0 +1,208 @@
+Distribuicao de votos por caso de teste e atributo
+(base: todas as execucoes validas dos 3 modelos somadas)
+==========================================================================================
+
+Caso de teste: 1
+------------------------------------------------------------
+  tipo_projeto:
+    web: 84/84 (100.0%) <-- VENCEDOR
+  dominio_negocio:
+    produtividade: 56/84 (66.7%) <-- VENCEDOR
+    outro: 28/84 (33.3%)
+  persistencia:
+    sql: 42/84 (50.0%) <-- VENCEDOR
+    sem_banco: 42/84 (50.0%) <-- VENCEDOR
+  escala:
+    pequena: 68/84 (81.0%) <-- VENCEDOR
+    media: 16/84 (19.0%)
+  integracao:
+    nenhuma: 76/84 (90.5%) <-- VENCEDOR
+    servicos_internos: 8/84 (9.5%)
+  arquitetura_esperada:
+    monolito: 83/84 (98.8%) <-- VENCEDOR
+    microsservicos: 1/84 (1.2%)
+  experiencia_usuario:
+    basica: 61/84 (72.6%) <-- VENCEDOR
+    intermediaria: 23/84 (27.4%)
+  requisitos_seguranca:
+    nenhum: 47/84 (56.0%) <-- VENCEDOR
+    basico: 36/84 (42.9%)
+    intermediario: 1/84 (1.2%)
+  ambiente_implantacao:
+    local: 65/84 (77.4%) <-- VENCEDOR
+    cloud: 19/84 (22.6%)
+  maturidade_equipe:
+    iniciante: 61/84 (72.6%) <-- VENCEDOR
+    intermediario: 23/84 (27.4%)
+  tipo_autenticacao:
+    nenhuma: 68/84 (81.0%) <-- VENCEDOR
+    propria: 11/84 (13.1%)
+    oauth: 5/84 (6.0%)
+  ciclo_desenvolvimento:
+    mvp: 53/84 (63.1%) <-- VENCEDOR
+    iterativo: 25/84 (29.8%)
+    longo_prazo: 6/84 (7.1%)
+
+Caso de teste: 2
+------------------------------------------------------------
+  tipo_projeto:
+    mobile: 83/84 (98.8%) <-- VENCEDOR
+    hibrido: 1/84 (1.2%)
+  dominio_negocio:
+    educacao: 84/84 (100.0%) <-- VENCEDOR
+  persistencia:
+    sql: 64/84 (76.2%) <-- VENCEDOR
+    sem_banco: 20/84 (23.8%)
+  escala:
+    media: 61/84 (72.6%) <-- VENCEDOR
+    pequena: 23/84 (27.4%)
+  integracao:
+    nenhuma: 67/84 (79.8%) <-- VENCEDOR
+    servicos_internos: 17/84 (20.2%)
+  arquitetura_esperada:
+    monolito: 74/84 (88.1%) <-- VENCEDOR
+    microsservicos: 10/84 (11.9%)
+  experiencia_usuario:
+    intermediaria: 44/84 (52.4%) <-- VENCEDOR
+    basica: 40/84 (47.6%)
+  requisitos_seguranca:
+    basico: 49/84 (58.3%) <-- VENCEDOR
+    nenhum: 33/84 (39.3%)
+    intermediario: 2/84 (2.4%)
+  ambiente_implantacao:
+    cloud: 57/84 (67.9%) <-- VENCEDOR
+    local: 27/84 (32.1%)
+  maturidade_equipe:
+    iniciante: 43/84 (51.2%) <-- VENCEDOR
+    intermediario: 41/84 (48.8%)
+  tipo_autenticacao:
+    nenhuma: 69/84 (82.1%) <-- VENCEDOR
+    propria: 15/84 (17.9%)
+  ciclo_desenvolvimento:
+    iterativo: 63/84 (75.0%) <-- VENCEDOR
+    mvp: 21/84 (25.0%)
+
+Caso de teste: 3
+------------------------------------------------------------
+  tipo_projeto:
+    web: 88/88 (100.0%) <-- VENCEDOR
+  dominio_negocio:
+    saude: 88/88 (100.0%) <-- VENCEDOR
+  persistencia:
+    sql: 88/88 (100.0%) <-- VENCEDOR
+  escala:
+    media: 88/88 (100.0%) <-- VENCEDOR
+  integracao:
+    nenhuma: 60/88 (68.2%) <-- VENCEDOR
+    servicos_internos: 26/88 (29.5%)
+    ambos: 2/88 (2.3%)
+  arquitetura_esperada:
+    monolito: 64/88 (72.7%) <-- VENCEDOR
+    microsservicos: 24/88 (27.3%)
+  experiencia_usuario:
+    intermediaria: 81/88 (92.0%) <-- VENCEDOR
+    basica: 7/88 (8.0%)
+  requisitos_seguranca:
+    basico: 72/88 (81.8%) <-- VENCEDOR
+    intermediario: 16/88 (18.2%)
+  ambiente_implantacao:
+    cloud: 88/88 (100.0%) <-- VENCEDOR
+  maturidade_equipe:
+    intermediario: 59/88 (67.0%) <-- VENCEDOR
+    iniciante: 29/88 (33.0%)
+  tipo_autenticacao:
+    propria: 68/88 (77.3%) <-- VENCEDOR
+    nenhuma: 10/88 (11.4%)
+    oauth: 10/88 (11.4%)
+  ciclo_desenvolvimento:
+    iterativo: 78/88 (88.6%) <-- VENCEDOR
+    mvp: 7/88 (8.0%)
+    longo_prazo: 3/88 (3.4%)
+
+Caso de teste: 4
+------------------------------------------------------------
+  tipo_projeto:
+    web: 87/87 (100.0%) <-- VENCEDOR
+  dominio_negocio:
+    educacao: 87/87 (100.0%) <-- VENCEDOR
+  persistencia:
+    sql: 87/87 (100.0%) <-- VENCEDOR
+  escala:
+    media: 75/87 (86.2%) <-- VENCEDOR
+    pequena: 12/87 (13.8%)
+  integracao:
+    nenhuma: 59/87 (67.8%) <-- VENCEDOR
+    servicos_internos: 27/87 (31.0%)
+    apis_externas: 1/87 (1.1%)
+  arquitetura_esperada:
+    monolito: 68/87 (78.2%) <-- VENCEDOR
+    microsservicos: 19/87 (21.8%)
+  experiencia_usuario:
+    intermediaria: 53/87 (60.9%) <-- VENCEDOR
+    basica: 34/87 (39.1%)
+  requisitos_seguranca:
+    basico: 71/87 (81.6%) <-- VENCEDOR
+    intermediario: 16/87 (18.4%)
+  ambiente_implantacao:
+    cloud: 87/87 (100.0%) <-- VENCEDOR
+  maturidade_equipe:
+    intermediario: 51/87 (58.6%) <-- VENCEDOR
+    iniciante: 36/87 (41.4%)
+  tipo_autenticacao:
+    propria: 55/87 (63.2%) <-- VENCEDOR
+    nenhuma: 16/87 (18.4%)
+    oauth: 16/87 (18.4%)
+  ciclo_desenvolvimento:
+    iterativo: 77/87 (88.5%) <-- VENCEDOR
+    mvp: 10/87 (11.5%)
+
+Caso de teste: 5
+------------------------------------------------------------
+  tipo_projeto:
+    desktop: 81/81 (100.0%) <-- VENCEDOR
+  dominio_negocio:
+    entretenimento: 78/81 (96.3%) <-- VENCEDOR
+    outro: 3/81 (3.7%)
+  persistencia:
+    sem_banco: 49/81 (60.5%) <-- VENCEDOR
+    sql: 26/81 (32.1%)
+    hibrido: 6/81 (7.4%)
+  escala:
+    media: 46/81 (56.8%) <-- VENCEDOR
+    pequena: 25/81 (30.9%)
+    grande: 10/81 (12.3%)
+  integracao:
+    servicos_internos: 58/81 (71.6%) <-- VENCEDOR
+    nenhuma: 14/81 (17.3%)
+    apis_externas: 9/81 (11.1%)
+  arquitetura_esperada:
+    microsservicos: 45/81 (55.6%) <-- VENCEDOR
+    serverless: 25/81 (30.9%)
+    event_driven: 6/81 (7.4%)
+    monolito: 5/81 (6.2%)
+  experiencia_usuario:
+    intermediaria: 33/81 (40.7%) <-- VENCEDOR
+    basica: 30/81 (37.0%)
+    avancada: 18/81 (22.2%)
+  requisitos_seguranca:
+    basico: 50/81 (61.7%) <-- VENCEDOR
+    nenhum: 22/81 (27.2%)
+    intermediario: 8/81 (9.9%)
+    avancado: 1/81 (1.2%)
+  ambiente_implantacao:
+    cloud: 34/81 (42.0%) <-- VENCEDOR
+    local: 24/81 (29.6%)
+    on_premise: 22/81 (27.2%)
+    hibrido: 1/81 (1.2%)
+  maturidade_equipe:
+    intermediario: 55/81 (67.9%) <-- VENCEDOR
+    iniciante: 20/81 (24.7%)
+    experiente: 6/81 (7.4%)
+  tipo_autenticacao:
+    nenhuma: 55/81 (67.9%) <-- VENCEDOR
+    propria: 16/81 (19.8%)
+    oauth: 10/81 (12.3%)
+  ciclo_desenvolvimento:
+    iterativo: 62/81 (76.5%) <-- VENCEDOR
+    mvp: 12/81 (14.8%)
+    longo_prazo: 7/81 (8.6%)

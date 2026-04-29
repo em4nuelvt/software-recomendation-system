@@ -1,0 +1,72 @@
+{
+    "1": {
+        "tipo_projeto": "web",
+        "dominio_negocio": "produtividade",
+        "persistencia": "sql",
+        "escala": "pequena",
+        "integracao": "nenhuma",
+        "arquitetura_esperada": "monolito",
+        "experiencia_usuario": "basica",
+        "requisitos_seguranca": "nenhum",
+        "ambiente_implantacao": "local",
+        "maturidade_equipe": "iniciante",
+        "tipo_autenticacao": "nenhuma",
+        "ciclo_desenvolvimento": "mvp"
+    },
+    "2": {
+        "tipo_projeto": "mobile",
+        "dominio_negocio": "educacao",
+        "persistencia": "sql",
+        "escala": "media",
+        "integracao": "nenhuma",
+        "arquitetura_esperada": "monolito",
+        "experiencia_usuario": "intermediaria",
+        "requisitos_seguranca": "basico",
+        "ambiente_implantacao": "cloud",
+        "maturidade_equipe": "iniciante",
+        "tipo_autenticacao": "nenhuma",
+        "ciclo_desenvolvimento": "iterativo"
+    },
+    "3": {
+        "tipo_projeto": "web",
+        "dominio_negocio": "saude",
+        "persistencia": "sql",
+        "escala": "media",
+        "integracao": "nenhuma",
+        "arquitetura_esperada": "monolito",
+        "experiencia_usuario": "intermediaria",
+        "requisitos_seguranca": "basico",
+        "ambiente_implantacao": "cloud",
+        "maturidade_equipe": "intermediario",
+        "tipo_autenticacao": "propria",
+        "ciclo_desenvolvimento": "iterativo"
+    },
+    "4": {
+        "tipo_projeto": "web",
+        "dominio_negocio": "educacao",
+        "persistencia": "sql",
+        "escala": "media",
+        "integracao": "nenhuma",
+        "arquitetura_esperada": "monolito",
+        "experiencia_usuario": "intermediaria",
+        "requisitos_seguranca": "basico",
+        "ambiente_implantacao": "cloud",
+        "maturidade_equipe": "intermediario",
+        "tipo_autenticacao": "propria",
+        "ciclo_desenvolvimento": "iterativo"
+    },
+    "5": {
+        "tipo_projeto": "desktop",
+        "dominio_negocio": "entretenimento",
+        "persistencia": "sem_banco",
+        "escala": "media",
+        "integracao": "servicos_internos",
+        "arquitetura_esperada": "microsservicos",
+        "experiencia_usuario": "intermediaria",
+        "requisitos_seguranca": "basico",
+        "ambiente_implantacao": "cloud",
+        "maturidade_equipe": "intermediario",
+        "tipo_autenticacao": "nenhuma",
+        "ciclo_desenvolvimento": "iterativo"
+    }
+}
