@@ -1,6 +1,7 @@
-### Modelos a serem utilizados
+### Modelos candidatos a serem utilizados
 - BERT (NER/Classificação) -> Compreender o texto de entrada do usuário e rotular em termos específicos baseados em compressão de significado.
 	- É necessário um conjunto de dados inicial com exemplos de frases rotuladas para o treinamento/ajuste do modelo. 
+	- Não será utilizado, mas é interessante citar no texto, pois é relevante na bibliografia sobre processamento de linguagem natural. 
 - LLaMA (Prompting) -> Processar o texto através de instruções (prompts) para gerar a estrutura de saída diretamente. 
 	- É necessário definir um prompt estruturado para guiar a geração e mitigar risco de imprecisões ou alucinações. 
 
@@ -122,6 +123,22 @@ Lê o arquivo gerado por requirement_extractor_benchmark e aplica _majority vot
 #### accuracy_report
 Lê o arquivo gerado por requirement_extractor_benchmark com os resultados de teste e também lê um gabarito de resultado esperado para os inputs para validar a acurácia da classificação de requisitos das entradas. Gera o arquivo `accuracy_report.txt` com acurácia por modelo/caso, por modelo consolidado, por atributo (indicando quais atributos os modelos mais erram) e ranking
 
+
+### Breve análise de resultados
+Os testes realizados avaliaram os modelos em duas dimensões: conformidade de saída, que verifica se a resposta segue o esquema definido e acurácia semântica, que compara os valores extraídos com um gabarito de referência.
+
+Os modelos deep seek e o qwen retornaram sempre saídas válidas dentro do escopo definido: retorno de um json com os atributos/requisitos de software devidamente classificados de acordo com a entrada. 
+O deep seek foi o melhor modelo no quesito de validação do formato da saída, pois apresentou todas saídas válidas em todos os processamentos. Além disso, foi o que teve menor tempo médio de execução. O qwen também foi consistente e apresentou saídas válidas. Entretanto, o Llama já não apresentou a saída dentro do escopo válido para todos os casos de teste, sendo assim o pior classificado dentro dos modelos testados. 
+
+Ao analisar somente as execuções válidas, verificou-se também a acurácia do modelo para 5 entradas distintas e seus respectivos "gabaritos", ou seja, a saída esperada para cada um deles. Nesse cenário, observou-se que alguns dos atributos não tiveram constância nas respostas. Dependendo da entrada informada, o modelo pode ter que inferir um atributo e isso naturalmente faz com que haja variação da resposta para atributos específicos para entradas específicas.
+- Atribuos determináveis são inferíveis diretamente da entrada, para o teste se destacaram atributos como 'tipo_projeto' e 'dominio_negocio'. 
+- Já atributos de inferência contextual são atributos que não foram mencionados explicitramente pelo usuário e o modelo precisa inferir com base no contexto da entrada. Dessa forma pode ser possível que haja mais de uma resposta válida. 
+
+Conclusões interessantes:
+- qwen2.5 lidera em acurácia média (71.72%), mas deepseek-r1:8b tem mais execuções 100% corretas (6 vs 1) — isso sugere que o deepseek é mais preciso quando acerta, mas menos consistente.
+- llama3 tem dupla desvantagem: menor acurácia (62.84%) e menor taxa de formato válido (70–93%), tornando-o menos confiável
+- Os resultados de 62–72% de acurácia são razoáveis considerando que vários atributos dependem de interpretação subjetiva. Para atributos explícitos, a acurácia seria muito maior
+- A consistência é baixa para todos os modelos, o que indica que eles não apresentam sempre a mesma saída para uma mesma entrada. Modelos LLMs são não-determinísticos por padrão, então, nesse cenário de testes onde ele precisa inferir algumas informações para classificar os atributos, é justificável variações nas respostas. 
 
 #### Configurar depois a Etapa 1 pra rodar com uma API na nuvem -> Ideia para fazer assim que ja tiver finalizado
 
