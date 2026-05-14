@@ -1,8 +1,8 @@
 from RequirementExtractor import RequirementExtractor 
 import user_input as ui 
 import json
-#USER_INPUT = "Quero fazer uma aplicação sobre futebol que me ajuda a responder duvidas como: foi a ultima vez que a seleção brasileira de futebol ganhou uma copa do mundo?"
-USER_INPUT = ui.inputs[1]
+USER_INPUT = "Quero fazer uma aplicação sobre futebol que me ajuda a responder duvidas como: foi a ultima vez que a seleção brasileira de futebol ganhou uma copa do mundo?"
+#USER_INPUT = ui.inputs[1]
 if __name__ == "__main__":
     extractor = RequirementExtractor()
     print("--- Motor de PLN com modelos generativos (LLM) ---")

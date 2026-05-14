@@ -88,7 +88,7 @@ Você é um especialista em engenharia de requisitos de software. Analise a entr
 
 ### Saída esperada (somente JSON):
 ```
-  
+https://gist.github.com/em4nuelvt/c174bc079d537a51e99e508b919835e0
 ### Preparando o ambiente
 #### Instalação do OLLAMA e modelos
 - O Ollama é o programa que funciona como um motor para rodar modelos LLMs localmente no computador. 
