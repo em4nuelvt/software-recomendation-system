@@ -13,7 +13,6 @@ from collections import defaultdict
 
 matplotlib.use("Agg")
 
-# ---------- Caminhos ----------
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "benchmark_output")
 GRAFICOS_DIR = os.path.join(OUTPUT_DIR, "graficos")
@@ -23,7 +22,6 @@ RESUMO_PATH = os.path.join(OUTPUT_DIR, "resumo_metricas.txt")
 ACCURACY_PATH = os.path.join(OUTPUT_DIR, "accuracy_report.txt")
 DETALHADOS_PATH = os.path.join(OUTPUT_DIR, "resultados_detalhados.txt")
 
-# ---------- Estilo global ----------
 CORES_MODELOS = {"qwen2.5": "#4C72B0", "llama3": "#DD8452", "deepseek-r1:8b": "#55A868"}
 MODELOS_ORDEM = ["qwen2.5", "llama3", "deepseek-r1:8b"]
 CASOS = ["1", "2", "3", "4", "5"]
@@ -39,18 +37,12 @@ plt.rcParams.update({
 })
 
 
-# ========================================================
-# PARSING
-# ========================================================
-
 def parse_resumo():
-    """Retorna dict[modelo][caso] = {tempo_medio, tempo_mediano, ...}  e  dict[modelo] = {...consolidado}."""
     por_caso = defaultdict(dict)
     consolidado = {}
     with open(RESUMO_PATH, encoding="utf-8") as f:
         texto = f.read()
 
-    # --- por modelo e caso de teste ---
     blocos = re.split(r"Modelo:\s+", texto)
     for bloco in blocos[1:]:
         m = re.match(r"(.+?)\s*\|\s*Caso de teste:\s*(\d+)", bloco)
@@ -74,7 +66,6 @@ def parse_resumo():
             por_caso[modelo][caso] = d
             continue
 
-        # consolidado
         m2 = re.match(r"(.+?)[\r\n]", bloco)
         if m2:
             modelo = m2.group(1).strip()
@@ -95,12 +86,6 @@ def parse_resumo():
 
 
 def parse_accuracy():
-    """Retorna:
-    - por_caso: dict[modelo][caso] = {acuracia_media, acuracia_min, acuracia_max}
-    - por_atributo_geral: dict[atributo] = pct
-    - por_modelo_consolidado: dict[modelo] = {acuracia_media, exec_100pct, total_exec}
-    - atributos_por_modelo_caso: dict[modelo][caso] = dict[atributo] = pct
-    """
     por_caso = defaultdict(dict)
     consolidado = {}
     por_atributo_geral = {}
@@ -109,7 +94,6 @@ def parse_accuracy():
     with open(ACCURACY_PATH, encoding="utf-8") as f:
         texto = f.read()
 
-    # Secao 1 - por modelo e caso
     secao1 = texto.split("2) Acuracia consolidada por modelo")[0]
     blocos = re.split(r"Modelo:\s+", secao1)
     for bloco in blocos[1:]:
@@ -122,11 +106,9 @@ def parse_accuracy():
         ac_max = float(re.search(r"Acuracia maxima:\s*([\d.]+)%", bloco).group(1))
         por_caso[modelo][caso] = {"acuracia_media": ac_media, "acuracia_min": ac_min, "acuracia_max": ac_max}
 
-        # atributos
         for am in re.finditer(r"  (\w+):\s*\d+/\d+\s*\(([\d.]+)%\)", bloco):
             atrib_mc[modelo][caso][am.group(1)] = float(am.group(2))
 
-    # Secao 2 - consolidado
     secao2_3 = texto.split("2) Acuracia consolidada por modelo")[1]
     secao2 = secao2_3.split("3) Acuracia por atributo")[0]
     for bm in re.finditer(r"Modelo:\s+(.+?)\n.*?Acuracia media:\s*([\d.]+)%.*?Execucoes 100% corretas:\s*(\d+)/(\d+)", secao2, re.DOTALL):
@@ -137,7 +119,6 @@ def parse_accuracy():
             "total_exec": int(bm.group(4)),
         }
 
-    # Secao 3 - atributos geral
     secao3 = secao2_3.split("3) Acuracia por atributo")[1].split("4) Ranking")[0]
     for am in re.finditer(r"(\w+):\s*\d+/\d+\s*\(([\d.]+)%\)", secao3):
         por_atributo_geral[am.group(1)] = float(am.group(2))
@@ -146,7 +127,6 @@ def parse_accuracy():
 
 
 def parse_tempos_detalhados():
-    """Retorna dict[modelo][caso] = [lista de tempos em ms]."""
     tempos = defaultdict(lambda: defaultdict(list))
     with open(DETALHADOS_PATH, encoding="utf-8") as f:
         modelo_atual = caso_atual = None
@@ -162,10 +142,6 @@ def parse_tempos_detalhados():
     return tempos
 
 
-# ========================================================
-# GRÁFICOS
-# ========================================================
-
 def salvar(fig, nome):
     path = os.path.join(GRAFICOS_DIR, nome)
     fig.savefig(path, dpi=200, bbox_inches="tight")
@@ -174,7 +150,6 @@ def salvar(fig, nome):
 
 
 def fig01_tempo_medio_por_caso(resumo_caso):
-    """Barras agrupadas: eixo X = caso de teste, barras = modelos, Y = tempo médio (s)."""
     fig, ax = plt.subplots(figsize=(10, 5.5))
     x = np.arange(len(CASOS))
     w = 0.25
@@ -189,16 +164,11 @@ def fig01_tempo_medio_por_caso(resumo_caso):
     ax.set_title("Tempo Médio de Resposta por Caso de Teste e Modelo")
     ax.set_xticks(x + w)
     ax.set_xticklabels([f"Caso {c}" for c in CASOS])
-<<<<<<< HEAD
     ax.legend(loc="upper left", bbox_to_anchor=(1.01, 1), borderaxespad=0)
-=======
-    ax.legend()
->>>>>>> bb4946e23842af7589a8f5520a039c1f75ca083b
     salvar(fig, "fig01_tempo_medio_por_caso.png")
 
 
 def fig02_boxplot_tempo(tempos):
-    """Boxplot de tempo de resposta consolidado por modelo."""
     fig, ax = plt.subplots(figsize=(8, 5.5))
     data = []
     labels = []
@@ -222,19 +192,13 @@ def fig02_boxplot_tempo(tempos):
 
 
 def fig03_taxa_sucesso(resumo_consolidado):
-    """Barras empilhadas: sucesso vs falha por modelo."""
     fig, ax = plt.subplots(figsize=(7, 5))
     modelos = MODELOS_ORDEM
     sucesso = [resumo_consolidado[m]["taxa_sucesso"] for m in modelos]
     falha = [100 - s for s in sucesso]
     x = np.arange(len(modelos))
-<<<<<<< HEAD
     bars_s = ax.bar(x, sucesso, 0.5, color=[CORES_MODELOS[m] for m in modelos], edgecolor="white")
     bars_f = ax.bar(x, falha, 0.5, bottom=sucesso, color="#E07B73", edgecolor="white", alpha=0.85)
-=======
-    bars_s = ax.bar(x, sucesso, 0.5, label="Sucesso (%)", color=[CORES_MODELOS[m] for m in modelos], edgecolor="white")
-    bars_f = ax.bar(x, falha, 0.5, bottom=sucesso, label="Falha (%)", color="#E07B73", edgecolor="white", alpha=0.85)
->>>>>>> bb4946e23842af7589a8f5520a039c1f75ca083b
     for bar, val in zip(bars_s, sucesso):
         ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() / 2,
                 f"{val:.1f}%", ha="center", va="center", fontweight="bold", color="white", fontsize=11)
@@ -247,18 +211,13 @@ def fig03_taxa_sucesso(resumo_consolidado):
     ax.set_ylabel("Porcentagem (%)")
     ax.set_title("Taxa de Sucesso vs. Falha por Modelo")
     ax.set_ylim(0, 105)
-<<<<<<< HEAD
     legend_handles = [matplotlib.patches.Patch(facecolor=CORES_MODELOS[m], label=m) for m in modelos]
     legend_handles.append(matplotlib.patches.Patch(facecolor="#E07B73", alpha=0.85, label="Falha (%)"))
     ax.legend(handles=legend_handles, loc="upper left", bbox_to_anchor=(1.01, 1), borderaxespad=0)
-=======
-    ax.legend(loc="upper right")
->>>>>>> bb4946e23842af7589a8f5520a039c1f75ca083b
     salvar(fig, "fig03_taxa_sucesso.png")
 
 
 def fig04_acuracia_por_modelo(acc_consolidado):
-    """Barras simples de acurácia média consolidada por modelo."""
     fig, ax = plt.subplots(figsize=(7, 5))
     modelos = MODELOS_ORDEM
     vals = [acc_consolidado[m]["acuracia_media"] for m in modelos]
@@ -273,7 +232,6 @@ def fig04_acuracia_por_modelo(acc_consolidado):
 
 
 def fig05_acuracia_por_caso(acc_caso):
-    """Barras agrupadas: acurácia por caso de teste e modelo."""
     fig, ax = plt.subplots(figsize=(10, 5.5))
     x = np.arange(len(CASOS))
     w = 0.25
@@ -294,7 +252,6 @@ def fig05_acuracia_por_caso(acc_caso):
 
 
 def fig06_acuracia_por_atributo(atrib_geral):
-    """Barras horizontais ordenadas: acurácia por atributo (todos os modelos)."""
     atribs_sorted = sorted(atrib_geral.items(), key=lambda x: x[1])
     nomes = [a[0].replace("_", " ").title() for a in atribs_sorted]
     vals = [a[1] for a in atribs_sorted]
@@ -308,29 +265,22 @@ def fig06_acuracia_por_atributo(atrib_geral):
     ax.set_xlabel("Acurácia (%)")
     ax.set_title("Acurácia por Atributo (Todos os Modelos)")
     ax.set_xlim(0, 110)
-<<<<<<< HEAD
     legend_handles = [
         matplotlib.patches.Patch(facecolor="#55A868", label="\u2265 80%"),
         matplotlib.patches.Patch(facecolor="#F0C05A", label="60 \u2013 79%"),
         matplotlib.patches.Patch(facecolor="#E07B73", label="< 60%"),
     ]
     ax.legend(handles=legend_handles, loc="lower right", title="Acurácia")
-=======
->>>>>>> bb4946e23842af7589a8f5520a039c1f75ca083b
     salvar(fig, "fig06_acuracia_por_atributo.png")
 
 
 def fig07_heatmap_atributo_modelo(atrib_mc):
-    """Heatmap: atributo × modelo (acurácia média em todos os casos)."""
-    # Coletar todos os atributos
     all_atribs = set()
     for modelo in MODELOS_ORDEM:
         for caso in CASOS:
             if caso in atrib_mc[modelo]:
                 all_atribs.update(atrib_mc[modelo][caso].keys())
 
-    # Para cada (modelo, atributo), calcular média dos acertos nos casos onde apareceu
-    # Atributos não listados no relatório tiveram 100%
     atribs_list = sorted(all_atribs)
     matrix = np.zeros((len(atribs_list), len(MODELOS_ORDEM)))
 
@@ -342,7 +292,7 @@ def fig07_heatmap_atributo_modelo(atrib_mc):
                     if atrib in atrib_mc[modelo][caso]:
                         vals_casos.append(atrib_mc[modelo][caso][atrib])
                     else:
-                        vals_casos.append(100.0)  # não listado = 100%
+                        vals_casos.append(100.0)
                 else:
                     vals_casos.append(100.0)
             matrix[i, j] = np.mean(vals_casos)
@@ -363,7 +313,6 @@ def fig07_heatmap_atributo_modelo(atrib_mc):
 
 
 def fig08_consistencia_por_caso(resumo_caso):
-    """Barras agrupadas: consistência por caso de teste e modelo."""
     fig, ax = plt.subplots(figsize=(10, 5.5))
     x = np.arange(len(CASOS))
     w = 0.25
@@ -384,7 +333,6 @@ def fig08_consistencia_por_caso(resumo_caso):
 
 
 def fig09_consistencia_por_modelo(resumo_consolidado):
-    """Barras de consistência consolidada por modelo."""
     fig, ax = plt.subplots(figsize=(7, 5))
     modelos = MODELOS_ORDEM
     vals = [resumo_consolidado[m]["consistencia_validos"] for m in modelos]
@@ -399,7 +347,6 @@ def fig09_consistencia_por_modelo(resumo_consolidado):
 
 
 def fig10_radar(acc_consolidado, resumo_consolidado):
-    """Radar chart comparando modelos em 4 dimensões."""
     categorias = ["Acurácia", "Consistência", "Taxa Sucesso", "Velocidade"]
     N = len(categorias)
     angles = [n / float(N) * 2 * math.pi for n in range(N)]
@@ -407,9 +354,6 @@ def fig10_radar(acc_consolidado, resumo_consolidado):
 
     fig, ax = plt.subplots(figsize=(7, 7), subplot_kw=dict(polar=True))
 
-    # Normalizar velocidade (inverter: menor tempo = melhor)
-    # Usa razão inversa: (tempo_do_mais_rápido / tempo_do_modelo) × 100
-    # Assim o modelo mais rápido recebe 100% e os demais recebem proporcionalmente menos
     tempos = {m: resumo_consolidado[m]["tempo_medio"] for m in MODELOS_ORDEM}
     t_min = min(tempos.values())
 
@@ -433,7 +377,6 @@ def fig10_radar(acc_consolidado, resumo_consolidado):
 
 
 def fig11_saidas_distintas(resumo_caso):
-    """Barras agrupadas: nº de saídas distintas por caso de teste e modelo."""
     fig, ax = plt.subplots(figsize=(10, 5.5))
     x = np.arange(len(CASOS))
     w = 0.25
@@ -451,10 +394,6 @@ def fig11_saidas_distintas(resumo_caso):
     ax.legend()
     salvar(fig, "fig11_saidas_distintas.png")
 
-
-# ========================================================
-# MAIN
-# ========================================================
 
 def main():
     print("Parsing dados...")
