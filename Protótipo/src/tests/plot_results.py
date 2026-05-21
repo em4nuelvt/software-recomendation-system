@@ -189,7 +189,11 @@ def fig01_tempo_medio_por_caso(resumo_caso):
     ax.set_title("Tempo Médio de Resposta por Caso de Teste e Modelo")
     ax.set_xticks(x + w)
     ax.set_xticklabels([f"Caso {c}" for c in CASOS])
+<<<<<<< HEAD
     ax.legend(loc="upper left", bbox_to_anchor=(1.01, 1), borderaxespad=0)
+=======
+    ax.legend()
+>>>>>>> bb4946e23842af7589a8f5520a039c1f75ca083b
     salvar(fig, "fig01_tempo_medio_por_caso.png")
 
 
@@ -224,8 +228,13 @@ def fig03_taxa_sucesso(resumo_consolidado):
     sucesso = [resumo_consolidado[m]["taxa_sucesso"] for m in modelos]
     falha = [100 - s for s in sucesso]
     x = np.arange(len(modelos))
+<<<<<<< HEAD
     bars_s = ax.bar(x, sucesso, 0.5, color=[CORES_MODELOS[m] for m in modelos], edgecolor="white")
     bars_f = ax.bar(x, falha, 0.5, bottom=sucesso, color="#E07B73", edgecolor="white", alpha=0.85)
+=======
+    bars_s = ax.bar(x, sucesso, 0.5, label="Sucesso (%)", color=[CORES_MODELOS[m] for m in modelos], edgecolor="white")
+    bars_f = ax.bar(x, falha, 0.5, bottom=sucesso, label="Falha (%)", color="#E07B73", edgecolor="white", alpha=0.85)
+>>>>>>> bb4946e23842af7589a8f5520a039c1f75ca083b
     for bar, val in zip(bars_s, sucesso):
         ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() / 2,
                 f"{val:.1f}%", ha="center", va="center", fontweight="bold", color="white", fontsize=11)
@@ -238,9 +247,13 @@ def fig03_taxa_sucesso(resumo_consolidado):
     ax.set_ylabel("Porcentagem (%)")
     ax.set_title("Taxa de Sucesso vs. Falha por Modelo")
     ax.set_ylim(0, 105)
+<<<<<<< HEAD
     legend_handles = [matplotlib.patches.Patch(facecolor=CORES_MODELOS[m], label=m) for m in modelos]
     legend_handles.append(matplotlib.patches.Patch(facecolor="#E07B73", alpha=0.85, label="Falha (%)"))
     ax.legend(handles=legend_handles, loc="upper left", bbox_to_anchor=(1.01, 1), borderaxespad=0)
+=======
+    ax.legend(loc="upper right")
+>>>>>>> bb4946e23842af7589a8f5520a039c1f75ca083b
     salvar(fig, "fig03_taxa_sucesso.png")
 
 
@@ -295,12 +308,15 @@ def fig06_acuracia_por_atributo(atrib_geral):
     ax.set_xlabel("Acurácia (%)")
     ax.set_title("Acurácia por Atributo (Todos os Modelos)")
     ax.set_xlim(0, 110)
+<<<<<<< HEAD
     legend_handles = [
         matplotlib.patches.Patch(facecolor="#55A868", label="\u2265 80%"),
         matplotlib.patches.Patch(facecolor="#F0C05A", label="60 \u2013 79%"),
         matplotlib.patches.Patch(facecolor="#E07B73", label="< 60%"),
     ]
     ax.legend(handles=legend_handles, loc="lower right", title="Acurácia")
+=======
+>>>>>>> bb4946e23842af7589a8f5520a039c1f75ca083b
     salvar(fig, "fig06_acuracia_por_atributo.png")
 
 
