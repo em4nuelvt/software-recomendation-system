@@ -370,6 +370,13 @@ def fig10_radar(acc_consolidado, resumo_consolidado):
 
     ax.set_xticks(angles[:-1])
     ax.set_xticklabels(categorias, fontsize=11)
+    for label, angle in zip(ax.get_xticklabels(), angles[:-1]):
+        angle_deg = math.degrees(angle) % 360
+        if angle_deg < 90 or angle_deg > 270:  # lado direito
+            label.set_ha("left")
+        elif 90 < angle_deg < 270:              # lado esquerdo
+            label.set_ha("right")
+        # 90° e 270° (topo/baixo) mantêm 'center'
     ax.set_ylim(0, 105)
     ax.set_title("Comparação Multidimensional dos Modelos", y=1.08)
     ax.legend(loc="upper right", bbox_to_anchor=(1.3, 1.1))
