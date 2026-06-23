@@ -1,15 +1,28 @@
-from RequirementExtractor import RequirementExtractor 
-import user_input as ui 
+import sys
 import json
-USER_INPUT = "Quero fazer uma aplicação sobre futebol que me ajuda a responder duvidas como: foi a ultima vez que a seleção brasileira de futebol ganhou uma copa do mundo?"
-#USER_INPUT = ui.inputs[1]
+from RequirementExtractor import RequirementExtractor 
+from RecommendationEngine import RecommendationEngine
+from ResponseFormatter import ResponseFormatter
+
+USER_INPUT = "Gostaria de desenvolver um sistema de lista de tarefas local para computador sem banco de dados na linguagem Java"
 if __name__ == "__main__":
     extractor = RequirementExtractor()
-    print("--- Motor de PLN com modelos generativos (LLM) ---")
+    engine = RecommendationEngine()
+    formatter = ResponseFormatter()
+
+    print("--- Sistema Recomendação de Tecnologias de Software ---\n")
 
     if not extractor.validateInput(USER_INPUT):
         print("Sou um sistema de recomendação de tecnologias de software. Não possuo capacidade de auxiliar sobre assuntos que fogem do meu escopo de atuação.")
     else:
         requirements = extractor.extractRequirement(USER_INPUT)
-        print("Saída: \n")
-        print(json.dumps(requirements, indent=4, ensure_ascii=False))
+        recommendation = engine.recommend(requirements)
+        
+        print("=== Requisitos Extraídos (JSON) ===")
+        print(json.dumps(requirements, indent=2, ensure_ascii=False))
+        print()
+        
+        print(f"Entrada do Usuário: {USER_INPUT}\n")
+        
+        output = formatter.format(USER_INPUT, recommendation)
+        print(output)

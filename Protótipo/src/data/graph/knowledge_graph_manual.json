@@ -1,0 +1,4354 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "technology",
+      "id": "python",
+      "nome": "Python",
+      "categoria": "linguagem",
+      "descricao": "Linguagem versátil, muito forte em dados, IA e backend."
+    },
+    {
+      "type": "technology",
+      "id": "javascript",
+      "nome": "JavaScript",
+      "categoria": "linguagem",
+      "descricao": "A linguagem base da web, também muito usada no backend com Node.js."
+    },
+    {
+      "type": "technology",
+      "id": "typescript",
+      "nome": "TypeScript",
+      "categoria": "linguagem",
+      "descricao": "JavaScript com tipagem estática, ideal para projetos maiores."
+    },
+    {
+      "type": "technology",
+      "id": "java",
+      "nome": "Java",
+      "categoria": "linguagem",
+      "descricao": "Linguagem robusta e amplamente adotada no mundo enterprise."
+    },
+    {
+      "type": "technology",
+      "id": "csharp",
+      "nome": "C#",
+      "categoria": "linguagem",
+      "descricao": "Linguagem principal do ecossistema .NET."
+    },
+    {
+      "type": "technology",
+      "id": "php",
+      "nome": "PHP",
+      "categoria": "linguagem",
+      "descricao": "Linguagem clássica para desenvolvimento web server-side."
+    },
+    {
+      "type": "technology",
+      "id": "go",
+      "nome": "Go",
+      "categoria": "linguagem",
+      "descricao": "Linguagem do Google focada em concorrência e alta performance."
+    },
+    {
+      "type": "technology",
+      "id": "kotlin",
+      "nome": "Kotlin",
+      "categoria": "linguagem",
+      "descricao": "Linguagem moderna da JVM, oficial para desenvolvimento Android."
+    },
+    {
+      "type": "technology",
+      "id": "swift",
+      "nome": "Swift",
+      "categoria": "linguagem",
+      "descricao": "Linguagem oficial da Apple para iOS e macOS."
+    },
+    {
+      "type": "technology",
+      "id": "ruby",
+      "nome": "Ruby",
+      "categoria": "linguagem",
+      "descricao": "Linguagem focada na produtividade e felicidade do desenvolvedor."
+    },
+    {
+      "type": "technology",
+      "id": "dart",
+      "nome": "Dart",
+      "categoria": "linguagem",
+      "descricao": "Linguagem do Google otimizada para o framework Flutter."
+    },
+    {
+      "type": "technology",
+      "id": "rust",
+      "nome": "Rust",
+      "categoria": "linguagem",
+      "descricao": "Linguagem focada em performance e segurança de memória."
+    },
+    {
+      "type": "technology",
+      "id": "cpp",
+      "nome": "C++",
+      "categoria": "linguagem",
+      "descricao": "Linguagem de alta performance para sistemas embarcados e motores gráficos."
+    },
+    {
+      "type": "technology",
+      "id": "c",
+      "nome": "C",
+      "categoria": "linguagem",
+      "descricao": "Linguagem de baixo nível, base de sistemas operacionais e embarcados."
+    },
+    {
+      "type": "technology",
+      "id": "django",
+      "nome": "Django",
+      "categoria": "framework_backend",
+      "descricao": "Framework Python 'batteries-included' focado em desenvolvimento rápido."
+    },
+    {
+      "type": "technology",
+      "id": "flask",
+      "nome": "Flask",
+      "categoria": "framework_backend",
+      "descricao": "Micro-framework Python simples e flexível."
+    },
+    {
+      "type": "technology",
+      "id": "fastapi",
+      "nome": "FastAPI",
+      "categoria": "framework_backend",
+      "descricao": "Framework Python moderno e de alta performance para construção de APIs."
+    },
+    {
+      "type": "technology",
+      "id": "express",
+      "nome": "Express",
+      "categoria": "framework_backend",
+      "descricao": "Framework web rápido, não opinativo e minimalista para Node.js."
+    },
+    {
+      "type": "technology",
+      "id": "nestjs",
+      "nome": "NestJS",
+      "categoria": "framework_backend",
+      "descricao": "Framework Node.js progressivo para aplicações escaláveis, inspirado no Angular."
+    },
+    {
+      "type": "technology",
+      "id": "spring",
+      "nome": "Spring Boot",
+      "categoria": "framework_backend",
+      "descricao": "Framework maduro e abrangente para o ecossistema Java."
+    },
+    {
+      "type": "technology",
+      "id": "laravel",
+      "nome": "Laravel",
+      "categoria": "framework_backend",
+      "descricao": "Framework PHP elegante e expressivo para aplicações web."
+    },
+    {
+      "type": "technology",
+      "id": "rails",
+      "nome": "Ruby on Rails",
+      "categoria": "framework_backend",
+      "descricao": "Framework web full-stack focado em produtividade."
+    },
+    {
+      "type": "technology",
+      "id": "aspnet",
+      "nome": "ASP.NET Core",
+      "categoria": "framework_backend",
+      "descricao": "Framework web multiplataforma e de alta performance da Microsoft."
+    },
+    {
+      "type": "technology",
+      "id": "gin",
+      "nome": "Gin",
+      "categoria": "framework_backend",
+      "descricao": "Micro-framework web HTTP escrito em Go, focado em performance."
+    },
+    {
+      "type": "technology",
+      "id": "react",
+      "nome": "React",
+      "categoria": "framework_frontend",
+      "descricao": "Biblioteca JavaScript para criar interfaces de usuário interativas."
+    },
+    {
+      "type": "technology",
+      "id": "vue",
+      "nome": "Vue.js",
+      "categoria": "framework_frontend",
+      "descricao": "Framework JavaScript progressivo e acessível para interfaces de usuário."
+    },
+    {
+      "type": "technology",
+      "id": "angular",
+      "nome": "Angular",
+      "categoria": "framework_frontend",
+      "descricao": "Plataforma e framework para desenvolvimento de aplicações web completas."
+    },
+    {
+      "type": "technology",
+      "id": "svelte",
+      "nome": "Svelte",
+      "categoria": "framework_frontend",
+      "descricao": "Compilador que gera código altamente otimizado para a web."
+    },
+    {
+      "type": "technology",
+      "id": "nextjs",
+      "nome": "Next.js",
+      "categoria": "framework_frontend",
+      "descricao": "Framework React com suporte a Server-Side Rendering e sites estáticos."
+    },
+    {
+      "type": "technology",
+      "id": "nuxtjs",
+      "nome": "Nuxt.js",
+      "categoria": "framework_frontend",
+      "descricao": "Framework Vue.js intuitivo para desenvolvimento full-stack moderno."
+    },
+    {
+      "type": "technology",
+      "id": "jquery",
+      "nome": "jQuery",
+      "categoria": "framework_frontend",
+      "descricao": "Biblioteca JavaScript legada, rápida e pequena para manipulação do DOM."
+    },
+    {
+      "type": "technology",
+      "id": "react_native",
+      "nome": "React Native",
+      "categoria": "framework_mobile",
+      "descricao": "Framework para construir aplicativos nativos usando React."
+    },
+    {
+      "type": "technology",
+      "id": "flutter",
+      "nome": "Flutter",
+      "categoria": "framework_mobile",
+      "descricao": "UI toolkit do Google para criar apps bonitos e compilados nativamente."
+    },
+    {
+      "type": "technology",
+      "id": "swiftui",
+      "nome": "SwiftUI",
+      "categoria": "framework_mobile",
+      "descricao": "Framework declarativo da Apple para criar interfaces de usuário nativas."
+    },
+    {
+      "type": "technology",
+      "id": "android_kotlin",
+      "nome": "Android (Kotlin)",
+      "categoria": "framework_mobile",
+      "descricao": "Desenvolvimento Android nativo clássico."
+    },
+    {
+      "type": "technology",
+      "id": "ionic",
+      "nome": "Ionic",
+      "categoria": "framework_mobile",
+      "descricao": "Framework open-source de UI para construção de aplicativos móveis híbridos."
+    },
+    {
+      "type": "technology",
+      "id": "postgresql",
+      "nome": "PostgreSQL",
+      "categoria": "banco_dados",
+      "descricao": "Banco de dados relacional de código aberto extremamente avançado e robusto."
+    },
+    {
+      "type": "technology",
+      "id": "mysql",
+      "nome": "MySQL",
+      "categoria": "banco_dados",
+      "descricao": "O banco de dados relacional de código aberto mais popular do mundo."
+    },
+    {
+      "type": "technology",
+      "id": "sqlite",
+      "nome": "SQLite",
+      "categoria": "banco_dados",
+      "descricao": "Motor de banco de dados SQL embutido e de configuração zero."
+    },
+    {
+      "type": "technology",
+      "id": "mongodb",
+      "nome": "MongoDB",
+      "categoria": "banco_dados",
+      "descricao": "Banco de dados de documentos, muito usado em aplicações modernas e escaláveis."
+    },
+    {
+      "type": "technology",
+      "id": "redis",
+      "nome": "Redis",
+      "categoria": "banco_dados",
+      "descricao": "Armazenamento em memória, frequentemente usado como cache de alta performance."
+    },
+    {
+      "type": "technology",
+      "id": "firebase_rt",
+      "nome": "Firebase Realtime DB",
+      "categoria": "banco_dados",
+      "descricao": "Banco de dados NoSQL hospedado na nuvem que sincroniza dados em tempo real."
+    },
+    {
+      "type": "technology",
+      "id": "dynamodb",
+      "nome": "Amazon DynamoDB",
+      "categoria": "banco_dados",
+      "descricao": "Banco de dados de chave-valor e documento da AWS com latência de milissegundos."
+    },
+    {
+      "type": "technology",
+      "id": "mariadb",
+      "nome": "MariaDB",
+      "categoria": "banco_dados",
+      "descricao": "Fork comunitário do MySQL, oferecendo alta compatibilidade e melhorias."
+    },
+    {
+      "type": "technology",
+      "id": "sqlserver",
+      "nome": "Microsoft SQL Server",
+      "categoria": "banco_dados",
+      "descricao": "Sistema gerenciador de banco de dados relacional enterprise da Microsoft."
+    },
+    {
+      "type": "technology",
+      "id": "docker",
+      "nome": "Docker",
+      "categoria": "infraestrutura",
+      "descricao": "Plataforma aberta para desenvolver, enviar e executar aplicações em contêineres."
+    },
+    {
+      "type": "technology",
+      "id": "kubernetes",
+      "nome": "Kubernetes",
+      "categoria": "infraestrutura",
+      "descricao": "Sistema de orquestração de contêineres open-source."
+    },
+    {
+      "type": "technology",
+      "id": "aws",
+      "nome": "Amazon Web Services",
+      "categoria": "infraestrutura",
+      "descricao": "Plataforma de nuvem mais abrangente e amplamente adotada do mundo."
+    },
+    {
+      "type": "technology",
+      "id": "gcp",
+      "nome": "Google Cloud Platform",
+      "categoria": "infraestrutura",
+      "descricao": "Suíte de serviços de computação em nuvem fornecidos pelo Google."
+    },
+    {
+      "type": "technology",
+      "id": "azure",
+      "nome": "Microsoft Azure",
+      "categoria": "infraestrutura",
+      "descricao": "Serviço de computação em nuvem criado pela Microsoft."
+    },
+    {
+      "type": "technology",
+      "id": "nginx",
+      "nome": "Nginx",
+      "categoria": "infraestrutura",
+      "descricao": "Servidor HTTP e proxy reverso de alta performance."
+    },
+    {
+      "type": "technology",
+      "id": "heroku",
+      "nome": "Heroku",
+      "categoria": "infraestrutura",
+      "descricao": "Plataforma como serviço (PaaS) que possibilita deploy e escalonamento simples."
+    },
+    {
+      "type": "technology",
+      "id": "vercel",
+      "nome": "Vercel",
+      "categoria": "infraestrutura",
+      "descricao": "Plataforma para desenvolvedores front-end, focada em frameworks como Next.js."
+    },
+    {
+      "type": "technology",
+      "id": "elixir",
+      "nome": "Elixir",
+      "categoria": "linguagem",
+      "descricao": "Linguagem funcional na BEAM VM, projetada para alta concorrência e tolerância a falhas."
+    },
+    {
+      "type": "technology",
+      "id": "scala",
+      "nome": "Scala",
+      "categoria": "linguagem",
+      "descricao": "Linguagem híbrida funcional/OO na JVM, forte em Big Data e sistemas distribuídos."
+    },
+    {
+      "type": "technology",
+      "id": "phoenix",
+      "nome": "Phoenix",
+      "categoria": "framework_backend",
+      "descricao": "Framework web Elixir de alta performance com suporte nativo a WebSockets e canais."
+    },
+    {
+      "type": "technology",
+      "id": "kafka",
+      "nome": "Apache Kafka",
+      "categoria": "infraestrutura",
+      "descricao": "Plataforma de streaming distribuída para pipelines de dados em tempo real."
+    },
+    {
+      "type": "technology",
+      "id": "rabbitmq",
+      "nome": "RabbitMQ",
+      "categoria": "infraestrutura",
+      "descricao": "Broker de mensagens open-source para comunicação assíncrona entre microsserviços."
+    },
+    {
+      "type": "technology",
+      "id": "cassandra",
+      "nome": "Apache Cassandra",
+      "categoria": "banco_dados",
+      "descricao": "Banco de dados colunar distribuído para altíssima escala e disponibilidade."
+    },
+    {
+      "type": "technology",
+      "id": "neo4j",
+      "nome": "Neo4j",
+      "categoria": "banco_dados",
+      "descricao": "Banco de dados de grafos líder, ideal para redes sociais, recomendações e logística."
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "tipo_projeto",
+      "valor": "web",
+      "id": "tipo_projeto=web"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "tipo_projeto",
+      "valor": "mobile",
+      "id": "tipo_projeto=mobile"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "tipo_projeto",
+      "valor": "desktop",
+      "id": "tipo_projeto=desktop"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "tipo_projeto",
+      "valor": "api",
+      "id": "tipo_projeto=api"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "tipo_projeto",
+      "valor": "embarcado",
+      "id": "tipo_projeto=embarcado"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "tipo_projeto",
+      "valor": "hibrido",
+      "id": "tipo_projeto=hibrido"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "dominio_negocio",
+      "valor": "produtividade",
+      "id": "dominio_negocio=produtividade"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "dominio_negocio",
+      "valor": "financeiro",
+      "id": "dominio_negocio=financeiro"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "dominio_negocio",
+      "valor": "saude",
+      "id": "dominio_negocio=saude"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "dominio_negocio",
+      "valor": "educacao",
+      "id": "dominio_negocio=educacao"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "dominio_negocio",
+      "valor": "ecommerce",
+      "id": "dominio_negocio=ecommerce"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "dominio_negocio",
+      "valor": "logistica",
+      "id": "dominio_negocio=logistica"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "dominio_negocio",
+      "valor": "entretenimento",
+      "id": "dominio_negocio=entretenimento"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "dominio_negocio",
+      "valor": "outro",
+      "id": "dominio_negocio=outro"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "persistencia",
+      "valor": "sem_banco",
+      "id": "persistencia=sem_banco"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "persistencia",
+      "valor": "sql",
+      "id": "persistencia=sql"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "persistencia",
+      "valor": "nosql",
+      "id": "persistencia=nosql"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "persistencia",
+      "valor": "hibrido",
+      "id": "persistencia=hibrido"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "escala",
+      "valor": "pequena",
+      "id": "escala=pequena"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "escala",
+      "valor": "media",
+      "id": "escala=media"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "escala",
+      "valor": "grande",
+      "id": "escala=grande"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "escala",
+      "valor": "enterprise",
+      "id": "escala=enterprise"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "integracao",
+      "valor": "nenhuma",
+      "id": "integracao=nenhuma"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "integracao",
+      "valor": "apis_externas",
+      "id": "integracao=apis_externas"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "integracao",
+      "valor": "servicos_internos",
+      "id": "integracao=servicos_internos"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "integracao",
+      "valor": "ambos",
+      "id": "integracao=ambos"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "arquitetura_esperada",
+      "valor": "monolito",
+      "id": "arquitetura_esperada=monolito"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "arquitetura_esperada",
+      "valor": "microsservicos",
+      "id": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "arquitetura_esperada",
+      "valor": "serverless",
+      "id": "arquitetura_esperada=serverless"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "arquitetura_esperada",
+      "valor": "event_driven",
+      "id": "arquitetura_esperada=event_driven"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "experiencia_usuario",
+      "valor": "basica",
+      "id": "experiencia_usuario=basica"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "experiencia_usuario",
+      "valor": "intermediaria",
+      "id": "experiencia_usuario=intermediaria"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "experiencia_usuario",
+      "valor": "avancada",
+      "id": "experiencia_usuario=avancada"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "requisitos_seguranca",
+      "valor": "nenhum",
+      "id": "requisitos_seguranca=nenhum"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "requisitos_seguranca",
+      "valor": "basico",
+      "id": "requisitos_seguranca=basico"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "requisitos_seguranca",
+      "valor": "intermediario",
+      "id": "requisitos_seguranca=intermediario"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "requisitos_seguranca",
+      "valor": "avancado",
+      "id": "requisitos_seguranca=avancado"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "ambiente_implantacao",
+      "valor": "local",
+      "id": "ambiente_implantacao=local"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "ambiente_implantacao",
+      "valor": "cloud",
+      "id": "ambiente_implantacao=cloud"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "ambiente_implantacao",
+      "valor": "on_premise",
+      "id": "ambiente_implantacao=on_premise"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "ambiente_implantacao",
+      "valor": "hibrido",
+      "id": "ambiente_implantacao=hibrido"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "maturidade_equipe",
+      "valor": "iniciante",
+      "id": "maturidade_equipe=iniciante"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "maturidade_equipe",
+      "valor": "intermediario",
+      "id": "maturidade_equipe=intermediario"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "maturidade_equipe",
+      "valor": "experiente",
+      "id": "maturidade_equipe=experiente"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "tipo_autenticacao",
+      "valor": "nenhuma",
+      "id": "tipo_autenticacao=nenhuma"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "tipo_autenticacao",
+      "valor": "propria",
+      "id": "tipo_autenticacao=propria"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "tipo_autenticacao",
+      "valor": "oauth",
+      "id": "tipo_autenticacao=oauth"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "tipo_autenticacao",
+      "valor": "enterprise",
+      "id": "tipo_autenticacao=enterprise"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "ciclo_desenvolvimento",
+      "valor": "mvp",
+      "id": "ciclo_desenvolvimento=mvp"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "ciclo_desenvolvimento",
+      "valor": "iterativo",
+      "id": "ciclo_desenvolvimento=iterativo"
+    },
+    {
+      "type": "attribute-value",
+      "atributo": "ciclo_desenvolvimento",
+      "valor": "longo_prazo",
+      "id": "ciclo_desenvolvimento=longo_prazo"
+    }
+  ],
+  "links": [
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "python",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "python",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.5,
+      "fonte": "manual",
+      "source": "python",
+      "target": "tipo_projeto=desktop"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -0.8,
+      "fonte": "manual",
+      "source": "python",
+      "target": "tipo_projeto=embarcado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "python",
+      "target": "dominio_negocio=saude"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "python",
+      "target": "dominio_negocio=financeiro"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "python",
+      "target": "dominio_negocio=educacao"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "python",
+      "target": "dominio_negocio=produtividade"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "python",
+      "target": "dominio_negocio=logistica"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.5,
+      "fonte": "manual",
+      "source": "python",
+      "target": "dominio_negocio=entretenimento"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.6,
+      "fonte": "manual",
+      "source": "python",
+      "target": "persistencia=sem_banco"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "python",
+      "target": "persistencia=hibrido"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "python",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "python",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "python",
+      "target": "integracao=apis_externas"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "python",
+      "target": "arquitetura_esperada=monolito"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "python",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "python",
+      "target": "arquitetura_esperada=serverless"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "python",
+      "target": "ambiente_implantacao=local"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "python",
+      "target": "maturidade_equipe=iniciante"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "python",
+      "target": "ciclo_desenvolvimento=mvp"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "python",
+      "target": "ciclo_desenvolvimento=iterativo"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "tipo_projeto=hibrido"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -1.0,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "tipo_projeto=embarcado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -0.5,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "tipo_projeto=desktop"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "dominio_negocio=produtividade"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "dominio_negocio=educacao"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "dominio_negocio=entretenimento"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "integracao=apis_externas"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "arquitetura_esperada=monolito"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "arquitetura_esperada=serverless"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "maturidade_equipe=iniciante"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "tipo_autenticacao=oauth"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "ciclo_desenvolvimento=mvp"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "javascript",
+      "target": "ciclo_desenvolvimento=iterativo"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "typescript",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "typescript",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "typescript",
+      "target": "tipo_projeto=hibrido"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -1.0,
+      "fonte": "manual",
+      "source": "typescript",
+      "target": "tipo_projeto=embarcado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "typescript",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "typescript",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "typescript",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "typescript",
+      "target": "integracao=apis_externas"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "typescript",
+      "target": "maturidade_equipe=intermediario"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "java",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "java",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "java",
+      "target": "tipo_projeto=desktop"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -0.8,
+      "fonte": "manual",
+      "source": "java",
+      "target": "tipo_projeto=embarcado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "java",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "java",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "java",
+      "target": "dominio_negocio=financeiro"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "java",
+      "target": "dominio_negocio=logistica"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "java",
+      "target": "dominio_negocio=educacao"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "java",
+      "target": "persistencia=hibrido"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "java",
+      "target": "integracao=servicos_internos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "java",
+      "target": "integracao=ambos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "java",
+      "target": "arquitetura_esperada=event_driven"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "java",
+      "target": "ambiente_implantacao=on_premise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "java",
+      "target": "requisitos_seguranca=avancado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "java",
+      "target": "maturidade_equipe=intermediario"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "java",
+      "target": "tipo_autenticacao=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "java",
+      "target": "ciclo_desenvolvimento=longo_prazo"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "csharp",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "csharp",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "csharp",
+      "target": "tipo_projeto=desktop"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -0.8,
+      "fonte": "manual",
+      "source": "csharp",
+      "target": "tipo_projeto=embarcado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "csharp",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "csharp",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "csharp",
+      "target": "integracao=servicos_internos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "csharp",
+      "target": "ambiente_implantacao=on_premise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "csharp",
+      "target": "requisitos_seguranca=avancado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "csharp",
+      "target": "maturidade_equipe=intermediario"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "csharp",
+      "target": "tipo_autenticacao=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "csharp",
+      "target": "ciclo_desenvolvimento=longo_prazo"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "php",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "php",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -1.0,
+      "fonte": "manual",
+      "source": "php",
+      "target": "tipo_projeto=embarcado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -1.0,
+      "fonte": "manual",
+      "source": "php",
+      "target": "tipo_projeto=desktop"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "php",
+      "target": "escala=pequena"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "php",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -0.7,
+      "fonte": "manual",
+      "source": "php",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "php",
+      "target": "dominio_negocio=saude"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "php",
+      "target": "dominio_negocio=ecommerce"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "php",
+      "target": "dominio_negocio=educacao"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "php",
+      "target": "maturidade_equipe=iniciante"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "php",
+      "target": "ciclo_desenvolvimento=mvp"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "go",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -0.3,
+      "fonte": "manual",
+      "source": "go",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "go",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "go",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "go",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "go",
+      "target": "dominio_negocio=logistica"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "go",
+      "target": "integracao=apis_externas"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "go",
+      "target": "integracao=servicos_internos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "go",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "go",
+      "target": "arquitetura_esperada=event_driven"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "go",
+      "target": "maturidade_equipe=experiente"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "go",
+      "target": "ciclo_desenvolvimento=longo_prazo"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "go",
+      "target": "ciclo_desenvolvimento=iterativo"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "kotlin",
+      "target": "tipo_projeto=mobile"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "kotlin",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "swift",
+      "target": "tipo_projeto=mobile"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "ruby",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "ruby",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -1.0,
+      "fonte": "manual",
+      "source": "ruby",
+      "target": "tipo_projeto=embarcado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -0.8,
+      "fonte": "manual",
+      "source": "ruby",
+      "target": "tipo_projeto=desktop"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "ruby",
+      "target": "escala=pequena"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "ruby",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "ruby",
+      "target": "dominio_negocio=saude"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "ruby",
+      "target": "dominio_negocio=ecommerce"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "dart",
+      "target": "tipo_projeto=mobile"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "dart",
+      "target": "tipo_projeto=hibrido"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "dart",
+      "target": "experiencia_usuario=intermediaria"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rust",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "rust",
+      "target": "tipo_projeto=embarcado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "rust",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rust",
+      "target": "persistencia=sem_banco"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "rust",
+      "target": "integracao=nenhuma"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rust",
+      "target": "ambiente_implantacao=local"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "rust",
+      "target": "maturidade_equipe=experiente"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "cpp",
+      "target": "tipo_projeto=desktop"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "cpp",
+      "target": "tipo_projeto=embarcado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -1.0,
+      "fonte": "manual",
+      "source": "cpp",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "cpp",
+      "target": "dominio_negocio=entretenimento"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "cpp",
+      "target": "persistencia=sem_banco"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "cpp",
+      "target": "integracao=nenhuma"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "cpp",
+      "target": "ambiente_implantacao=local"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "cpp",
+      "target": "tipo_autenticacao=nenhuma"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "c",
+      "target": "tipo_projeto=embarcado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -1.0,
+      "fonte": "manual",
+      "source": "c",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -1.0,
+      "fonte": "manual",
+      "source": "c",
+      "target": "tipo_projeto=mobile"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "c",
+      "target": "persistencia=sem_banco"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "c",
+      "target": "integracao=nenhuma"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "c",
+      "target": "ambiente_implantacao=local"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "django",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "django",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "django",
+      "target": "escala=pequena"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "django",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "django",
+      "target": "arquitetura_esperada=monolito"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "django",
+      "target": "persistencia=sql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "django",
+      "target": "persistencia=hibrido"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "django",
+      "target": "dominio_negocio=saude"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "django",
+      "target": "dominio_negocio=financeiro"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "django",
+      "target": "dominio_negocio=educacao"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "django",
+      "target": "dominio_negocio=produtividade"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "django",
+      "target": "experiencia_usuario=basica"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "django",
+      "target": "requisitos_seguranca=basico"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "django",
+      "target": "maturidade_equipe=iniciante"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "django",
+      "target": "tipo_autenticacao=propria"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "django",
+      "target": "ciclo_desenvolvimento=iterativo"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "django",
+      "target": "python"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "django",
+      "target": "react"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "django",
+      "target": "vue"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "django",
+      "target": "postgresql"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "django",
+      "target": "mysql"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "django",
+      "target": "sqlite"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.6,
+      "fonte": "manual",
+      "source": "django",
+      "target": "rabbitmq"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "escala=pequena"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "persistencia=sem_banco"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "experiencia_usuario=basica"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "integracao=nenhuma"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "ambiente_implantacao=local"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "requisitos_seguranca=nenhum"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "maturidade_equipe=iniciante"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "tipo_autenticacao=nenhuma"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "ciclo_desenvolvimento=mvp"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "python"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "vue"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "react"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "sqlite"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "flask",
+      "target": "postgresql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "arquitetura_esperada=serverless"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "integracao=apis_externas"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "integracao=ambos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "dominio_negocio=logistica"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "dominio_negocio=saude"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "maturidade_equipe=experiente"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "tipo_autenticacao=oauth"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "python"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "react"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "vue"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "angular"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "postgresql"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "mongodb"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "fastapi",
+      "target": "kafka"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "express",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "express",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "express",
+      "target": "escala=pequena"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "express",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "express",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "express",
+      "target": "integracao=apis_externas"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "express",
+      "target": "requisitos_seguranca=nenhum"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "express",
+      "target": "tipo_autenticacao=nenhuma"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "express",
+      "target": "ciclo_desenvolvimento=mvp"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "express",
+      "target": "ciclo_desenvolvimento=iterativo"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "express",
+      "target": "javascript"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "express",
+      "target": "react"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "express",
+      "target": "vue"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "express",
+      "target": "angular"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "express",
+      "target": "mongodb"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "express",
+      "target": "postgresql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "arquitetura_esperada=monolito"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "integracao=apis_externas"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "integracao=ambos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "dominio_negocio=logistica"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "requisitos_seguranca=intermediario"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "maturidade_equipe=intermediario"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "tipo_autenticacao=oauth"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "ciclo_desenvolvimento=iterativo"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "typescript"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "angular"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "react"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "postgresql"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "mongodb"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "kafka"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "nestjs",
+      "target": "rabbitmq"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "arquitetura_esperada=monolito"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "arquitetura_esperada=event_driven"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "persistencia=hibrido"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "dominio_negocio=financeiro"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "dominio_negocio=saude"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "dominio_negocio=logistica"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "integracao=servicos_internos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "integracao=ambos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "ambiente_implantacao=on_premise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "requisitos_seguranca=intermediario"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "requisitos_seguranca=avancado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "maturidade_equipe=intermediario"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "maturidade_equipe=experiente"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "tipo_autenticacao=oauth"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "tipo_autenticacao=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "ciclo_desenvolvimento=longo_prazo"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "java"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "angular"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "react"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "vue"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "postgresql"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "mysql"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "sqlserver"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "mariadb"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "kafka"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "spring",
+      "target": "rabbitmq"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "escala=pequena"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "arquitetura_esperada=monolito"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "dominio_negocio=ecommerce"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "dominio_negocio=saude"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "dominio_negocio=educacao"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "experiencia_usuario=basica"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "requisitos_seguranca=basico"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "maturidade_equipe=iniciante"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "tipo_autenticacao=propria"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "ciclo_desenvolvimento=mvp"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "php"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "vue"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "react"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "mysql"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "laravel",
+      "target": "postgresql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "escala=pequena"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "arquitetura_esperada=monolito"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "dominio_negocio=ecommerce"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "dominio_negocio=saude"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "experiencia_usuario=basica"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "requisitos_seguranca=basico"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "tipo_autenticacao=propria"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "ruby"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "react"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "vue"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "postgresql"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "mysql"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "rails",
+      "target": "sqlite"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "integracao=servicos_internos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "ambiente_implantacao=on_premise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "requisitos_seguranca=intermediario"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "requisitos_seguranca=avancado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "tipo_autenticacao=oauth"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "tipo_autenticacao=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "ciclo_desenvolvimento=longo_prazo"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "csharp"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "angular"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "react"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "vue"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "sqlserver"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "aspnet",
+      "target": "postgresql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "gin",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "gin",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "gin",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "gin",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "gin",
+      "target": "integracao=servicos_internos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "gin",
+      "target": "maturidade_equipe=experiente"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "gin",
+      "target": "go"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "gin",
+      "target": "vue"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "gin",
+      "target": "react"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "gin",
+      "target": "postgresql"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "gin",
+      "target": "mysql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "react",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "react",
+      "target": "tipo_projeto=hibrido"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "react",
+      "target": "experiencia_usuario=intermediaria"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "react",
+      "target": "experiencia_usuario=avancada"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "react",
+      "target": "maturidade_equipe=intermediario"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "react",
+      "target": "ciclo_desenvolvimento=iterativo"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "react",
+      "target": "javascript"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "vue",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "vue",
+      "target": "experiencia_usuario=intermediaria"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "vue",
+      "target": "experiencia_usuario=avancada"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "vue",
+      "target": "maturidade_equipe=intermediario"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "vue",
+      "target": "javascript"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "angular",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "angular",
+      "target": "experiencia_usuario=avancada"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "angular",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "angular",
+      "target": "typescript"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "svelte",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "svelte",
+      "target": "experiencia_usuario=intermediaria"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "svelte",
+      "target": "experiencia_usuario=avancada"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "svelte",
+      "target": "javascript"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "nextjs",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "nextjs",
+      "target": "experiencia_usuario=avancada"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "nextjs",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "nextjs",
+      "target": "react"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "nuxtjs",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "nuxtjs",
+      "target": "experiencia_usuario=avancada"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "nuxtjs",
+      "target": "vue"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "jquery",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "jquery",
+      "target": "experiencia_usuario=basica"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "jquery",
+      "target": "maturidade_equipe=iniciante"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "react_native",
+      "target": "tipo_projeto=mobile"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "react_native",
+      "target": "tipo_projeto=hibrido"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "react_native",
+      "target": "dominio_negocio=educacao"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "react_native",
+      "target": "experiencia_usuario=intermediaria"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "react_native",
+      "target": "react"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "react_native",
+      "target": "sqlite"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "react_native",
+      "target": "firebase_rt"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "flutter",
+      "target": "tipo_projeto=mobile"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "flutter",
+      "target": "tipo_projeto=hibrido"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "flutter",
+      "target": "dominio_negocio=educacao"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "flutter",
+      "target": "experiencia_usuario=intermediaria"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "flutter",
+      "target": "dart"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "flutter",
+      "target": "sqlite"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "flutter",
+      "target": "firebase_rt"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "swiftui",
+      "target": "tipo_projeto=mobile"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "swiftui",
+      "target": "swift"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "android_kotlin",
+      "target": "tipo_projeto=mobile"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "android_kotlin",
+      "target": "kotlin"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "ionic",
+      "target": "tipo_projeto=mobile"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "ionic",
+      "target": "tipo_projeto=hibrido"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "ionic",
+      "target": "javascript"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.95,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "persistencia=sql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "requisitos_seguranca=basico"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "requisitos_seguranca=intermediario"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "requisitos_seguranca=avancado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "ciclo_desenvolvimento=longo_prazo"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "django"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "laravel"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "spring"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "express"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "nestjs"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "aspnet"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "flask"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "fastapi"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "gin"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "postgresql",
+      "target": "rails"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.95,
+      "fonte": "manual",
+      "source": "mysql",
+      "target": "persistencia=sql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "mysql",
+      "target": "escala=pequena"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "mysql",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "mysql",
+      "target": "requisitos_seguranca=basico"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "mysql",
+      "target": "django"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "mysql",
+      "target": "laravel"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "mysql",
+      "target": "spring"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "mysql",
+      "target": "gin"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "mysql",
+      "target": "rails"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.95,
+      "fonte": "manual",
+      "source": "sqlite",
+      "target": "persistencia=sql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "sqlite",
+      "target": "escala=pequena"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "sqlite",
+      "target": "tipo_projeto=mobile"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "sqlite",
+      "target": "ambiente_implantacao=local"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "sqlite",
+      "target": "requisitos_seguranca=nenhum"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "sqlite",
+      "target": "django"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "sqlite",
+      "target": "flask"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "sqlite",
+      "target": "rails"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "sqlite",
+      "target": "flutter"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "sqlite",
+      "target": "react_native"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.95,
+      "fonte": "manual",
+      "source": "mongodb",
+      "target": "persistencia=nosql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "mongodb",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "mongodb",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "mongodb",
+      "target": "express"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "mongodb",
+      "target": "nestjs"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "mongodb",
+      "target": "fastapi"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "redis",
+      "target": "persistencia=nosql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "redis",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "redis",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "firebase_rt",
+      "target": "persistencia=nosql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "firebase_rt",
+      "target": "tipo_projeto=mobile"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "firebase_rt",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "firebase_rt",
+      "target": "escala=pequena"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "firebase_rt",
+      "target": "ciclo_desenvolvimento=mvp"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "firebase_rt",
+      "target": "flutter"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "firebase_rt",
+      "target": "react_native"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.95,
+      "fonte": "manual",
+      "source": "dynamodb",
+      "target": "persistencia=nosql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "dynamodb",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "dynamodb",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "dynamodb",
+      "target": "ambiente_implantacao=cloud"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "mariadb",
+      "target": "persistencia=sql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "mariadb",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "mariadb",
+      "target": "spring"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.95,
+      "fonte": "manual",
+      "source": "sqlserver",
+      "target": "persistencia=sql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "sqlserver",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "sqlserver",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "sqlserver",
+      "target": "requisitos_seguranca=avancado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "sqlserver",
+      "target": "tipo_autenticacao=enterprise"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "sqlserver",
+      "target": "spring"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "sqlserver",
+      "target": "aspnet"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "docker",
+      "target": "ambiente_implantacao=cloud"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "docker",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "kubernetes",
+      "target": "ambiente_implantacao=cloud"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "kubernetes",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "kubernetes",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "kubernetes",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "kubernetes",
+      "target": "requisitos_seguranca=avancado"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "kubernetes",
+      "target": "maturidade_equipe=experiente"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "kubernetes",
+      "target": "ciclo_desenvolvimento=longo_prazo"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "aws",
+      "target": "ambiente_implantacao=cloud"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "aws",
+      "target": "arquitetura_esperada=serverless"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "aws",
+      "target": "arquitetura_esperada=event_driven"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "gcp",
+      "target": "ambiente_implantacao=cloud"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "gcp",
+      "target": "arquitetura_esperada=serverless"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "gcp",
+      "target": "arquitetura_esperada=event_driven"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "azure",
+      "target": "ambiente_implantacao=cloud"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "azure",
+      "target": "arquitetura_esperada=serverless"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "azure",
+      "target": "arquitetura_esperada=event_driven"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "nginx",
+      "target": "arquitetura_esperada=monolito"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "nginx",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "heroku",
+      "target": "ambiente_implantacao=cloud"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "heroku",
+      "target": "escala=pequena"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "heroku",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": -0.8,
+      "fonte": "manual",
+      "source": "heroku",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "vercel",
+      "target": "ambiente_implantacao=cloud"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "vercel",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "elixir",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "elixir",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "elixir",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "elixir",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "elixir",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "elixir",
+      "target": "arquitetura_esperada=event_driven"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "elixir",
+      "target": "maturidade_equipe=experiente"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "elixir",
+      "target": "ciclo_desenvolvimento=longo_prazo"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "scala",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "scala",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "scala",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "scala",
+      "target": "dominio_negocio=financeiro"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "scala",
+      "target": "dominio_negocio=logistica"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "scala",
+      "target": "arquitetura_esperada=event_driven"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "scala",
+      "target": "maturidade_equipe=experiente"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "scala",
+      "target": "ciclo_desenvolvimento=longo_prazo"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "phoenix",
+      "target": "tipo_projeto=api"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "phoenix",
+      "target": "tipo_projeto=web"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "phoenix",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "phoenix",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "phoenix",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "phoenix",
+      "target": "arquitetura_esperada=event_driven"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "phoenix",
+      "target": "maturidade_equipe=experiente"
+    },
+    {
+      "relacao": "REQUER",
+      "peso": 1.0,
+      "fonte": "manual",
+      "source": "phoenix",
+      "target": "elixir"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "phoenix",
+      "target": "react"
+    },
+    {
+      "relacao": "COMPLEMENTA",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "phoenix",
+      "target": "vue"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "kafka",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "kafka",
+      "target": "arquitetura_esperada=event_driven"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "kafka",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "kafka",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "kafka",
+      "target": "maturidade_equipe=experiente"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "kafka",
+      "target": "spring"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "kafka",
+      "target": "nestjs"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "kafka",
+      "target": "fastapi"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rabbitmq",
+      "target": "arquitetura_esperada=microsservicos"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rabbitmq",
+      "target": "arquitetura_esperada=event_driven"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rabbitmq",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rabbitmq",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rabbitmq",
+      "target": "maturidade_equipe=intermediario"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "rabbitmq",
+      "target": "spring"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.7,
+      "fonte": "manual",
+      "source": "rabbitmq",
+      "target": "nestjs"
+    },
+    {
+      "relacao": "COMPATIVEL_COM",
+      "peso": 0.6,
+      "fonte": "manual",
+      "source": "rabbitmq",
+      "target": "django"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "cassandra",
+      "target": "persistencia=nosql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "cassandra",
+      "target": "escala=grande"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.9,
+      "fonte": "manual",
+      "source": "cassandra",
+      "target": "escala=enterprise"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "cassandra",
+      "target": "arquitetura_esperada=event_driven"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "cassandra",
+      "target": "maturidade_equipe=experiente"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "neo4j",
+      "target": "persistencia=nosql"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "neo4j",
+      "target": "escala=media"
+    },
+    {
+      "relacao": "ADEQUADO_PARA",
+      "peso": 0.8,
+      "fonte": "manual",
+      "source": "neo4j",
+      "target": "dominio_negocio=logistica"
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+[
+    {
+        "id": "python",
+        "nome": "Python",
+        "categoria": "linguagem",
+        "descricao": "Linguagem versátil, muito forte em dados, IA e backend."
+    },
+    {
+        "id": "javascript",
+        "nome": "JavaScript",
+        "categoria": "linguagem",
+        "descricao": "A linguagem base da web, também muito usada no backend com Node.js."
+    },
+    {
+        "id": "typescript",
+        "nome": "TypeScript",
+        "categoria": "linguagem",
+        "descricao": "JavaScript com tipagem estática, ideal para projetos maiores."
+    },
+    {
+        "id": "java",
+        "nome": "Java",
+        "categoria": "linguagem",
+        "descricao": "Linguagem robusta e amplamente adotada no mundo enterprise."
+    },
+    {
+        "id": "csharp",
+        "nome": "C#",
+        "categoria": "linguagem",
+        "descricao": "Linguagem principal do ecossistema .NET."
+    },
+    {
+        "id": "php",
+        "nome": "PHP",
+        "categoria": "linguagem",
+        "descricao": "Linguagem clássica para desenvolvimento web server-side."
+    },
+    {
+        "id": "go",
+        "nome": "Go",
+        "categoria": "linguagem",
+        "descricao": "Linguagem do Google focada em concorrência e alta performance."
+    },
+    {
+        "id": "kotlin",
+        "nome": "Kotlin",
+        "categoria": "linguagem",
+        "descricao": "Linguagem moderna da JVM, oficial para desenvolvimento Android."
+    },
+    {
+        "id": "swift",
+        "nome": "Swift",
+        "categoria": "linguagem",
+        "descricao": "Linguagem oficial da Apple para iOS e macOS."
+    },
+    {
+        "id": "ruby",
+        "nome": "Ruby",
+        "categoria": "linguagem",
+        "descricao": "Linguagem focada na produtividade e felicidade do desenvolvedor."
+    },
+    {
+        "id": "dart",
+        "nome": "Dart",
+        "categoria": "linguagem",
+        "descricao": "Linguagem do Google otimizada para o framework Flutter."
+    },
+    {
+        "id": "rust",
+        "nome": "Rust",
+        "categoria": "linguagem",
+        "descricao": "Linguagem focada em performance e segurança de memória."
+    },
+    {
+        "id": "cpp",
+        "nome": "C++",
+        "categoria": "linguagem",
+        "descricao": "Linguagem de alta performance para sistemas embarcados e motores gráficos."
+    },
+    {
+        "id": "c",
+        "nome": "C",
+        "categoria": "linguagem",
+        "descricao": "Linguagem de baixo nível, base de sistemas operacionais e embarcados."
+    },
+    {
+        "id": "django",
+        "nome": "Django",
+        "categoria": "framework_backend",
+        "descricao": "Framework Python 'batteries-included' focado em desenvolvimento rápido."
+    },
+    {
+        "id": "flask",
+        "nome": "Flask",
+        "categoria": "framework_backend",
+        "descricao": "Micro-framework Python simples e flexível."
+    },
+    {
+        "id": "fastapi",
+        "nome": "FastAPI",
+        "categoria": "framework_backend",
+        "descricao": "Framework Python moderno e de alta performance para construção de APIs."
+    },
+    {
+        "id": "express",
+        "nome": "Express",
+        "categoria": "framework_backend",
+        "descricao": "Framework web rápido, não opinativo e minimalista para Node.js."
+    },
+    {
+        "id": "nestjs",
+        "nome": "NestJS",
+        "categoria": "framework_backend",
+        "descricao": "Framework Node.js progressivo para aplicações escaláveis, inspirado no Angular."
+    },
+    {
+        "id": "spring",
+        "nome": "Spring Boot",
+        "categoria": "framework_backend",
+        "descricao": "Framework maduro e abrangente para o ecossistema Java."
+    },
+    {
+        "id": "laravel",
+        "nome": "Laravel",
+        "categoria": "framework_backend",
+        "descricao": "Framework PHP elegante e expressivo para aplicações web."
+    },
+    {
+        "id": "rails",
+        "nome": "Ruby on Rails",
+        "categoria": "framework_backend",
+        "descricao": "Framework web full-stack focado em produtividade."
+    },
+    {
+        "id": "aspnet",
+        "nome": "ASP.NET Core",
+        "categoria": "framework_backend",
+        "descricao": "Framework web multiplataforma e de alta performance da Microsoft."
+    },
+    {
+        "id": "gin",
+        "nome": "Gin",
+        "categoria": "framework_backend",
+        "descricao": "Micro-framework web HTTP escrito em Go, focado em performance."
+    },
+    {
+        "id": "react",
+        "nome": "React",
+        "categoria": "framework_frontend",
+        "descricao": "Biblioteca JavaScript para criar interfaces de usuário interativas."
+    },
+    {
+        "id": "vue",
+        "nome": "Vue.js",
+        "categoria": "framework_frontend",
+        "descricao": "Framework JavaScript progressivo e acessível para interfaces de usuário."
+    },
+    {
+        "id": "angular",
+        "nome": "Angular",
+        "categoria": "framework_frontend",
+        "descricao": "Plataforma e framework para desenvolvimento de aplicações web completas."
+    },
+    {
+        "id": "svelte",
+        "nome": "Svelte",
+        "categoria": "framework_frontend",
+        "descricao": "Compilador que gera código altamente otimizado para a web."
+    },
+    {
+        "id": "nextjs",
+        "nome": "Next.js",
+        "categoria": "framework_frontend",
+        "descricao": "Framework React com suporte a Server-Side Rendering e sites estáticos."
+    },
+    {
+        "id": "nuxtjs",
+        "nome": "Nuxt.js",
+        "categoria": "framework_frontend",
+        "descricao": "Framework Vue.js intuitivo para desenvolvimento full-stack moderno."
+    },
+    {
+        "id": "jquery",
+        "nome": "jQuery",
+        "categoria": "framework_frontend",
+        "descricao": "Biblioteca JavaScript legada, rápida e pequena para manipulação do DOM."
+    },
+    {
+        "id": "react_native",
+        "nome": "React Native",
+        "categoria": "framework_mobile",
+        "descricao": "Framework para construir aplicativos nativos usando React."
+    },
+    {
+        "id": "flutter",
+        "nome": "Flutter",
+        "categoria": "framework_mobile",
+        "descricao": "UI toolkit do Google para criar apps bonitos e compilados nativamente."
+    },
+    {
+        "id": "swiftui",
+        "nome": "SwiftUI",
+        "categoria": "framework_mobile",
+        "descricao": "Framework declarativo da Apple para criar interfaces de usuário nativas."
+    },
+    {
+        "id": "android_kotlin",
+        "nome": "Android (Kotlin)",
+        "categoria": "framework_mobile",
+        "descricao": "Desenvolvimento Android nativo clássico."
+    },
+    {
+        "id": "ionic",
+        "nome": "Ionic",
+        "categoria": "framework_mobile",
+        "descricao": "Framework open-source de UI para construção de aplicativos móveis híbridos."
+    },
+    {
+        "id": "postgresql",
+        "nome": "PostgreSQL",
+        "categoria": "banco_dados",
+        "descricao": "Banco de dados relacional de código aberto extremamente avançado e robusto."
+    },
+    {
+        "id": "mysql",
+        "nome": "MySQL",
+        "categoria": "banco_dados",
+        "descricao": "O banco de dados relacional de código aberto mais popular do mundo."
+    },
+    {
+        "id": "sqlite",
+        "nome": "SQLite",
+        "categoria": "banco_dados",
+        "descricao": "Motor de banco de dados SQL embutido e de configuração zero."
+    },
+    {
+        "id": "mongodb",
+        "nome": "MongoDB",
+        "categoria": "banco_dados",
+        "descricao": "Banco de dados de documentos, muito usado em aplicações modernas e escaláveis."
+    },
+    {
+        "id": "redis",
+        "nome": "Redis",
+        "categoria": "banco_dados",
+        "descricao": "Armazenamento em memória, frequentemente usado como cache de alta performance."
+    },
+    {
+        "id": "firebase_rt",
+        "nome": "Firebase Realtime DB",
+        "categoria": "banco_dados",
+        "descricao": "Banco de dados NoSQL hospedado na nuvem que sincroniza dados em tempo real."
+    },
+    {
+        "id": "dynamodb",
+        "nome": "Amazon DynamoDB",
+        "categoria": "banco_dados",
+        "descricao": "Banco de dados de chave-valor e documento da AWS com latência de milissegundos."
+    },
+    {
+        "id": "mariadb",
+        "nome": "MariaDB",
+        "categoria": "banco_dados",
+        "descricao": "Fork comunitário do MySQL, oferecendo alta compatibilidade e melhorias."
+    },
+    {
+        "id": "sqlserver",
+        "nome": "Microsoft SQL Server",
+        "categoria": "banco_dados",
+        "descricao": "Sistema gerenciador de banco de dados relacional enterprise da Microsoft."
+    },
+    {
+        "id": "docker",
+        "nome": "Docker",
+        "categoria": "infraestrutura",
+        "descricao": "Plataforma aberta para desenvolver, enviar e executar aplicações em contêineres."
+    },
+    {
+        "id": "kubernetes",
+        "nome": "Kubernetes",
+        "categoria": "infraestrutura",
+        "descricao": "Sistema de orquestração de contêineres open-source."
+    },
+    {
+        "id": "aws",
+        "nome": "Amazon Web Services",
+        "categoria": "infraestrutura",
+        "descricao": "Plataforma de nuvem mais abrangente e amplamente adotada do mundo."
+    },
+    {
+        "id": "gcp",
+        "nome": "Google Cloud Platform",
+        "categoria": "infraestrutura",
+        "descricao": "Suíte de serviços de computação em nuvem fornecidos pelo Google."
+    },
+    {
+        "id": "azure",
+        "nome": "Microsoft Azure",
+        "categoria": "infraestrutura",
+        "descricao": "Serviço de computação em nuvem criado pela Microsoft."
+    },
+    {
+        "id": "nginx",
+        "nome": "Nginx",
+        "categoria": "infraestrutura",
+        "descricao": "Servidor HTTP e proxy reverso de alta performance."
+    },
+    {
+        "id": "heroku",
+        "nome": "Heroku",
+        "categoria": "infraestrutura",
+        "descricao": "Plataforma como serviço (PaaS) que possibilita deploy e escalonamento simples."
+    },
+    {
+        "id": "vercel",
+        "nome": "Vercel",
+        "categoria": "infraestrutura",
+        "descricao": "Plataforma para desenvolvedores front-end, focada em frameworks como Next.js."
+    },
+    {
+        "id": "elixir",
+        "nome": "Elixir",
+        "categoria": "linguagem",
+        "descricao": "Linguagem funcional na BEAM VM, projetada para alta concorrência e tolerância a falhas."
+    },
+    {
+        "id": "scala",
+        "nome": "Scala",
+        "categoria": "linguagem",
+        "descricao": "Linguagem híbrida funcional/OO na JVM, forte em Big Data e sistemas distribuídos."
+    },
+    {
+        "id": "phoenix",
+        "nome": "Phoenix",
+        "categoria": "framework_backend",
+        "descricao": "Framework web Elixir de alta performance com suporte nativo a WebSockets e canais."
+    },
+    {
+        "id": "kafka",
+        "nome": "Apache Kafka",
+        "categoria": "infraestrutura",
+        "descricao": "Plataforma de streaming distribuída para pipelines de dados em tempo real."
+    },
+    {
+        "id": "rabbitmq",
+        "nome": "RabbitMQ",
+        "categoria": "infraestrutura",
+        "descricao": "Broker de mensagens open-source para comunicação assíncrona entre microsserviços."
+    },
+    {
+        "id": "cassandra",
+        "nome": "Apache Cassandra",
+        "categoria": "banco_dados",
+        "descricao": "Banco de dados colunar distribuído para altíssima escala e disponibilidade."
+    },
+    {
+        "id": "neo4j",
+        "nome": "Neo4j",
+        "categoria": "banco_dados",
+        "descricao": "Banco de dados de grafos líder, ideal para redes sociais, recomendações e logística."
+    }
+]
+

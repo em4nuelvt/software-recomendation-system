@@ -1,0 +1,170 @@
+--- Sistema Inteligente de Recomendação de Tecnologias de Software ---
+
+=== TESTE 1 ===
+Entrada: Tecnologias para sistema de lista de tarefas web
+=== Opções Selecionadas pelo Motor de Recomendação ===
+
+Tipo de desenvolvimento : WEB
+Arquitetura sugerida    : Monolito
+Complexidade de UX      : Basica
+
+Opção 1 [Aderência 6.0/10]: Python + Django (back) + React (front) + SQLite (db)
+Opção 2 [Aderência 5.1/10]: Python + Flask (back) + React (front) + SQLite (db)
+Opção 3 [Aderência 4.4/10]: PHP + Laravel (back) + React (front) + MySQL (db)
+
+--- Resumo da Recomendação ---
+Resumo: A Stack com o maior score é a primeira opção, Python + Django + SQLite + React.
+
+Esta stack vence as outras duas por várias razões:
+
+- O Django é um framework completo e maduro que oferece uma boa segurança de saída "segura" para um projeto básico. A integração com React para o frontend também é robusta.
+
+- As bibliotecas do Python, como Django, são bem documentadas e tem grande comunidade de suporte, facilitando a resolução de problemas e aprendizado para uma equipe intermediária.
+
+- O uso combinado de Python, Django e React fornece uma arquitetura monolítica consistente e fácil de manter. Django cuida da lógica backend robusta, enquanto React oferece um frontend moderno.
+
+A segunda opção usa Flask no lugar do Django, que tem menos recursos integrados mas ainda é adequado para a escala pequena e o domínio de produtividade proposto.
+
+A terceira opção com Laravel em PHP não é recomendada, pois Laravel tem uma curva de aprendizado mais difícil e a equipe intermediária pode encontrar desafios. Além disso, a Stack Python/Django foi projetada especificamente para este caso e se adapta melhor ao projeto.
+
+Portanto, recomendo usar Python + Django + SQLite + React como a stack ideal para o seu sistema de lista de tarefas web local com requisitos básicos.
+
+==================================================
+
+=== TESTE 2 ===
+Entrada: Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas aulas de Educação Física. O aplicativo deve conter informações sobre equipamentos, regras oficiais e tutoriais de como jogar.
+=== Opções Selecionadas pelo Motor de Recomendação ===
+
+Tipo de desenvolvimento : MOBILE
+Arquitetura sugerida    : Monolito
+Complexidade de UX      : Intermediaria
+
+Opção 1 [Aderência 4.8/10]: Dart + Flutter (back) + SQLite (db)
+Opção 2 [Aderência 4.7/10]: JavaScript + React Native (back) + SQLite (db)
+Opção 3 [Aderência 3.8/10]: Swift + SwiftUI (back) + PostgreSQL (db)
+
+--- Resumo da Recomendação ---
+Resumo: A Stack que escolho como a melhor opção para este projeto é o conjunto **Lang=Dart, Fw=Flutter, DB=SQLite, Outros=Heroku**. Vamos analisar as razões por trás dessa escolha.
+
+Este projeto visa criar um aplicativo multiplataforma (Android e iOS) sobre badminton com foco em ensino. Flutter é uma ótima escolha para aplicações multiplataforma, permitindo um código compartilhado entre Android e iOS com um bom nível de sincronização visual. Dart, a linguagem oficial do Flutter, oferece uma experiência de desenvolvimento suave e eficiente.
+
+Com base nos requisitos extraídos, o banco de dados SQLite é adequado para aplicações menores ou de média escala, já que o Heroku está sendo usado como serviço de nuvem, facilitando a gestão do banco. A arquitetura monolítica também se encaixa bem com este conjunto de tecnologias.
+
+A Stack **Lang=JavaScript, Fw=React Native, DB=SQLite, Outros=Heroku** é uma alternativa viável, mas tem um score ligeiramente menor (4.7/10) que a primeira opção. React Native também permite criação de aplicativos multiplataforma e JavaScript é uma linguagem muito versátil. No entanto, Flutter oferece uma experiência mais integrada para aplicações multiplataforma e pode ser ligeiramente superior em termos de performance e visual.
+
+Finalmente, a Stack **Lang=Swift, Fw=SwiftUI, DB=PostgreSQL, Outros=Heroku** não é a melhor escolha para este projeto. Swift é específicamente projetado para iOS, o que limita as capacidades do aplicativo multiplataforma. A escolha de PostgreSQL como banco de dados sugere uma solução mais complexa ou escalável do que o necessário para um projeto de média escala.
+
+Baseando-se nessas avaliações e considerando a necessidade de criar uma experiência unificada entre Android e iOS, a Stack Lang=Dart, Fw=Flutter, DB=SQLite, Outros=Heroku é a melhor escolha. Ela proporciona uma arquitetura monolítica adequada para o projeto, suporte multiplataforma robusto e um bom equilíbrio entre eficiência de desenvolvimento e performance do aplicativo.
+
+Recomendação Bônus: Embora Flutter seja a melhor opção entre as listadas, se houver uma necessidade muito específica que exija uma linguagem específica, como JavaScript para integração com outros sistemas web, seria possível considerar uma Stack personalizada. No entanto, no contexto deste projeto, Flutter oferece um excelente conjunto de ferramentas e recursos necessários para a criação de um aplicativo robusto multiplataforma.
+
+==================================================
+
+=== TESTE 3 ===
+Entrada: Gostaria de desenvolver um sistema de gestão para clínicas médicas, acessível por qualquer plataforma por meio de um site na internet. O sistema deve armazenar dados de pacientes, médicos, consultas, exames e informações financeiras.
+=== Opções Selecionadas pelo Motor de Recomendação ===
+
+Tipo de desenvolvimento : WEB
+Arquitetura sugerida    : Monolito
+Complexidade de UX      : Intermediaria
+
+Opção 1 [Aderência 5.5/10]: Python + Django (back) + React (front) + PostgreSQL (db)
+Opção 2 [Aderência 5.2/10]: PHP + Laravel (back) + Vue.js (front) + PostgreSQL (db)
+Opção 3 [Aderência 5.1/10]: Ruby + Ruby on Rails (back) + React (front) + PostgreSQL (db)
+
+--- Resumo da Recomendação ---
+Resumo: A análise dos requisitos e das tecnologias sugeridas indica que o melhor Stack para este projeto é a primeira opção:
+
+**Lang=Python, Fw=Django, DB=PostgreSQL, Outros=React, Vercel**
+
+Este Stack tem um score de 5.5/10, sendo a mais bem ajustada às necessidades do usuário. Vamos detalhar o porquê:
+
+- **Linguagem e Framework**: Python é uma linguagem versátil e eficiente para aplicações web, particularmente quando combinado com Django, um framework robusto que oferece funcionalidades de segurança e escalabilidade adequadas ao projeto.
+  
+- **Persistência de Dados**: PostgreSQL é um excelente banco de dados relacional que suporta transações confiáveis, índices e integridade referencial, ideais para armazenar a complexidade de dados médicos.
+
+- **Frontend**: React é uma biblioteca JavaScript popular para interfaces de usuário interativas. Vercel, um serviço de CDN (Content Delivery Network), é ótimo para hospedar aplicações web modernas.
+
+A segunda opção (PHP/Laravel) e a terceira (Ruby on Rails) têm algumas limitações:
+- PHP e Ruby, embora robustos, podem ser menos modernos em comparação com Python.
+- Laravel e Ruby on Rails são frameworks sólidos, mas podem requerer mais tempo de desenvolvimento do que Django.
+
+Para o tipo web especificado, as tecnologias base de Frontend não estão listadas explicitamente nas opções selecionadas. No entanto, para um sistema completo, é recomendável utilizar HTML, CSS e JavaScript junto com React. Vercel é uma ferramenta adequada para a implantação e otimização do frontend.
+
+A arquitetura proposta segue um monolito, que é adequado para aplicações médicas onde o controle de acesso e a integridade dos dados são cruciais. A solução Python-Django com PostgreSQL é eficiente e oferece as ferramentas necessárias para segurança básica e escalabilidade intermediária.
+
+Considerando a complexidade do projeto, recomenda-se que a equipe desenvolva a API backend primeiro, utilizando Django, seguido pelo frontend React, garantindo uma experiência de usuário interativa. A implantação em Vercel proporcionará desempenho ótimo para um site acessível por qualquer plataforma.
+
+Esta Stack é a melhor adequada aos requisitos do projeto e oferece um equilíbrio entre eficiência, segurança e escalabilidade necessárias para o gerenciamento de clínicas médicas.
+
+==================================================
+
+=== TESTE 4 ===
+Entrada: Quero desenvolver um sistema para controle de horas complementares no ambiente acadêmico, acessível pela internet. Cada aluno deve cadastrar seu perfil e curso, além de gerenciar as horas necessárias para concluir a graduação.
+=== Opções Selecionadas pelo Motor de Recomendação ===
+
+Tipo de desenvolvimento : WEB
+Arquitetura sugerida    : Monolito
+Complexidade de UX      : Basica
+
+Opção 1 [Aderência 4.9/10]: Python + Django (back) + React (front) + MySQL (db)
+Opção 2 [Aderência 4.4/10]: PHP + Laravel (back) + React (front) + MySQL (db)
+Opção 3 [Aderência 3.9/10]: Ruby + Ruby on Rails (back) + React (front) + MySQL (db)
+
+--- Resumo da Recomendação ---
+Resumo: A stack Python com Django e React é a melhor opção para o sistema de controle de horas complementares no ambiente acadêmico, principalmente por seu alto score (4.9/10). Esta escolha combina uma robusta arquitetura backend em Django com um frontend interativo usando React, tudo hospedado na nuvem pelo Vercel.
+
+Django é amplamente utilizado para projetos web de pequena a média escala e oferece recursos de segurança sólidos, o que se encaixa bem com os requisitos básicos de segurança do projeto. Adicionalmente, a estrutura monolítica recomendada é facilmente implementável com Django, facilitando o gerenciamento do código e manutenção.
+
+A segunda opção, Laravel (PHP), tem um score ligeiramente inferior (4.4/10) mas ainda é uma boa alternativa. Laravel também é robusto para projetos web pequenos a médios, oferecendo boas práticas de segurança e implementação do monolito.
+
+A terceira opção com Ruby on Rails tem um score muito baixo (3.9/10), o que sugere potenciais problemas em cumprir os requisitos do projeto. Embora Ruby on Rails seja popular, seu score inferior leva a concluir que esta stack não seria a melhor escolha.
+
+Para arquitetura completa, recomenda-se:
+- Back-end: Python + Django
+- Front-end: React.js
+- Banco de Dados: MySQL
+- Hoster: Vercel
+
+Esta combinação garante uma solução balanceada entre robustez, segurança e simplicidade, ideal para a equipe intermediária e com requisitos básicos de experiência do usuário.
+
+==================================================
+
+=== TESTE 5 ===
+Entrada: Quero construir um jogo da memória para computadores desktop, utilizando conceitos de sistemas distribuídos. Os jogadores devem se comunicar entre si por meio de um servidor middleware.
+=== Opções Selecionadas pelo Motor de Recomendação ===
+
+Tipo de desenvolvimento : DESKTOP
+Arquitetura sugerida    : Serverless
+Complexidade de UX      : Avancada
+
+Opção 1 [Aderência 7.0/10]: C++
+Opção 2 [Aderência 5.9/10]: Python
+Opção 3 [Aderência 5.2/10]: C#
+
+--- Resumo da Recomendação ---
+Resumo: A arquitetura do projeto requer um servidor middleware para comunicação entre os jogadores e uma implementação robusta de conceitos de sistemas distribuídos. A partir dos requisitos extraídos, a melhor opção entre as três sugestões é a primeira stack: **Lang=C++, Fw=, DB=, Outros=Heroku**.
+
+### Razão da escolha
+1. **C++**: É uma linguagem muito eficiente para aplicativos de desktop com desempenho crítico como jogos, o que justifica seu alto score.
+2. **Heroku**: Um serviço PaaS (Platform as a Service) ideal para manter um servidor middleware distribuído e escalável em nuvem.
+
+A segunda opção com Python tem um score inferior devido à performance potencialmente menor comparada ao C++ para esse tipo de aplicação, embora seja uma boa alternativa se desempenho não for o principal requisito. A terceira opção com C# também poderia ser viável mas não se destaca em termos de desempenho.
+
+### Arquitetura
+A arquitetura proposta envolve:
+- **Front-End**: HTML, CSS, JavaScript para a interface do usuário.
+- **Back-End (Serverless)**: Heroku para hospedar o servidor middleware que gerencia as comunicações entre os jogadores. Heroku suporta aplicativos em várias linguagens, incluindo C++ via processos backend.
+
+### Requisitos de Segurança
+As funções de autenticação e segurança básicas podem ser implementadas no nível do servidor usando APIs RESTful fornecidas pelo Heroku para lidar com a comunicação entre os jogadores.
+
+### Recomendação Bônus (Se necessário)
+Embora as tecnologias sugeridas sejam adequadas, um detalhe importante é que HTML e CSS não suportam JavaScript nativamente em aplicações de desktop. Para implementar o jogo da memória com interatividade e funcionalidades complexas, você pode considerar usar:
+- **Electron** para criar uma aplicação desktop cross-platform.
+- **WebAssembly** para integrar código C++ direto no navegador ou no Electron, permitindo que você aproveite a eficiência de C++ com o suporte robusto do JavaScript.
+
+Essa abordagem maximiza desempenho e interatividade, mantendo a facilidade de desenvolvimento e manutenção.
+
+==================================================
+
