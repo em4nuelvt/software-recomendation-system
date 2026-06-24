@@ -62,15 +62,22 @@ Você é um especialista em engenharia de requisitos de software. Analise a entr
 class RequirementExtractor:
     model: str = "qwen2.5" #modelo padrão
     prompt: str = PROMPT
+    temperature: float = None
 
     def extractRequirement(self, user_input: str) -> dict:
         complete_prompt = f'{self.prompt}\n\nEntrada do usuário: "{user_input}"'
+        
+        generate_kwargs = {
+            "model": self.model,
+            "prompt": complete_prompt,
+            "format": 'json'
+        }
+        
+        if self.temperature is not None:
+            generate_kwargs["options"] = {"temperature": self.temperature}
+
         try:
-            response = ollama.generate(
-                model = self.model,
-                prompt = complete_prompt,
-                format = 'json'
-            )
+            response = ollama.generate(**generate_kwargs)
             requirements_dictionary = json.loads(response['response'])
             return requirements_dictionary 
         except json.JSONDecodeError:

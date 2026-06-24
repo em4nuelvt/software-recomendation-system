@@ -175,7 +175,10 @@ def process_survey(csv_path: str, manual_graph_path: str, output_graph_path: str
     print("Processamento concluído!")
 
 if __name__ == "__main__":
-    csv_path = os.path.join("data", "results.csv")
-    manual_graph_path = os.path.join("data", "graph", "knowledge_graph_manual.json")
-    output_graph_path = os.path.join("data", "graph", "knowledge_graph.json")
+    import os
+    # Obter o diretório pai da pasta 'scripts' (que é a pasta 'src')
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    csv_path = os.path.join(base_dir, "data", "results.csv")
+    manual_graph_path = os.path.join(base_dir, "data", "graph", "knowledge_graph_manual.json")
+    output_graph_path = os.path.join(base_dir, "data", "graph", "knowledge_graph.json")
     process_survey(csv_path, manual_graph_path, output_graph_path)

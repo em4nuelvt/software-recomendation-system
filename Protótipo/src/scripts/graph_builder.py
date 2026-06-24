@@ -522,8 +522,9 @@ def build_manual_graph(seed_path: str, output_path: str):
 
 if __name__ == "__main__":
     import os
-    # cwd é src
-    seed_path = os.path.join("data", "graph", "technology_seed.json")
-    output_path = os.path.join("data", "graph", "knowledge_graph_manual.json")
+    # Obter o diretório pai da pasta 'scripts' (que é a pasta 'src')
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    seed_path = os.path.join(base_dir, "data", "graph", "technology_seed.json")
+    output_path = os.path.join(base_dir, "data", "graph", "knowledge_graph_manual.json")
     build_manual_graph(seed_path, output_path)
     print(f"Grafo manual construído com sucesso e salvo em {output_path}")
