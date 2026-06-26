@@ -12,7 +12,7 @@ MULTIPLICADORES = {
     "integracao": 1.0,
     "arquitetura_esperada": 1.0,
     "experiencia_usuario": 1.0,
-    "requisitos_seguranca": 1.0,
+    "requisito_seguranca": 1.0,
     "ambiente_implantacao": 1.0,
     "maturidade_equipe": 1.0,
     "tipo_autenticacao": 1.0,

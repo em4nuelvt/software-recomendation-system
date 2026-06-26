@@ -15,7 +15,7 @@ Execucoes 100% corretas: 0/30
 Atributos com acertos abaixo de 100%:
   tipo_autenticacao: 1/30 (3.33%)
   ambiente_implantacao: 3/30 (10.00%)
-  requisitos_seguranca: 7/30 (23.33%)
+  requisito_seguranca: 7/30 (23.33%)
   ciclo_desenvolvimento: 14/30 (46.67%)
   maturidade_equipe: 21/30 (70.00%)
 
@@ -27,7 +27,7 @@ Acuracia maxima: 75.00%
 Execucoes 100% corretas: 0/30
 Atributos com acertos abaixo de 100%:
   ciclo_desenvolvimento: 0/30 (0.00%)
-  requisitos_seguranca: 1/30 (3.33%)
+  requisito_seguranca: 1/30 (3.33%)
   persistencia: 2/30 (6.67%)
   ambiente_implantacao: 2/30 (6.67%)
   maturidade_equipe: 6/30 (20.00%)
@@ -42,7 +42,7 @@ Acuracia minima: 66.67%
 Acuracia maxima: 91.67%
 Execucoes 100% corretas: 0/30
 Atributos com acertos abaixo de 100%:
-  requisitos_seguranca: 0/30 (0.00%)
+  requisito_seguranca: 0/30 (0.00%)
   tipo_autenticacao: 20/30 (66.67%)
   ciclo_desenvolvimento: 27/30 (90.00%)
   experiencia_usuario: 29/30 (96.67%)
@@ -70,7 +70,7 @@ Execucoes 100% corretas: 0/30
 Atributos com acertos abaixo de 100%:
   arquitetura_esperada: 0/30 (0.00%)
   ambiente_implantacao: 6/30 (20.00%)
-  requisitos_seguranca: 9/30 (30.00%)
+  requisito_seguranca: 9/30 (30.00%)
   experiencia_usuario: 10/30 (33.33%)
   escala: 13/30 (43.33%)
   persistencia: 24/30 (80.00%)
@@ -91,7 +91,7 @@ Atributos com acertos abaixo de 100%:
   maturidade_equipe: 11/24 (45.83%)
   ciclo_desenvolvimento: 11/24 (45.83%)
   experiencia_usuario: 12/24 (50.00%)
-  requisitos_seguranca: 12/24 (50.00%)
+  requisito_seguranca: 12/24 (50.00%)
   ambiente_implantacao: 13/24 (54.17%)
   integracao: 16/24 (66.67%)
   dominio_negocio: 23/24 (95.83%)
@@ -107,7 +107,7 @@ Atributos com acertos abaixo de 100%:
   ambiente_implantacao: 1/24 (4.17%)
   ciclo_desenvolvimento: 6/24 (25.00%)
   integracao: 7/24 (29.17%)
-  requisitos_seguranca: 7/24 (29.17%)
+  requisito_seguranca: 7/24 (29.17%)
   maturidade_equipe: 7/24 (29.17%)
   escala: 9/24 (37.50%)
   tipo_autenticacao: 10/24 (41.67%)
@@ -123,7 +123,7 @@ Acuracia maxima: 83.33%
 Execucoes 100% corretas: 0/28
 Atributos com acertos abaixo de 100%:
   integracao: 0/28 (0.00%)
-  requisitos_seguranca: 0/28 (0.00%)
+  requisito_seguranca: 0/28 (0.00%)
   arquitetura_esperada: 4/28 (14.29%)
   tipo_autenticacao: 21/28 (75.00%)
 
@@ -137,7 +137,7 @@ Atributos com acertos abaixo de 100%:
   integracao: 0/27 (0.00%)
   maturidade_equipe: 0/27 (0.00%)
   arquitetura_esperada: 8/27 (29.63%)
-  requisitos_seguranca: 11/27 (40.74%)
+  requisito_seguranca: 11/27 (40.74%)
   tipo_autenticacao: 18/27 (66.67%)
 
 Modelo: llama3 | Caso de teste: 5
@@ -149,7 +149,7 @@ Execucoes 100% corretas: 0/21
 Atributos com acertos abaixo de 100%:
   arquitetura_esperada: 1/21 (4.76%)
   experiencia_usuario: 2/21 (9.52%)
-  requisitos_seguranca: 3/21 (14.29%)
+  requisito_seguranca: 3/21 (14.29%)
   escala: 9/21 (42.86%)
   persistencia: 12/21 (57.14%)
   ambiente_implantacao: 14/21 (66.67%)
@@ -169,7 +169,7 @@ Atributos com acertos abaixo de 100%:
   dominio_negocio: 3/30 (10.00%)
   ambiente_implantacao: 3/30 (10.00%)
   persistencia: 4/30 (13.33%)
-  requisitos_seguranca: 17/30 (56.67%)
+  requisito_seguranca: 17/30 (56.67%)
   experiencia_usuario: 19/30 (63.33%)
   escala: 27/30 (90.00%)
   ciclo_desenvolvimento: 28/30 (93.33%)
@@ -187,7 +187,7 @@ Atributos com acertos abaixo de 100%:
   experiencia_usuario: 2/30 (6.67%)
   ciclo_desenvolvimento: 15/30 (50.00%)
   ambiente_implantacao: 24/30 (80.00%)
-  requisitos_seguranca: 25/30 (83.33%)
+  requisito_seguranca: 25/30 (83.33%)
   tipo_projeto: 29/30 (96.67%)
 
 Modelo: deepseek-r1:8b | Caso de teste: 3
@@ -197,7 +197,7 @@ Acuracia minima: 66.67%
 Acuracia maxima: 83.33%
 Execucoes 100% corretas: 0/30
 Atributos com acertos abaixo de 100%:
-  requisitos_seguranca: 0/30 (0.00%)
+  requisito_seguranca: 0/30 (0.00%)
   maturidade_equipe: 2/30 (6.67%)
   ciclo_desenvolvimento: 23/30 (76.67%)
   experiencia_usuario: 24/30 (80.00%)
@@ -226,7 +226,7 @@ Atributos com acertos abaixo de 100%:
   ambiente_implantacao: 4/30 (13.33%)
   arquitetura_esperada: 5/30 (16.67%)
   integracao: 7/30 (23.33%)
-  requisitos_seguranca: 10/30 (33.33%)
+  requisito_seguranca: 10/30 (33.33%)
   persistencia: 13/30 (43.33%)
   tipo_autenticacao: 14/30 (46.67%)
   maturidade_equipe: 16/30 (53.33%)
@@ -258,7 +258,7 @@ Execucoes 100% corretas: 6/150
 
 3) Acuracia por atributo (todos os modelos e casos)
 (mostra quais atributos os modelos mais erram)
-  requisitos_seguranca: 162/424 (38.21%)
+  requisito_seguranca: 162/424 (38.21%)
   ambiente_implantacao: 245/424 (57.78%)
   maturidade_equipe: 254/424 (59.91%)
   tipo_autenticacao: 258/424 (60.85%)

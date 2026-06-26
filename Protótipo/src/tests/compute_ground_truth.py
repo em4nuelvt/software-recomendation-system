@@ -21,7 +21,7 @@ EXPECTED_KEYS = [
     "integracao",
     "arquitetura_esperada",
     "experiencia_usuario",
-    "requisitos_seguranca",
+    "requisito_seguranca",
     "ambiente_implantacao",
     "maturidade_equipe",
     "tipo_autenticacao",

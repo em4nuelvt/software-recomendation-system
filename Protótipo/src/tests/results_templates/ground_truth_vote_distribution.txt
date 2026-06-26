@@ -24,7 +24,7 @@ Caso de teste: 1
   experiencia_usuario:
     basica: 61/84 (72.6%) <-- VENCEDOR
     intermediaria: 23/84 (27.4%)
-  requisitos_seguranca:
+  requisito_seguranca:
     nenhum: 47/84 (56.0%) <-- VENCEDOR
     basico: 36/84 (42.9%)
     intermediario: 1/84 (1.2%)
@@ -65,7 +65,7 @@ Caso de teste: 2
   experiencia_usuario:
     intermediaria: 44/84 (52.4%) <-- VENCEDOR
     basica: 40/84 (47.6%)
-  requisitos_seguranca:
+  requisito_seguranca:
     basico: 49/84 (58.3%) <-- VENCEDOR
     nenhum: 33/84 (39.3%)
     intermediario: 2/84 (2.4%)
@@ -102,7 +102,7 @@ Caso de teste: 3
   experiencia_usuario:
     intermediaria: 81/88 (92.0%) <-- VENCEDOR
     basica: 7/88 (8.0%)
-  requisitos_seguranca:
+  requisito_seguranca:
     basico: 72/88 (81.8%) <-- VENCEDOR
     intermediario: 16/88 (18.2%)
   ambiente_implantacao:
@@ -140,7 +140,7 @@ Caso de teste: 4
   experiencia_usuario:
     intermediaria: 53/87 (60.9%) <-- VENCEDOR
     basica: 34/87 (39.1%)
-  requisitos_seguranca:
+  requisito_seguranca:
     basico: 71/87 (81.6%) <-- VENCEDOR
     intermediario: 16/87 (18.4%)
   ambiente_implantacao:
@@ -184,7 +184,7 @@ Caso de teste: 5
     intermediaria: 33/81 (40.7%) <-- VENCEDOR
     basica: 30/81 (37.0%)
     avancada: 18/81 (22.2%)
-  requisitos_seguranca:
+  requisito_seguranca:
     basico: 50/81 (61.7%) <-- VENCEDOR
     nenhum: 22/81 (27.2%)
     intermediario: 8/81 (9.9%)

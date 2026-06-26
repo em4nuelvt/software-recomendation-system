@@ -7,7 +7,7 @@ import ollama
 # PROMPT = """
 # Você é um extrator de requisitos de software.
 # Sua tarefa é analisar a entrada do usuário e extrair 9 atributos em formato JSON.
-# Atributos: tipo_projeto, dominio_negocio, persistencia, escala, integracao, arquitetura_esperada, requisitos_desempenho, experiencia_usuario, requisitos_seguranca.
+# Atributos: tipo_projeto, dominio_negocio, persistencia, escala, integracao, arquitetura_esperada, requisitos_desempenho, experiencia_usuario, requisito_seguranca.
 
 # Regras:
 # - Se o usuário não mencionar informações suficientes para preencher um atributo, preencha-o com a opção que torne o sistema o mais SIMPLES e comum possível de ser construído (ex: se arquitetura não for citada, use "Monolito").
@@ -26,7 +26,7 @@ Entrada do usuário: "{ENTRADA}"
 Responda apenas: "true" ou "false"
 """
 
-PROMPT = """
+PROMPT1 = """
 Você é um especialista em engenharia de requisitos de software. Analise a entrada do usuário e extraia exatamente 12 atributos, retornando **somente** um objeto JSON válido, sem texto adicional, sem markdown, sem explicações.
 
 ### Atributos e Valores Permitidos (Escolha ESTRITAMENTE desta lista):
@@ -38,7 +38,7 @@ Você é um especialista em engenharia de requisitos de software. Analise a entr
 - **integracao**: "nenhuma" | "apis_externas" | "servicos_internos" | "ambos"
 - **arquitetura_esperada**: "monolito" | "microsservicos" | "serverless" | "event_driven"
 - **experiencia_usuario**: "basica" | "intermediaria" | "avancada"
-- **requisitos_seguranca**: "nenhum" | "basico" | "intermediario" | "avancado"
+- **requisito_seguranca**: "nenhum" | "basico" | "intermediario" | "avancado"
 - **ambiente_implantacao**: "local" | "cloud" | "on_premise" | "hibrido"
 - **maturidade_equipe**: "iniciante" | "intermediario" | "experiente"
 - **tipo_autenticacao**: "nenhuma" | "propria" | "oauth" | "enterprise"
@@ -56,12 +56,68 @@ Você é um especialista em engenharia de requisitos de software. Analise a entr
 
 ### Saída esperada (somente JSON):
 """
+
+PROMPT2 = """
+
+Você é um extrator de requisitos de software de um sistema de recomendação. Analise a entrada do usuário e extraia exatamente 12 atributos, retornando **somente** um objeto JSON válido, sem texto adicional, sem markdown, sem explicações. Seu objetivo é classificar a entrada em atributos de requisitos de software de acordo com o texto fornecido. 
+
+Abaixo estão listados os atributos com suas chaves e valores permitidos.
+Estrutura -> [chave: valor_permido]
+
+### Atributos e Valores Permitidos (Escolha ESTRITAMENTE desta lista):
+
+- tipo_projeto: "web" | "mobile" | "desktop" | "api" | "embarcado" | "hibrido"
+- dominio_negocio: "produtividade" | "financeiro" | "saude" | "educacao" | "ecommerce" | "logistica" | "entretenimento" | "outro"
+- persistencia: "sem_banco" | "sql" | "nosql" | "hibrido"
+- escala: "pequena" | "media" | "grande" | "enterprise"
+- integracao: "nenhuma" | "apis_externas" | "servicos_internos" | "ambos"
+- arquitetura_esperada: "monolito" | "microsservicos" | "serverless" | "event_driven"
+- experiencia_usuario: "basica" | "intermediaria" | "avancada"
+- requisito_seguranca: "nenhum" | "basico" | "intermediario" | "avancado"
+- ambiente_implantacao: "local" | "cloud" | "on_premise" | "hibrido"
+- maturidade_equipe: "iniciante" | "intermediario" | "experiente"
+- tipo_autenticacao: "nenhuma" | "propria" | "oauth" | "enterprise"
+- ciclo_desenvolvimento: "mvp" | "iterativo" | "longo_prazo"
+
+### Regras de preenchimento:
+
+1. Use apenas os as chaves e valores listados acima para cada atributo. Todos eles devem estar, obrigatoriamente, escritos conforme listados: sem espaço, sem pontuação e sem acentuação.    
+2. Se um atributo não for mencionado explicitamente na entrada do usuário, você é PROIBIDO de deixá-lo vazio ou excluí-lo. Use sua inteligência para INFERIR o valor mais provável da lista. Se for impossível inferir, preencha OBRIGATORIAMENTE com o valor que julgar mais comum em sistemas da lista de valores permitidos.
+3. **Nunca** retorne campos nulos, vazios ou fora da lista de valores permitidos.
+4. **Nunca** adicione texto fora do JSON.
+5. A estrutura retornada deve ser exclusivamente um JSON com 12 atributos no formato "chave: valor" dentro da lista de atributos e valores permitidos citadas.
+
+Veja um exemplo genérico de saída abaixo:
+{
+	"tipo_projeto": "web",
+	"dominio_negocio": "produtividade",
+	"persistencia": "sem_banco",
+	"escala": "media",
+	"integracao": "nenhuma",
+	"arquitetura_esperada": "serverless",
+	"experiencia_usuario": "intermediaria",
+	"requisito_seguranca": "basico",
+	"ambiente_implantacao": "local",
+	"maturidade_equipe": "experiente",
+	"tipo_autenticacao": "oauth",
+	"ciclo_desenvolvimento": "iterativo"
+}
+
+### Entrada do usuário:
+
+"{ENTRADA}"
+
+### Saída esperada (somente JSON):
+
+"""
+
+
 #USER_INPUT = "Tecnologias para sistema de lista de tarefas web"
 
 @dataclass
 class RequirementExtractor:
     model: str = "qwen2.5" #modelo padrão
-    prompt: str = PROMPT
+    prompt: str = PROMPT2
     temperature: float = None
 
     def extractRequirement(self, user_input: str) -> dict:

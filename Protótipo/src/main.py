@@ -3,10 +3,12 @@ import json
 from RequirementExtractor import RequirementExtractor 
 from RecommendationEngine import RecommendationEngine
 from ResponseFormatter import ResponseFormatter
+import user_input
 
-USER_INPUT = "Gostaria de desenvolver um sistema de lista de tarefas local para computador sem banco de dados na linguagem Java"
+#USER_INPUT = "Gostaria de desenvolver um sistema de lista de tarefas local para computador sem banco de dados na linguagem Java"
+USER_INPUT = user_input.input[4]
 if __name__ == "__main__":
-    extractor = RequirementExtractor()
+    extractor = RequirementExtractor(model="deepseek-r1:8b")
     engine = RecommendationEngine()
     formatter = ResponseFormatter()
 

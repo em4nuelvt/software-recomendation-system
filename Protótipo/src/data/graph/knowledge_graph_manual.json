@@ -623,27 +623,27 @@
     },
     {
       "type": "attribute-value",
-      "atributo": "requisitos_seguranca",
+      "atributo": "requisito_seguranca",
       "valor": "nenhum",
-      "id": "requisitos_seguranca=nenhum"
+      "id": "requisito_seguranca=nenhum"
     },
     {
       "type": "attribute-value",
-      "atributo": "requisitos_seguranca",
+      "atributo": "requisito_seguranca",
       "valor": "basico",
-      "id": "requisitos_seguranca=basico"
+      "id": "requisito_seguranca=basico"
     },
     {
       "type": "attribute-value",
-      "atributo": "requisitos_seguranca",
+      "atributo": "requisito_seguranca",
       "valor": "intermediario",
-      "id": "requisitos_seguranca=intermediario"
+      "id": "requisito_seguranca=intermediario"
     },
     {
       "type": "attribute-value",
-      "atributo": "requisitos_seguranca",
+      "atributo": "requisito_seguranca",
       "valor": "avancado",
-      "id": "requisitos_seguranca=avancado"
+      "id": "requisito_seguranca=avancado"
     },
     {
       "type": "attribute-value",
@@ -1163,7 +1163,7 @@
       "peso": 0.9,
       "fonte": "manual",
       "source": "java",
-      "target": "requisitos_seguranca=avancado"
+      "target": "requisito_seguranca=avancado"
     },
     {
       "relacao": "ADEQUADO_PARA",
@@ -1247,7 +1247,7 @@
       "peso": 0.9,
       "fonte": "manual",
       "source": "csharp",
-      "target": "requisitos_seguranca=avancado"
+      "target": "requisito_seguranca=avancado"
     },
     {
       "relacao": "ADEQUADO_PARA",
@@ -1779,7 +1779,7 @@
       "peso": 0.9,
       "fonte": "manual",
       "source": "django",
-      "target": "requisitos_seguranca=basico"
+      "target": "requisito_seguranca=basico"
     },
     {
       "relacao": "ADEQUADO_PARA",
@@ -1912,7 +1912,7 @@
       "peso": 0.8,
       "fonte": "manual",
       "source": "flask",
-      "target": "requisitos_seguranca=nenhum"
+      "target": "requisito_seguranca=nenhum"
     },
     {
       "relacao": "ADEQUADO_PARA",
@@ -2143,7 +2143,7 @@
       "peso": 0.8,
       "fonte": "manual",
       "source": "express",
-      "target": "requisitos_seguranca=nenhum"
+      "target": "requisito_seguranca=nenhum"
     },
     {
       "relacao": "ADEQUADO_PARA",
@@ -2269,7 +2269,7 @@
       "peso": 0.8,
       "fonte": "manual",
       "source": "nestjs",
-      "target": "requisitos_seguranca=intermediario"
+      "target": "requisito_seguranca=intermediario"
     },
     {
       "relacao": "ADEQUADO_PARA",
@@ -2444,14 +2444,14 @@
       "peso": 0.9,
       "fonte": "manual",
       "source": "spring",
-      "target": "requisitos_seguranca=intermediario"
+      "target": "requisito_seguranca=intermediario"
     },
     {
       "relacao": "ADEQUADO_PARA",
       "peso": 0.9,
       "fonte": "manual",
       "source": "spring",
-      "target": "requisitos_seguranca=avancado"
+      "target": "requisito_seguranca=avancado"
     },
     {
       "relacao": "ADEQUADO_PARA",
@@ -2626,7 +2626,7 @@
       "peso": 0.9,
       "fonte": "manual",
       "source": "laravel",
-      "target": "requisitos_seguranca=basico"
+      "target": "requisito_seguranca=basico"
     },
     {
       "relacao": "ADEQUADO_PARA",
@@ -2745,7 +2745,7 @@
       "peso": 0.8,
       "fonte": "manual",
       "source": "rails",
-      "target": "requisitos_seguranca=basico"
+      "target": "requisito_seguranca=basico"
     },
     {
       "relacao": "ADEQUADO_PARA",
@@ -2843,14 +2843,14 @@
       "peso": 0.9,
       "fonte": "manual",
       "source": "aspnet",
-      "target": "requisitos_seguranca=intermediario"
+      "target": "requisito_seguranca=intermediario"
     },
     {
       "relacao": "ADEQUADO_PARA",
       "peso": 0.9,
       "fonte": "manual",
       "source": "aspnet",
-      "target": "requisitos_seguranca=avancado"
+      "target": "requisito_seguranca=avancado"
     },
     {
       "relacao": "ADEQUADO_PARA",
@@ -3382,21 +3382,21 @@
       "peso": 0.8,
       "fonte": "manual",
       "source": "postgresql",
-      "target": "requisitos_seguranca=basico"
+      "target": "requisito_seguranca=basico"
     },
     {
       "relacao": "ADEQUADO_PARA",
       "peso": 0.9,
       "fonte": "manual",
       "source": "postgresql",
-      "target": "requisitos_seguranca=intermediario"
+      "target": "requisito_seguranca=intermediario"
     },
     {
       "relacao": "ADEQUADO_PARA",
       "peso": 0.9,
       "fonte": "manual",
       "source": "postgresql",
-      "target": "requisitos_seguranca=avancado"
+      "target": "requisito_seguranca=avancado"
     },
     {
       "relacao": "ADEQUADO_PARA",
@@ -3501,7 +3501,7 @@
       "peso": 0.8,
       "fonte": "manual",
       "source": "mysql",
-      "target": "requisitos_seguranca=basico"
+      "target": "requisito_seguranca=basico"
     },
     {
       "relacao": "COMPATIVEL_COM",
@@ -3571,7 +3571,7 @@
       "peso": 0.8,
       "fonte": "manual",
       "source": "sqlite",
-      "target": "requisitos_seguranca=nenhum"
+      "target": "requisito_seguranca=nenhum"
     },
     {
       "relacao": "COMPATIVEL_COM",
@@ -3795,7 +3795,7 @@
       "peso": 0.9,
       "fonte": "manual",
       "source": "sqlserver",
-      "target": "requisitos_seguranca=avancado"
+      "target": "requisito_seguranca=avancado"
     },
     {
       "relacao": "ADEQUADO_PARA",
@@ -3865,7 +3865,7 @@
       "peso": 0.8,
       "fonte": "manual",
       "source": "kubernetes",
-      "target": "requisitos_seguranca=avancado"
+      "target": "requisito_seguranca=avancado"
     },
     {
       "relacao": "ADEQUADO_PARA",
