@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+﻿from dataclasses import dataclass
 import json
 import ollama
 
@@ -117,7 +117,7 @@ Veja um exemplo genérico de saída abaixo:
 @dataclass
 class RequirementExtractor:
     model: str = "qwen2.5" #modelo padrão
-    prompt: str = PROMPT2
+    prompt: str = PROMPT1
     temperature: float = None
 
     def extractRequirement(self, user_input: str) -> dict:

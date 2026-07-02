@@ -1,0 +1,321 @@
+Benchmark Etapa 1 - Resumo de Metricas
+Inicio: 2026-06-26 15:43:34
+Fim: 2026-06-26 18:23:22
+Tempo total: 02:39:49
+Modelos: qwen2.5, llama3, deepseek-r1:8b
+Casos de teste: 5
+Repeticoes por caso/modelo: 30
+
+Metricas:
+- Tempo medio (ms), tempo mediano (ms), tempo p95 (ms), tempo minimo (ms), tempo maximo (ms)
+- Taxa de formato valido, taxa de erro de execucao, taxa de sucesso
+- Consistencia total, consistencia somente validos, saidas validas distintas
+- Cobertura media de chaves
+==========================================================================================
+
+1) Resultado por modelo e caso de teste
+
+Modelo: qwen2.5 | Caso de teste: 1
+Entrada (resumo): Tecnologias para sistema de lista de tarefas web
+Total de execucoes: 30
+Tempo medio (ms): 18524.53
+Tempo mediano (ms): 18150.88
+Tempo p95 (ms): 18878.69
+Tempo minimo (ms): 13602.58
+Tempo maximo (ms): 30786.91
+Taxa de formato valido: 96.67%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 96.67%
+Cobertura media de chaves: 100.00%
+Saidas validas distintas: 10
+Consistencia total: 20.00%
+Consistencia somente validos: 20.69%
+
+Modelo: qwen2.5 | Caso de teste: 2
+Entrada (resumo): Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas a...
+Total de execucoes: 30
+Tempo medio (ms): 17978.47
+Tempo mediano (ms): 17951.30
+Tempo p95 (ms): 18554.04
+Tempo minimo (ms): 17106.42
+Tempo maximo (ms): 18630.94
+Taxa de formato valido: 100.00%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 100.00%
+Cobertura media de chaves: 100.00%
+Saidas validas distintas: 14
+Consistencia total: 20.00%
+Consistencia somente validos: 20.00%
+
+Modelo: qwen2.5 | Caso de teste: 3
+Entrada (resumo): Gostaria de desenvolver um sistema de gestão para clínicas médicas, acessível por qualquer plataforma por meio de um ...
+Total de execucoes: 30
+Tempo medio (ms): 17953.78
+Tempo mediano (ms): 17901.42
+Tempo p95 (ms): 18362.28
+Tempo minimo (ms): 17534.28
+Tempo maximo (ms): 18547.03
+Taxa de formato valido: 100.00%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 100.00%
+Cobertura media de chaves: 100.00%
+Saidas validas distintas: 5
+Consistencia total: 53.33%
+Consistencia somente validos: 53.33%
+
+Modelo: qwen2.5 | Caso de teste: 4
+Entrada (resumo): Quero desenvolver um sistema para controle de horas complementares no ambiente acadêmico, acessível pela internet. Ca...
+Total de execucoes: 30
+Tempo medio (ms): 18022.64
+Tempo mediano (ms): 18026.53
+Tempo p95 (ms): 18362.13
+Tempo minimo (ms): 17485.98
+Tempo maximo (ms): 18630.14
+Taxa de formato valido: 96.67%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 96.67%
+Cobertura media de chaves: 100.00%
+Saidas validas distintas: 11
+Consistencia total: 40.00%
+Consistencia somente validos: 41.38%
+
+Modelo: qwen2.5 | Caso de teste: 5
+Entrada (resumo): Quero construir um jogo da memória para computadores desktop, utilizando conceitos de sistemas distribuídos. Os jogad...
+Total de execucoes: 30
+Tempo medio (ms): 18878.52
+Tempo mediano (ms): 18832.72
+Tempo p95 (ms): 19360.39
+Tempo minimo (ms): 18389.96
+Tempo maximo (ms): 19658.64
+Taxa de formato valido: 100.00%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 100.00%
+Cobertura media de chaves: 100.00%
+Saidas validas distintas: 13
+Consistencia total: 43.33%
+Consistencia somente validos: 43.33%
+
+Modelo: llama3 | Caso de teste: 1
+Entrada (resumo): Tecnologias para sistema de lista de tarefas web
+Total de execucoes: 30
+Tempo medio (ms): 18942.57
+Tempo mediano (ms): 19020.01
+Tempo p95 (ms): 19488.44
+Tempo minimo (ms): 16369.88
+Tempo maximo (ms): 30395.85
+Taxa de formato valido: 86.67%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 86.67%
+Cobertura media de chaves: 97.78%
+Saidas validas distintas: 7
+Consistencia total: 56.67%
+Consistencia somente validos: 65.38%
+
+Modelo: llama3 | Caso de teste: 2
+Entrada (resumo): Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas a...
+Total de execucoes: 30
+Tempo medio (ms): 17238.43
+Tempo mediano (ms): 17059.97
+Tempo p95 (ms): 18950.83
+Tempo minimo (ms): 16714.56
+Tempo maximo (ms): 19135.06
+Taxa de formato valido: 76.67%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 76.67%
+Cobertura media de chaves: 97.50%
+Saidas validas distintas: 11
+Consistencia total: 40.00%
+Consistencia somente validos: 52.17%
+
+Modelo: llama3 | Caso de teste: 3
+Entrada (resumo): Gostaria de desenvolver um sistema de gestão para clínicas médicas, acessível por qualquer plataforma por meio de um ...
+Total de execucoes: 30
+Tempo medio (ms): 17266.61
+Tempo mediano (ms): 17004.14
+Tempo p95 (ms): 18737.42
+Tempo minimo (ms): 16511.68
+Tempo maximo (ms): 18837.49
+Taxa de formato valido: 76.67%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 76.67%
+Cobertura media de chaves: 97.78%
+Saidas validas distintas: 6
+Consistencia total: 23.33%
+Consistencia somente validos: 30.43%
+
+Modelo: llama3 | Caso de teste: 4
+Entrada (resumo): Quero desenvolver um sistema para controle de horas complementares no ambiente acadêmico, acessível pela internet. Ca...
+Total de execucoes: 30
+Tempo medio (ms): 17572.06
+Tempo mediano (ms): 17252.75
+Tempo p95 (ms): 18792.58
+Tempo minimo (ms): 16679.82
+Tempo maximo (ms): 18848.51
+Taxa de formato valido: 100.00%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 100.00%
+Cobertura media de chaves: 100.00%
+Saidas validas distintas: 5
+Consistencia total: 33.33%
+Consistencia somente validos: 33.33%
+
+Modelo: llama3 | Caso de teste: 5
+Entrada (resumo): Quero construir um jogo da memória para computadores desktop, utilizando conceitos de sistemas distribuídos. Os jogad...
+Total de execucoes: 30
+Tempo medio (ms): 18316.15
+Tempo mediano (ms): 17791.36
+Tempo p95 (ms): 19890.70
+Tempo minimo (ms): 16802.96
+Tempo maximo (ms): 20010.26
+Taxa de formato valido: 83.33%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 83.33%
+Cobertura media de chaves: 98.61%
+Saidas validas distintas: 20
+Consistencia total: 10.00%
+Consistencia somente validos: 12.00%
+
+Modelo: deepseek-r1:8b | Caso de teste: 1
+Entrada (resumo): Tecnologias para sistema de lista de tarefas web
+Total de execucoes: 30
+Tempo medio (ms): 25277.28
+Tempo mediano (ms): 24805.09
+Tempo p95 (ms): 25633.02
+Tempo minimo (ms): 23764.06
+Tempo maximo (ms): 38051.17
+Taxa de formato valido: 100.00%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 100.00%
+Cobertura media de chaves: 100.00%
+Saidas validas distintas: 12
+Consistencia total: 23.33%
+Consistencia somente validos: 23.33%
+
+Modelo: deepseek-r1:8b | Caso de teste: 2
+Entrada (resumo): Gostaria de desenvolver um aplicativo para Android e iOS sobre o esporte badminton, com foco no apoio ao ensino nas a...
+Total de execucoes: 30
+Tempo medio (ms): 35277.65
+Tempo mediano (ms): 25264.99
+Tempo p95 (ms): 28146.78
+Tempo minimo (ms): 23478.75
+Tempo maximo (ms): 320346.98
+Taxa de formato valido: 90.00%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 90.00%
+Cobertura media de chaves: 99.72%
+Saidas validas distintas: 11
+Consistencia total: 33.33%
+Consistencia somente validos: 37.04%
+
+Modelo: deepseek-r1:8b | Caso de teste: 3
+Entrada (resumo): Gostaria de desenvolver um sistema de gestão para clínicas médicas, acessível por qualquer plataforma por meio de um ...
+Total de execucoes: 30
+Tempo medio (ms): 24451.60
+Tempo mediano (ms): 24347.36
+Tempo p95 (ms): 25362.09
+Tempo minimo (ms): 23724.20
+Tempo maximo (ms): 25943.42
+Taxa de formato valido: 100.00%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 100.00%
+Cobertura media de chaves: 100.00%
+Saidas validas distintas: 5
+Consistencia total: 43.33%
+Consistencia somente validos: 43.33%
+
+Modelo: deepseek-r1:8b | Caso de teste: 4
+Entrada (resumo): Quero desenvolver um sistema para controle de horas complementares no ambiente acadêmico, acessível pela internet. Ca...
+Total de execucoes: 30
+Tempo medio (ms): 24569.71
+Tempo mediano (ms): 24568.95
+Tempo p95 (ms): 25647.69
+Tempo minimo (ms): 23849.00
+Tempo maximo (ms): 25868.41
+Taxa de formato valido: 96.67%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 96.67%
+Cobertura media de chaves: 100.00%
+Saidas validas distintas: 5
+Consistencia total: 46.67%
+Consistencia somente validos: 48.28%
+
+Modelo: deepseek-r1:8b | Caso de teste: 5
+Entrada (resumo): Quero construir um jogo da memória para computadores desktop, utilizando conceitos de sistemas distribuídos. Os jogad...
+Total de execucoes: 30
+Tempo medio (ms): 29344.84
+Tempo mediano (ms): 25786.00
+Tempo p95 (ms): 35967.08
+Tempo minimo (ms): 24553.64
+Tempo maximo (ms): 109126.73
+Taxa de formato valido: 86.67%
+Taxa de erro de execucao: 3.33%
+Taxa de sucesso: 86.67%
+Cobertura media de chaves: 96.39%
+Saidas validas distintas: 22
+Consistencia total: 10.00%
+Consistencia somente validos: 11.54%
+
+2) Resultado consolidado por modelo
+
+Modelo: qwen2.5
+Total de execucoes: 150
+Tempo medio (ms): 18271.59
+Tempo mediano (ms): 18123.92
+Tempo p95 (ms): 18984.99
+Tempo minimo (ms): 13602.58
+Tempo maximo (ms): 30786.91
+Taxa de formato valido: 98.67%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 98.67%
+Cobertura media de chaves: 100.00%
+Saidas validas distintas: 53
+Consistencia total: 10.67%
+Consistencia somente validos: 10.81%
+
+Modelo: llama3
+Total de execucoes: 150
+Tempo medio (ms): 17867.16
+Tempo mediano (ms): 17309.74
+Tempo p95 (ms): 19519.92
+Tempo minimo (ms): 16369.88
+Tempo maximo (ms): 30395.85
+Taxa de formato valido: 84.67%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 84.67%
+Cobertura media de chaves: 98.33%
+Saidas validas distintas: 49
+Consistencia total: 11.33%
+Consistencia somente validos: 13.39%
+
+Modelo: deepseek-r1:8b
+Total de execucoes: 150
+Tempo medio (ms): 27784.22
+Tempo mediano (ms): 24882.70
+Tempo p95 (ms): 28149.06
+Tempo minimo (ms): 23478.75
+Tempo maximo (ms): 320346.98
+Taxa de formato valido: 94.67%
+Taxa de erro de execucao: 0.67%
+Taxa de sucesso: 94.67%
+Cobertura media de chaves: 99.22%
+Saidas validas distintas: 55
+Consistencia total: 9.33%
+Consistencia somente validos: 9.86%
+
+3) Resultado global de todos os modelos
+Total de execucoes: 450
+Tempo medio (ms): 21307.66
+Tempo mediano (ms): 18648.07
+Tempo p95 (ms): 25880.56
+Taxa de formato valido: 92.67%
+Taxa de erro de execucao: 0.22%
+Taxa de sucesso: 92.67%
+Cobertura media de chaves: 99.19%
+Consistencia total: 3.78%
+Consistencia somente validos: 4.08%
+
+4) Ranking sugerido dos modelos
+Criterio: sucesso maior, depois consistencia maior, depois menor tempo medio
+1. qwen2.5 | sucesso=98.67% | consistencia validos=10.81% | tempo medio (ms)=18271.59
+2. deepseek-r1:8b | sucesso=94.67% | consistencia validos=9.86% | tempo medio (ms)=27784.22
+3. llama3 | sucesso=84.67% | consistencia validos=13.39% | tempo medio (ms)=17867.16

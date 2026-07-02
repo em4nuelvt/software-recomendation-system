@@ -1,0 +1,275 @@
+Relatorio de Acuracia vs. Gabarito
+Gabarito utilizado: C:\Users\emanu\OneDrive\Estudos\eng comp\PFC\Git\Protótipo\src\tests\results_templates\gabarito_pessoal_requisitos.json
+Fonte de dados: C:\Users\emanu\OneDrive\Estudos\eng comp\PFC\Git\Protótipo\src\tests\benchmark_output\resultados_detalhados_fast_test.txt
+Registros validos avaliados: 417
+==========================================================================================
+
+1) Acuracia por modelo e caso de teste
+
+Modelo: qwen2.5 | Caso de teste: 1
+Execucoes validas avaliadas: 29
+Acuracia media: 72.13%
+Acuracia minima: 66.67%
+Acuracia maxima: 83.33%
+Execucoes 100% corretas: 0/29
+Atributos com acertos abaixo de 100%:
+  ambiente_implantacao: 0/29 (0.00%)
+  tipo_autenticacao: 1/29 (3.45%)
+  ciclo_desenvolvimento: 13/29 (44.83%)
+  maturidade_equipe: 16/29 (55.17%)
+  requisito_seguranca: 18/29 (62.07%)
+
+Modelo: qwen2.5 | Caso de teste: 2
+Execucoes validas avaliadas: 30
+Acuracia media: 57.78%
+Acuracia minima: 41.67%
+Acuracia maxima: 83.33%
+Execucoes 100% corretas: 0/30
+Atributos com acertos abaixo de 100%:
+  ciclo_desenvolvimento: 0/30 (0.00%)
+  persistencia: 1/30 (3.33%)
+  requisito_seguranca: 1/30 (3.33%)
+  ambiente_implantacao: 6/30 (20.00%)
+  maturidade_equipe: 10/30 (33.33%)
+  escala: 16/30 (53.33%)
+  experiencia_usuario: 26/30 (86.67%)
+  tipo_autenticacao: 28/30 (93.33%)
+
+Modelo: qwen2.5 | Caso de teste: 3
+Execucoes validas avaliadas: 30
+Acuracia media: 86.94%
+Acuracia minima: 66.67%
+Acuracia maxima: 91.67%
+Execucoes 100% corretas: 0/30
+Atributos com acertos abaixo de 100%:
+  requisito_seguranca: 0/30 (0.00%)
+  tipo_autenticacao: 17/30 (56.67%)
+  experiencia_usuario: 28/30 (93.33%)
+  ciclo_desenvolvimento: 28/30 (93.33%)
+
+Modelo: qwen2.5 | Caso de teste: 4
+Execucoes validas avaliadas: 29
+Acuracia media: 83.91%
+Acuracia minima: 66.67%
+Acuracia maxima: 100.00%
+Execucoes 100% corretas: 1/29
+Atributos com acertos abaixo de 100%:
+  maturidade_equipe: 9/29 (31.03%)
+  tipo_autenticacao: 15/29 (51.72%)
+  experiencia_usuario: 17/29 (58.62%)
+  escala: 20/29 (68.97%)
+  ciclo_desenvolvimento: 28/29 (96.55%)
+
+Modelo: qwen2.5 | Caso de teste: 5
+Execucoes validas avaliadas: 30
+Acuracia media: 66.11%
+Acuracia minima: 50.00%
+Acuracia maxima: 91.67%
+Execucoes 100% corretas: 0/30
+Atributos com acertos abaixo de 100%:
+  arquitetura_esperada: 0/30 (0.00%)
+  requisito_seguranca: 7/30 (23.33%)
+  experiencia_usuario: 8/30 (26.67%)
+  ambiente_implantacao: 10/30 (33.33%)
+  escala: 11/30 (36.67%)
+  maturidade_equipe: 26/30 (86.67%)
+  persistencia: 28/30 (93.33%)
+  integracao: 29/30 (96.67%)
+  ciclo_desenvolvimento: 29/30 (96.67%)
+
+Modelo: llama3 | Caso de teste: 1
+Execucoes validas avaliadas: 26
+Acuracia media: 61.86%
+Acuracia minima: 33.33%
+Acuracia maxima: 66.67%
+Execucoes 100% corretas: 0/26
+Atributos com acertos abaixo de 100%:
+  persistencia: 4/26 (15.38%)
+  tipo_autenticacao: 5/26 (19.23%)
+  requisito_seguranca: 6/26 (23.08%)
+  ambiente_implantacao: 7/26 (26.92%)
+  escala: 19/26 (73.08%)
+  experiencia_usuario: 19/26 (73.08%)
+  maturidade_equipe: 19/26 (73.08%)
+  ciclo_desenvolvimento: 19/26 (73.08%)
+  integracao: 21/26 (80.77%)
+  dominio_negocio: 24/26 (92.31%)
+  arquitetura_esperada: 24/26 (92.31%)
+
+Modelo: llama3 | Caso de teste: 2
+Execucoes validas avaliadas: 23
+Acuracia media: 43.12%
+Acuracia minima: 25.00%
+Acuracia maxima: 91.67%
+Execucoes 100% corretas: 0/23
+Atributos com acertos abaixo de 100%:
+  ambiente_implantacao: 3/23 (13.04%)
+  ciclo_desenvolvimento: 4/23 (17.39%)
+  requisito_seguranca: 5/23 (21.74%)
+  maturidade_equipe: 5/23 (21.74%)
+  escala: 7/23 (30.43%)
+  integracao: 7/23 (30.43%)
+  tipo_autenticacao: 7/23 (30.43%)
+  arquitetura_esperada: 8/23 (34.78%)
+  persistencia: 9/23 (39.13%)
+  experiencia_usuario: 18/23 (78.26%)
+
+Modelo: llama3 | Caso de teste: 3
+Execucoes validas avaliadas: 23
+Acuracia media: 75.36%
+Acuracia minima: 66.67%
+Acuracia maxima: 83.33%
+Execucoes 100% corretas: 0/23
+Atributos com acertos abaixo de 100%:
+  integracao: 0/23 (0.00%)
+  requisito_seguranca: 0/23 (0.00%)
+  arquitetura_esperada: 7/23 (30.43%)
+  tipo_autenticacao: 17/23 (73.91%)
+
+Modelo: llama3 | Caso de teste: 4
+Execucoes validas avaliadas: 30
+Acuracia media: 71.94%
+Acuracia minima: 58.33%
+Acuracia maxima: 83.33%
+Execucoes 100% corretas: 0/30
+Atributos com acertos abaixo de 100%:
+  integracao: 0/30 (0.00%)
+  maturidade_equipe: 0/30 (0.00%)
+  arquitetura_esperada: 7/30 (23.33%)
+  tipo_autenticacao: 20/30 (66.67%)
+  requisito_seguranca: 22/30 (73.33%)
+
+Modelo: llama3 | Caso de teste: 5
+Execucoes validas avaliadas: 25
+Acuracia media: 58.33%
+Acuracia minima: 33.33%
+Acuracia maxima: 83.33%
+Execucoes 100% corretas: 0/25
+Atributos com acertos abaixo de 100%:
+  arquitetura_esperada: 0/25 (0.00%)
+  experiencia_usuario: 7/25 (28.00%)
+  requisito_seguranca: 7/25 (28.00%)
+  escala: 11/25 (44.00%)
+  persistencia: 13/25 (52.00%)
+  ambiente_implantacao: 14/25 (56.00%)
+  maturidade_equipe: 15/25 (60.00%)
+  tipo_autenticacao: 16/25 (64.00%)
+  dominio_negocio: 21/25 (84.00%)
+  ciclo_desenvolvimento: 21/25 (84.00%)
+
+Modelo: deepseek-r1:8b | Caso de teste: 1
+Execucoes validas avaliadas: 30
+Acuracia media: 51.39%
+Acuracia minima: 33.33%
+Acuracia maxima: 66.67%
+Execucoes 100% corretas: 0/30
+Atributos com acertos abaixo de 100%:
+  dominio_negocio: 0/30 (0.00%)
+  tipo_autenticacao: 0/30 (0.00%)
+  persistencia: 2/30 (6.67%)
+  ambiente_implantacao: 2/30 (6.67%)
+  ciclo_desenvolvimento: 10/30 (33.33%)
+  requisito_seguranca: 13/30 (43.33%)
+  experiencia_usuario: 19/30 (63.33%)
+  escala: 20/30 (66.67%)
+  maturidade_equipe: 29/30 (96.67%)
+
+Modelo: deepseek-r1:8b | Caso de teste: 2
+Execucoes validas avaliadas: 27
+Acuracia media: 68.83%
+Acuracia minima: 50.00%
+Acuracia maxima: 83.33%
+Execucoes 100% corretas: 0/27
+Atributos com acertos abaixo de 100%:
+  experiencia_usuario: 0/27 (0.00%)
+  escala: 2/27 (7.41%)
+  ciclo_desenvolvimento: 4/27 (14.81%)
+  persistencia: 14/27 (51.85%)
+  ambiente_implantacao: 19/27 (70.37%)
+  tipo_projeto: 24/27 (88.89%)
+  requisito_seguranca: 25/27 (92.59%)
+
+Modelo: deepseek-r1:8b | Caso de teste: 3
+Execucoes validas avaliadas: 30
+Acuracia media: 76.39%
+Acuracia minima: 66.67%
+Acuracia maxima: 83.33%
+Execucoes 100% corretas: 0/30
+Atributos com acertos abaixo de 100%:
+  requisito_seguranca: 0/30 (0.00%)
+  maturidade_equipe: 0/30 (0.00%)
+  tipo_autenticacao: 14/30 (46.67%)
+  experiencia_usuario: 21/30 (70.00%)
+
+Modelo: deepseek-r1:8b | Caso de teste: 4
+Execucoes validas avaliadas: 29
+Acuracia media: 92.53%
+Acuracia minima: 75.00%
+Acuracia maxima: 100.00%
+Execucoes 100% corretas: 8/29
+Atributos com acertos abaixo de 100%:
+  experiencia_usuario: 11/29 (37.93%)
+  tipo_autenticacao: 22/29 (75.86%)
+  ciclo_desenvolvimento: 28/29 (96.55%)
+
+Modelo: deepseek-r1:8b | Caso de teste: 5
+Execucoes validas avaliadas: 26
+Acuracia media: 48.72%
+Acuracia minima: 16.67%
+Acuracia maxima: 75.00%
+Execucoes 100% corretas: 0/26
+Atributos com acertos abaixo de 100%:
+  integracao: 1/26 (3.85%)
+  escala: 2/26 (7.69%)
+  ambiente_implantacao: 2/26 (7.69%)
+  arquitetura_esperada: 3/26 (11.54%)
+  persistencia: 8/26 (30.77%)
+  maturidade_equipe: 12/26 (46.15%)
+  tipo_autenticacao: 13/26 (50.00%)
+  dominio_negocio: 19/26 (73.08%)
+  requisito_seguranca: 19/26 (73.08%)
+  experiencia_usuario: 21/26 (80.77%)
+
+2) Acuracia consolidada por modelo
+
+Modelo: qwen2.5
+Total de execucoes validas avaliadas: 148
+Acuracia media: 73.31%
+Acuracia minima: 41.67%
+Acuracia maxima: 100.00%
+Execucoes 100% corretas: 1/148
+
+Modelo: llama3
+Total de execucoes validas avaliadas: 127
+Acuracia media: 62.60%
+Acuracia minima: 25.00%
+Acuracia maxima: 91.67%
+Execucoes 100% corretas: 0/127
+
+Modelo: deepseek-r1:8b
+Total de execucoes validas avaliadas: 142
+Acuracia media: 67.90%
+Acuracia minima: 16.67%
+Acuracia maxima: 100.00%
+Execucoes 100% corretas: 8/142
+
+3) Acuracia por atributo (todos os modelos e casos)
+(mostra quais atributos os modelos mais erram)
+  requisito_seguranca: 181/417 (43.41%)
+  tipo_autenticacao: 232/417 (55.64%)
+  ambiente_implantacao: 234/417 (56.12%)
+  maturidade_equipe: 250/417 (59.95%)
+  experiencia_usuario: 277/417 (66.43%)
+  persistencia: 279/417 (66.91%)
+  escala: 279/417 (66.91%)
+  arquitetura_esperada: 283/417 (67.87%)
+  ciclo_desenvolvimento: 293/417 (70.26%)
+  integracao: 317/417 (76.02%)
+  dominio_negocio: 374/417 (89.69%)
+  tipo_projeto: 414/417 (99.28%)
+
+4) Ranking dos modelos por acuracia media
+Criterio: maior acuracia media, depois maior proporcao de execucoes 100% corretas
+1. qwen2.5 | acuracia media=73.31% | 100% corretas=1/148
+2. deepseek-r1:8b | acuracia media=67.90% | 100% corretas=8/142
+3. llama3 | acuracia media=62.60% | 100% corretas=0/127
