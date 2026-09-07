@@ -68,5 +68,19 @@
         "maturidade_equipe": "intermediario",
         "tipo_autenticacao": "nenhuma",
         "ciclo_desenvolvimento": "iterativo"
+    },
+    "6": {
+        "tipo_projeto": "web",
+        "dominio_negocio": "educacao",
+        "persistencia": "sql",
+        "escala": "grande",
+        "integracao": "apis_externas",
+        "arquitetura_esperada": "monolito",
+        "experiencia_usuario": "avancada",
+        "requisito_seguranca": "avancado",
+        "ambiente_implantacao": "cloud",
+        "maturidade_equipe": "experiente",
+        "tipo_autenticacao": "enterprise",
+        "ciclo_desenvolvimento": "longo_prazo"
     }
 }
