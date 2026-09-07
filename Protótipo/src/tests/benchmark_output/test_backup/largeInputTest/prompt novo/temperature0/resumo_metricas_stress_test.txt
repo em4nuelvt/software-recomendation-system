@@ -1,0 +1,81 @@
+Benchmark Etapa 1 - Resumo de Metricas
+Inicio: 2026-09-07 02:47:05
+Fim: 2026-09-07 03:38:27
+Tempo total: 00:51:22
+Modelos: qwen2.5, llama3, deepseek-r1:8b
+Casos de teste: 1
+Repeticoes por caso/modelo: 30
+
+Metricas:
+- Tempo medio (ms), tempo mediano (ms), tempo p95 (ms), tempo minimo (ms), tempo maximo (ms)
+- Taxa de formato valido, taxa de erro de execucao, taxa de sucesso
+- Consistencia total, consistencia somente validos, saidas validas distintas
+- Cobertura media de chaves
+==========================================================================================
+
+1) Resultado por modelo e caso de teste
+
+2) Resultado consolidado por modelo
+
+Modelo: qwen2.5
+Total de execucoes: 30
+Tempo medio (ms): 30651.32
+Tempo mediano (ms): 30235.22
+Tempo p95 (ms): 30441.84
+Tempo minimo (ms): 30021.99
+Tempo maximo (ms): 42804.56
+Taxa de formato valido: 100.00%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 100.00%
+Cobertura media de chaves: 100.00%
+Saidas validas distintas: 1
+Consistencia total: 100.00%
+Consistencia somente validos: 100.00%
+
+Modelo: llama3
+Total de execucoes: 30
+Tempo medio (ms): 32742.41
+Tempo mediano (ms): 32316.11
+Tempo p95 (ms): 32565.04
+Tempo minimo (ms): 32028.26
+Tempo maximo (ms): 45307.25
+Taxa de formato valido: 100.00%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 100.00%
+Cobertura media de chaves: 100.00%
+Saidas validas distintas: 1
+Consistencia total: 100.00%
+Consistencia somente validos: 100.00%
+
+Modelo: deepseek-r1:8b
+Total de execucoes: 30
+Tempo medio (ms): 39354.99
+Tempo mediano (ms): 38868.86
+Tempo p95 (ms): 39082.28
+Tempo minimo (ms): 38534.46
+Tempo maximo (ms): 53958.18
+Taxa de formato valido: 0.00%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 0.00%
+Cobertura media de chaves: 91.67%
+Saidas validas distintas: 0
+Consistencia total: 0.00%
+Consistencia somente validos: 0.00%
+
+3) Resultado global de todos os modelos
+Total de execucoes: 90
+Tempo medio (ms): 34249.57
+Tempo mediano (ms): 32326.18
+Tempo p95 (ms): 39065.59
+Taxa de formato valido: 66.67%
+Taxa de erro de execucao: 0.00%
+Taxa de sucesso: 66.67%
+Cobertura media de chaves: 97.22%
+Consistencia total: 33.33%
+Consistencia somente validos: 50.00%
+
+4) Ranking sugerido dos modelos
+Criterio: sucesso maior, depois consistencia maior, depois menor tempo medio
+1. qwen2.5 | sucesso=100.00% | consistencia validos=100.00% | tempo medio (ms)=30651.32
+2. llama3 | sucesso=100.00% | consistencia validos=100.00% | tempo medio (ms)=32742.41
+3. deepseek-r1:8b | sucesso=0.00% | consistencia validos=0.00% | tempo medio (ms)=39354.99

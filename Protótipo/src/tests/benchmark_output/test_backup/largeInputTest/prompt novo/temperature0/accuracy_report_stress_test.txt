@@ -1,0 +1,104 @@
+Relatorio de Acuracia vs. Gabarito — Estresse 4 — Prompt Novo + Temp Zero
+Gabarito utilizado: C:\Users\emanu\OneDrive\Estudos\eng comp\PFC\Git\Protótipo\src\tests\results_templates\gabarito_pessoal_requisitos.json
+Fonte de dados: resultados_detalhados_fast_test.txt
+Total de registros avaliados: 90
+  - Formato valido (sim): 60
+  - Formato invalido (nao): 30
+  - JSON parseavel: 60
+  - JSON nao parseavel (contam como 0% de acuracia): 30
+==========================================================================================
+NOTA: Este relatorio considera TODAS as execucoes no calculo da acuracia.
+Execucoes com JSON nao parseavel recebem acuracia 0% (0/12 acertos).
+==========================================================================================
+
+1) Acuracia por modelo e caso de teste
+
+Modelo: qwen2.5 | Caso de teste: 6
+Total de execucoes: 30 (validas: 30, invalidas: 0)
+Acuracia media: 66.67%
+Acuracia minima: 66.67%
+Acuracia maxima: 66.67%
+Execucoes 100% corretas: 0/30
+Atributos com acertos abaixo de 100%:
+  arquitetura_esperada: 0/30 (0.00%)
+  experiencia_usuario: 0/30 (0.00%)
+  tipo_autenticacao: 0/30 (0.00%)
+  ciclo_desenvolvimento: 0/30 (0.00%)
+
+Modelo: llama3 | Caso de teste: 6
+Total de execucoes: 30 (validas: 30, invalidas: 0)
+Acuracia media: 50.00%
+Acuracia minima: 50.00%
+Acuracia maxima: 50.00%
+Execucoes 100% corretas: 0/30
+Atributos com acertos abaixo de 100%:
+  integracao: 0/30 (0.00%)
+  arquitetura_esperada: 0/30 (0.00%)
+  experiencia_usuario: 0/30 (0.00%)
+  requisito_seguranca: 0/30 (0.00%)
+  tipo_autenticacao: 0/30 (0.00%)
+  ciclo_desenvolvimento: 0/30 (0.00%)
+
+Modelo: deepseek-r1:8b | Caso de teste: 6
+Total de execucoes: 30 (validas: 0, invalidas: 30)
+Acuracia media: 0.00%
+Acuracia minima: 0.00%
+Acuracia maxima: 0.00%
+Execucoes 100% corretas: 0/30
+Atributos com acertos abaixo de 100%:
+  tipo_projeto: 0/30 (0.00%)
+  dominio_negocio: 0/30 (0.00%)
+  persistencia: 0/30 (0.00%)
+  escala: 0/30 (0.00%)
+  integracao: 0/30 (0.00%)
+  arquitetura_esperada: 0/30 (0.00%)
+  experiencia_usuario: 0/30 (0.00%)
+  requisito_seguranca: 0/30 (0.00%)
+  ambiente_implantacao: 0/30 (0.00%)
+  maturidade_equipe: 0/30 (0.00%)
+  tipo_autenticacao: 0/30 (0.00%)
+  ciclo_desenvolvimento: 0/30 (0.00%)
+
+2) Acuracia consolidada por modelo
+
+Modelo: qwen2.5
+Total de execucoes avaliadas: 30 (validas: 30, invalidas: 0)
+Acuracia media: 66.67%
+Acuracia minima: 66.67%
+Acuracia maxima: 66.67%
+Execucoes 100% corretas: 0/30
+
+Modelo: llama3
+Total de execucoes avaliadas: 30 (validas: 30, invalidas: 0)
+Acuracia media: 50.00%
+Acuracia minima: 50.00%
+Acuracia maxima: 50.00%
+Execucoes 100% corretas: 0/30
+
+Modelo: deepseek-r1:8b
+Total de execucoes avaliadas: 30 (validas: 0, invalidas: 30)
+Acuracia media: 0.00%
+Acuracia minima: 0.00%
+Acuracia maxima: 0.00%
+Execucoes 100% corretas: 0/30
+
+3) Acuracia por atributo (todos os modelos e casos)
+(mostra quais atributos os modelos mais erram)
+  arquitetura_esperada: 0/90 (0.00%)
+  experiencia_usuario: 0/90 (0.00%)
+  tipo_autenticacao: 0/90 (0.00%)
+  ciclo_desenvolvimento: 0/90 (0.00%)
+  integracao: 30/90 (33.33%)
+  requisito_seguranca: 30/90 (33.33%)
+  tipo_projeto: 60/90 (66.67%)
+  dominio_negocio: 60/90 (66.67%)
+  persistencia: 60/90 (66.67%)
+  escala: 60/90 (66.67%)
+  ambiente_implantacao: 60/90 (66.67%)
+  maturidade_equipe: 60/90 (66.67%)
+
+4) Ranking dos modelos por acuracia media
+Criterio: maior acuracia media, depois maior proporcao de execucoes 100% corretas
+1. qwen2.5 | acuracia media=66.67% | 100% corretas=0/30
+2. llama3 | acuracia media=50.00% | 100% corretas=0/30
+3. deepseek-r1:8b | acuracia media=0.00% | 100% corretas=0/30

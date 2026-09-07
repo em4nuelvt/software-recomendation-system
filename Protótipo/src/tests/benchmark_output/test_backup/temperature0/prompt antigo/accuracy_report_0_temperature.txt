@@ -1,13 +1,20 @@
-Relatorio de Acuracia vs. Gabarito
+Relatorio de Acuracia vs. Gabarito — Cenário 3 — Temp Zero + Prompt Antigo
 Gabarito utilizado: C:\Users\emanu\OneDrive\Estudos\eng comp\PFC\Git\Protótipo\src\tests\results_templates\gabarito_pessoal_requisitos.json
-Fonte de dados: C:\Users\emanu\OneDrive\Estudos\eng comp\PFC\Git\Protótipo\src\tests\benchmark_output\resultados_detalhados_0_temperature.txt
-Registros validos avaliados: 450
+Fonte de dados: resultados_detalhados_fast_test.txt
+Total de registros avaliados: 450
+  - Formato valido (sim): 450
+  - Formato invalido (nao): 0
+  - JSON parseavel: 450
+  - JSON nao parseavel (contam como 0% de acuracia): 0
+==========================================================================================
+NOTA: Este relatorio considera TODAS as execucoes no calculo da acuracia.
+Execucoes com JSON nao parseavel recebem acuracia 0% (0/12 acertos).
 ==========================================================================================
 
 1) Acuracia por modelo e caso de teste
 
 Modelo: qwen2.5 | Caso de teste: 1
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 66.67%
 Acuracia minima: 66.67%
 Acuracia maxima: 66.67%
@@ -19,7 +26,7 @@ Atributos com acertos abaixo de 100%:
   ciclo_desenvolvimento: 0/30 (0.00%)
 
 Modelo: qwen2.5 | Caso de teste: 2
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 58.06%
 Acuracia minima: 50.00%
 Acuracia maxima: 58.33%
@@ -33,7 +40,7 @@ Atributos com acertos abaixo de 100%:
   escala: 29/30 (96.67%)
 
 Modelo: qwen2.5 | Caso de teste: 3
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 91.67%
 Acuracia minima: 91.67%
 Acuracia maxima: 91.67%
@@ -42,7 +49,7 @@ Atributos com acertos abaixo de 100%:
   requisito_seguranca: 0/30 (0.00%)
 
 Modelo: qwen2.5 | Caso de teste: 4
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 91.67%
 Acuracia minima: 91.67%
 Acuracia maxima: 91.67%
@@ -51,7 +58,7 @@ Atributos com acertos abaixo de 100%:
   maturidade_equipe: 0/30 (0.00%)
 
 Modelo: qwen2.5 | Caso de teste: 5
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 83.33%
 Acuracia minima: 83.33%
 Acuracia maxima: 83.33%
@@ -61,7 +68,7 @@ Atributos com acertos abaixo de 100%:
   maturidade_equipe: 0/30 (0.00%)
 
 Modelo: llama3 | Caso de teste: 1
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 66.67%
 Acuracia minima: 66.67%
 Acuracia maxima: 66.67%
@@ -73,7 +80,7 @@ Atributos com acertos abaixo de 100%:
   tipo_autenticacao: 0/30 (0.00%)
 
 Modelo: llama3 | Caso de teste: 2
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 83.33%
 Acuracia minima: 83.33%
 Acuracia maxima: 83.33%
@@ -83,7 +90,7 @@ Atributos com acertos abaixo de 100%:
   ambiente_implantacao: 0/30 (0.00%)
 
 Modelo: llama3 | Caso de teste: 3
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 75.00%
 Acuracia minima: 75.00%
 Acuracia maxima: 75.00%
@@ -94,7 +101,7 @@ Atributos com acertos abaixo de 100%:
   requisito_seguranca: 0/30 (0.00%)
 
 Modelo: llama3 | Caso de teste: 4
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 75.00%
 Acuracia minima: 75.00%
 Acuracia maxima: 75.00%
@@ -105,7 +112,7 @@ Atributos com acertos abaixo de 100%:
   maturidade_equipe: 0/30 (0.00%)
 
 Modelo: llama3 | Caso de teste: 5
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 75.00%
 Acuracia minima: 75.00%
 Acuracia maxima: 75.00%
@@ -116,7 +123,7 @@ Atributos com acertos abaixo de 100%:
   ciclo_desenvolvimento: 0/30 (0.00%)
 
 Modelo: deepseek-r1:8b | Caso de teste: 1
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 58.33%
 Acuracia minima: 58.33%
 Acuracia maxima: 58.33%
@@ -129,7 +136,7 @@ Atributos com acertos abaixo de 100%:
   tipo_autenticacao: 0/30 (0.00%)
 
 Modelo: deepseek-r1:8b | Caso de teste: 2
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 75.00%
 Acuracia minima: 75.00%
 Acuracia maxima: 75.00%
@@ -140,7 +147,7 @@ Atributos com acertos abaixo de 100%:
   ciclo_desenvolvimento: 0/30 (0.00%)
 
 Modelo: deepseek-r1:8b | Caso de teste: 3
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 83.33%
 Acuracia minima: 83.33%
 Acuracia maxima: 83.33%
@@ -150,7 +157,7 @@ Atributos com acertos abaixo de 100%:
   maturidade_equipe: 0/30 (0.00%)
 
 Modelo: deepseek-r1:8b | Caso de teste: 4
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 91.67%
 Acuracia minima: 91.67%
 Acuracia maxima: 91.67%
@@ -159,7 +166,7 @@ Atributos com acertos abaixo de 100%:
   experiencia_usuario: 0/30 (0.00%)
 
 Modelo: deepseek-r1:8b | Caso de teste: 5
-Execucoes validas avaliadas: 30
+Total de execucoes: 30 (validas: 30, invalidas: 0)
 Acuracia media: 41.94%
 Acuracia minima: 41.67%
 Acuracia maxima: 50.00%
@@ -176,21 +183,21 @@ Atributos com acertos abaixo de 100%:
 2) Acuracia consolidada por modelo
 
 Modelo: qwen2.5
-Total de execucoes validas avaliadas: 150
+Total de execucoes avaliadas: 150 (validas: 150, invalidas: 0)
 Acuracia media: 78.28%
 Acuracia minima: 50.00%
 Acuracia maxima: 91.67%
 Execucoes 100% corretas: 0/150
 
 Modelo: llama3
-Total de execucoes validas avaliadas: 150
+Total de execucoes avaliadas: 150 (validas: 150, invalidas: 0)
 Acuracia media: 75.00%
 Acuracia minima: 66.67%
 Acuracia maxima: 83.33%
 Execucoes 100% corretas: 0/150
 
 Modelo: deepseek-r1:8b
-Total de execucoes validas avaliadas: 150
+Total de execucoes avaliadas: 150 (validas: 150, invalidas: 0)
 Acuracia media: 70.06%
 Acuracia minima: 41.67%
 Acuracia maxima: 91.67%
