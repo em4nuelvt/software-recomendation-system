@@ -111,17 +111,19 @@ Veja um exemplo genérico de saída abaixo:
 
 """
 
+PROMPTS = [PROMPT1, PROMPT2]
+
 
 #USER_INPUT = "Tecnologias para sistema de lista de tarefas web"
 
 @dataclass
 class RequirementExtractor:
     model: str = "qwen2.5" #modelo padrão
-    prompt: str = PROMPT1
+    prompt_index: int = 0 #prompt padrão
     temperature: float = None
 
     def extractRequirement(self, user_input: str) -> dict:
-        complete_prompt = f'{self.prompt}\n\nEntrada do usuário: "{user_input}"'
+        complete_prompt = f'{PROMPTS[self.prompt_index]}\n\nEntrada do usuário: "{user_input}"'
         
         generate_kwargs = {
             "model": self.model,

@@ -1,14 +1,15 @@
 import sys
 import json
-from RequirementExtractor import RequirementExtractor 
+from RequirementExtractor import RequirementExtractor
 from RecommendationEngine import RecommendationEngine
 from ResponseFormatter import ResponseFormatter
 import user_input
 
 #USER_INPUT = "Gostaria de desenvolver um sistema de lista de tarefas local para computador sem banco de dados na linguagem Java"
-USER_INPUT = user_input.input[4]
+USER_INPUT = user_input.inputs[2]
 if __name__ == "__main__":
-    extractor = RequirementExtractor(model="deepseek-r1:8b")
+
+    extractor = RequirementExtractor(model="qwen2.5", prompt_index=1, temperature=0.0)
     engine = RecommendationEngine()
     formatter = ResponseFormatter()
 
@@ -19,12 +20,14 @@ if __name__ == "__main__":
     else:
         requirements = extractor.extractRequirement(USER_INPUT)
         recommendation = engine.recommend(requirements)
+        output = requirements
+        print(requirements)
         
-        print("=== Requisitos Extraídos (JSON) ===")
-        print(json.dumps(requirements, indent=2, ensure_ascii=False))
-        print()
+        # print("=== Requisitos Extraídos (JSON) ===")
+        # print(json.dumps(requirements, indent=2, ensure_ascii=False))
+        # print()
         
-        print(f"Entrada do Usuário: {USER_INPUT}\n")
+        # print(f"Entrada do Usuário: {USER_INPUT}\n")
         
-        output = formatter.format(USER_INPUT, recommendation)
-        print(output)
+        # output = formatter.format(USER_INPUT, recommendation)
+        # print(output)

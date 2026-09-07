@@ -29,8 +29,7 @@ DETAILED_OUTPUT_FILE = OUTPUT_DIR / "resultados_detalhados_0_temperature.txt"
 SUMMARY_OUTPUT_FILE = OUTPUT_DIR / "resumo_metricas_0_temperature.txt"
 ACCURACY_REPORT_FILE = OUTPUT_DIR / "accuracy_report_0_temperature.txt"
 
-# Caminhos dos gabaritos originais (um para o benchmark e um para a acurácia extra)
-BENCHMARK_GROUND_TRUTH = Path(__file__).resolve().parent / "results_templates" / "ground_truth.json"
+# Gabarito de referência utilizado no cálculo de acurácia
 ACCURACY_GROUND_TRUTH = Path(__file__).resolve().parent / "results_templates" / "gabarito_pessoal_requisitos.json"
 
 EXPECTED_KEYS = [
@@ -125,21 +124,6 @@ def aggregate_metrics(records: List[Dict[str, Any]]) -> Dict[str, Any]:
     return {
         "total_runs": total, "mean_latency_ms": mean(latencies), "median_latency_ms": median(latencies), "p95_latency_ms": percentile(latencies, 95), "min_latency_ms": min(latencies), "max_latency_ms": max(latencies), "format_valid_rate": valid_count / float(total), "error_rate": error_count / float(total), "success_rate": success_count / float(total), "avg_key_coverage": mean(key_coverages), "distinct_valid_outputs": distinct_valid_outputs, "consistency_total_rate": consistency_total_rate, "consistency_valid_rate": consistency_valid_rate
     }
-
-def compute_accuracy_metrics(records, ground_truth):
-    by_model_case: Dict[Tuple[str, int], List[float]] = defaultdict(list)
-    by_model: Dict[str, List[float]] = defaultdict(list)
-    for rec in records:
-        if not rec["schema_valid"] or rec["has_error"]: continue
-        case_key = str(rec["case_id"])
-        if case_key not in ground_truth: continue
-        expected = ground_truth[case_key]
-        response = rec["response"]
-        correct = sum(1 for key in EXPECTED_KEYS if key in expected and key in response and response[key] == expected[key])
-        accuracy = correct / float(len(EXPECTED_KEYS))
-        by_model_case[(rec["model"], rec["case_id"])].append(accuracy)
-        by_model[rec["model"]].append(accuracy)
-    return by_model_case, by_model
 
 def pct(value: float) -> str:
     return "{:.2f}%".format(value * 100.0)
@@ -239,7 +223,6 @@ def write_summary_report(records: List[Dict[str, Any]], started_at: datetime, en
         f.write("- Taxa de formato valido, taxa de erro de execucao, taxa de sucesso\n")
         f.write("- Consistencia total, consistencia somente validos, saidas validas distintas\n")
         f.write("- Cobertura media de chaves\n")
-        if BENCHMARK_GROUND_TRUTH.exists(): f.write("- Acuracia media vs. gabarito, acuracia minima, acuracia maxima, execucoes 100% corretas\n")
         f.write("=" * 90 + "\n")
         f.write("\n1) Resultado por modelo e caso de teste\n")
         for model in MODELS:
@@ -299,43 +282,6 @@ def write_summary_report(records: List[Dict[str, Any]], started_at: datetime, en
         f.write("Criterio: sucesso maior, depois consistencia maior, depois menor tempo medio\n")
         for i, (model, metrics) in enumerate(model_ranking, start=1):
             f.write("{}. {} | sucesso={} | consistencia validos={} | tempo medio (ms)={:.2f}\n".format(i, model, pct(metrics["success_rate"]), pct(metrics["consistency_valid_rate"]), metrics["mean_latency_ms"]))
-        if BENCHMARK_GROUND_TRUTH.exists():
-            try:
-                ground_truth = json.loads(BENCHMARK_GROUND_TRUTH.read_text(encoding="utf-8"))
-                accuracy_by_model_case, accuracy_by_model = compute_accuracy_metrics(records, ground_truth)
-                f.write("\n5) Acuracia vs. Gabarito\n")
-                f.write("Gabarito: {}\n".format(BENCHMARK_GROUND_TRUTH))
-                f.write("\n5a) Acuracia por modelo e caso de teste\n")
-                for model in MODELS:
-                    for case_id in range(1, len(TEST_INPUTS) + 1):
-                        key = (model, case_id)
-                        if key not in accuracy_by_model_case: continue
-                        accs = accuracy_by_model_case[key]
-                        fully = sum(1 for a in accs if a == 1.0)
-                        f.write("\nModelo: {} | Caso de teste: {}\n".format(model, case_id))
-                        f.write("Execucoes validas avaliadas: {}\n".format(len(accs)))
-                        f.write("Acuracia media: {}\n".format(pct(mean(accs))))
-                        f.write("Execucoes 100% corretas: {}/{}\n".format(fully, len(accs)))
-                f.write("\n5b) Acuracia consolidada por modelo\n")
-                accuracy_ranking = []
-                for model in MODELS:
-                    if model not in accuracy_by_model: continue
-                    accs = accuracy_by_model[model]
-                    avg = mean(accs)
-                    fully = sum(1 for a in accs if a == 1.0)
-                    accuracy_ranking.append((model, avg, fully, len(accs)))
-                    f.write("\nModelo: {}\n".format(model))
-                    f.write("Total de execucoes validas avaliadas: {}\n".format(len(accs)))
-                    f.write("Acuracia media: {}\n".format(pct(avg)))
-                    f.write("Execucoes 100% corretas: {}/{}\n".format(fully, len(accs)))
-                accuracy_ranking.sort(key=lambda x: (-x[1], -x[2]))
-                f.write("\n5c) Ranking dos modelos por acuracia media\n")
-                f.write("Criterio: maior acuracia media, depois maior proporcao de execucoes 100% corretas\n")
-                for i, (model, avg, fully, total_n) in enumerate(accuracy_ranking, start=1):
-                    f.write("{}. {} | acuracia media={} | 100% corretas={}/{}\n".format(i, model, pct(avg), fully, total_n))
-            except Exception as exc:
-                f.write("\n5) Acuracia vs. Gabarito\n")
-                f.write("Erro ao calcular acuracia: {}\n".format(exc))
 
 # =============================================================================
 # MÉTODOS DE ACURÁCIA (accuracy_report.py)
