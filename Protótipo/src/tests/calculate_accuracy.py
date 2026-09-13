@@ -1,4 +1,4 @@
-"""
+﻿"""
 Recalcula a acurácia de TODOS os 4 cenários de teste salvos em test_backup/,
 considerando TODAS as execuções (válidas E inválidas) no cálculo.
 
@@ -18,7 +18,7 @@ from collections import defaultdict
 from pathlib import Path
 from statistics import mean
 
-# ── Caminhos ─────────────────────────────────────────────────────────────────
+# Caminhos
 
 BASE_DIR = Path(__file__).resolve().parent
 BACKUP_DIR = BASE_DIR / "benchmark_output" / "test_backup"
@@ -26,32 +26,32 @@ GROUND_TRUTH_FILE = BASE_DIR / "results_templates" / "gabarito_pessoal_requisito
 
 # Mapeamento dos 4 cenários (Casos 1-5) + 4 cenários do teste de estresse (Caso 6)
 SCENARIOS = [
-    # ── Casos 1-5 ────────────────────────────────────────────────────────────
+    # Casos 1-5
     {
         "name": "Cenário 1 — Temp Padrão + Prompt Antigo",
         "path": BACKUP_DIR / "standardtemperature" / "prompt antigo",
-        "detailed_file": "resultados_detalhados_fast_test.txt",
-        "output_file": "accuracy_report_fast_test.txt",
+        "detailed_file": "resultados_detalhados.txt",
+        "output_file": "accuracy_report.txt",
     },
     {
         "name": "Cenário 2 — Temp Padrão + Prompt Novo",
         "path": BACKUP_DIR / "standardtemperature" / "prompt novo",
-        "detailed_file": "resultados_detalhados_fast_test.txt",
-        "output_file": "accuracy_report_fast_test.txt",
+        "detailed_file": "resultados_detalhados.txt",
+        "output_file": "accuracy_report.txt",
     },
     {
         "name": "Cenário 3 — Temp Zero + Prompt Antigo",
         "path": BACKUP_DIR / "temperature0" / "prompt antigo",
-        "detailed_file": "resultados_detalhados_0_temperature.txt",
-        "output_file": "accuracy_report_0_temperature.txt",
+        "detailed_file": "resultados_detalhados.txt",
+        "output_file": "accuracy_report.txt",
     },
     {
         "name": "Cenário 4 — Temp Zero + Prompt Novo",
         "path": BACKUP_DIR / "temperature0" / "prompt novo",
-        "detailed_file": "resultados_detalhados_0_temperature.txt",
-        "output_file": "accuracy_report_0_temperature.txt",
+        "detailed_file": "resultados_detalhados.txt",
+        "output_file": "accuracy_report.txt",
     },
-    # ── Teste de Estresse (Caso 6) ───────────────────────────────────────────
+    # Teste de Estresse (Caso 6)
     {
         "name": "Estresse 1 — Prompt Antigo + Temp Padrão",
         "path": BACKUP_DIR / "largeInputTest" / "prompt antigo" / "standardtemperature",
@@ -96,7 +96,7 @@ EXPECTED_KEYS = [
 SEPARATOR = "-" * 90
 
 
-# ── Funções auxiliares ───────────────────────────────────────────────────────
+# Funcoes auxiliares
 
 
 def parse_records(filepath: Path):
@@ -219,7 +219,7 @@ def write_report(records, ground_truth, output_file: Path, scenario_name: str):
     with output_file.open("w", encoding="utf-8") as f:
         f.write(f"Relatorio de Acuracia vs. Gabarito — {scenario_name}\n")
         f.write(f"Gabarito utilizado: {GROUND_TRUTH_FILE}\n")
-        f.write(f"Fonte de dados: resultados_detalhados_fast_test.txt\n")
+        f.write(f"Fonte de dados: resultados_detalhados.txt\n")
         f.write(f"Total de registros avaliados: {total_records}\n")
         f.write(f"  - Formato valido (sim): {valid_records}\n")
         f.write(f"  - Formato invalido (nao): {invalid_records}\n")

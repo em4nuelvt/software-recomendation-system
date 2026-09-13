@@ -14,9 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from RequirementExtractor import RequirementExtractor
 import user_input as ui
 
-# =============================================================================
-# CONFIGURAÇÕES DO BENCHMARK
-# =============================================================================
+# Configuracoes do Benchmark
 MODELS = ["qwen2.5", "llama3", "deepseek-r1:8b"]
 REPETITIONS = 30
 TEST_INPUTS = ui.inputs
@@ -25,12 +23,9 @@ OUTPUT_DIR = Path(__file__).resolve().parent / "benchmark_output"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Novos arquivos de saída
-DETAILED_OUTPUT_FILE = OUTPUT_DIR / "resultados_detalhados_fast_test.txt"
-SUMMARY_OUTPUT_FILE = OUTPUT_DIR / "resumo_metricas_fast_test.txt"
-ACCURACY_REPORT_FILE = OUTPUT_DIR / "accuracy_report_fast_test.txt"
+DETAILED_OUTPUT_FILE = OUTPUT_DIR / "resultados_detalhados.txt"
+SUMMARY_OUTPUT_FILE = OUTPUT_DIR / "resumo_metricas.txt"
 
-# Gabarito de referência utilizado no cálculo de acurácia
-ACCURACY_GROUND_TRUTH = Path(__file__).resolve().parent / "results_templates" / "gabarito_pessoal_requisitos.json"
 
 EXPECTED_KEYS = [
     "tipo_projeto",
@@ -62,9 +57,7 @@ ALLOWED_VALUES = {
     "ciclo_desenvolvimento": {"mvp", "iterativo", "longo_prazo"},
 }
 
-# =============================================================================
-# MÉTODOS DO BENCHMARK (requirement_extractor_benchmark.py)
-# =============================================================================
+# Metodos de Execucao e Validacao
 
 def percentile(values: List[float], p: float) -> float:
     if not values: return 0.0
@@ -147,7 +140,7 @@ def run_benchmark() -> List[Dict[str, Any]]:
     progress_start = perf_counter()
     if total_runs == 0: return records
     for model in MODELS:
-        extractor = RequirementExtractor(model=model)
+        extractor = RequirementExtractor(model=model, temperature=0.0)
         for case_id, input_text in enumerate(TEST_INPUTS, start=1):
             for iteration in range(1, REPETITIONS + 1):
                 start = perf_counter()
@@ -438,12 +431,10 @@ def main() -> None:
     write_summary_report(records, started_at, ended_at)
 
     print("\nGerando relatorio de acuracia estendido...")
-    generate_accuracy_report()
 
     print("\nTeste finalizado com sucesso!")
     print(f"Detalhado: {DETAILED_OUTPUT_FILE}")
     print(f"Resumo: {SUMMARY_OUTPUT_FILE}")
-    print(f"Acuracia: {ACCURACY_REPORT_FILE}")
 
 if __name__ == "__main__":
     main()
