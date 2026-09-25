@@ -348,8 +348,8 @@ def fig07_heatmap_atributo_modelo(atrib_mc, casos, out_dir, subtitle):
                 if caso in atrib_mc.get(modelo, {}) and atrib in atrib_mc[modelo][caso]:
                     vals_casos.append(atrib_mc[modelo][caso][atrib])
                 else:
-                    vals_casos.append(0.0) # Se nulo, 0.
-            matrix[i, j] = np.mean(vals_casos) if vals_casos else 0.0
+                    print(f"  [fig07] AVISO: {modelo} / caso {caso} / atributo '{atrib}' nao encontrado no relatorio. Verifique o accuracy_report.")
+            matrix[i, j] = np.mean(vals_casos) if vals_casos else np.nan
 
     fig, ax = plt.subplots(figsize=(8, 8))
     im = ax.imshow(matrix, cmap="RdYlGn", aspect="auto", vmin=0, vmax=100)
@@ -361,8 +361,12 @@ def fig07_heatmap_atributo_modelo(atrib_mc, casos, out_dir, subtitle):
     
     for i in range(len(atribs_list)):
         for j in range(len(MODELOS_ORDEM)):
-            color = "white" if matrix[i, j] < 40 or matrix[i,j] > 80 else "black"
-            ax.text(j, i, f"{matrix[i, j]:.0f}%", ha="center", va="center", fontsize=9, color=color)
+            val = matrix[i, j]
+            if np.isnan(val):
+                ax.text(j, i, "N/D", ha="center", va="center", fontsize=9, color="black")
+                continue
+            color = "white" if val < 40 or val > 80 else "black"
+            ax.text(j, i, f"{val:.0f}%", ha="center", va="center", fontsize=9, color=color)
             
     configure_titles(fig, ax, "Heatmap: Acurácia Média por Atributo e Modelo", subtitle)
     fig.colorbar(im, ax=ax, label="Acurácia (%)", shrink=0.8)

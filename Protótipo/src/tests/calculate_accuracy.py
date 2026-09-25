@@ -251,20 +251,23 @@ def write_report(records, ground_truth, output_file: Path, scenario_name: str):
                 f.write(f"Execucoes 100% corretas: {fully_correct}/{len(entries)}\n")
 
                 # Acurácia por atributo neste (model, case)
+                # NOTA: lista TODOS os 12 atributos (não apenas os que ficaram
+                # abaixo de 100%), para que qualquer consumidor deste relatório
+                # (incluindo scripts de geração de gráficos) não precise inferir
+                # o valor de atributos omitidos.
                 attr_correct = defaultdict(int)
                 for _, attr_results, _ in entries:
                     for attr, correct in attr_results.items():
                         if correct:
                             attr_correct[attr] += 1
                 total_entries = len(entries)
-                wrong_attrs = [
+                all_attrs = [
                     (attr, attr_correct[attr], total_entries)
                     for attr in EXPECTED_KEYS
-                    if attr_correct[attr] < total_entries
                 ]
-                if wrong_attrs:
-                    f.write("Atributos com acertos abaixo de 100%:\n")
-                    for attr, correct_n, total_n in sorted(wrong_attrs, key=lambda x: x[1]):
+                if all_attrs:
+                    f.write("Acertos por atributo:\n")
+                    for attr, correct_n, total_n in sorted(all_attrs, key=lambda x: x[1]):
                         f.write("  {}: {}/{} ({})\n".format(
                             attr, correct_n, total_n, pct(correct_n / total_n)
                         ))

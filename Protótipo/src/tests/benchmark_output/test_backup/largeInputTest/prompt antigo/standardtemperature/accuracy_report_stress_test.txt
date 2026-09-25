@@ -1,6 +1,6 @@
 Relatorio de Acuracia vs. Gabarito — Estresse 1 — Prompt Antigo + Temp Padrão
 Gabarito utilizado: C:\Users\emanu\OneDrive\Estudos\eng comp\PFC\Git\Protótipo\src\tests\results_templates\gabarito_pessoal_requisitos.json
-Fonte de dados: resultados_detalhados_fast_test.txt
+Fonte de dados: resultados_detalhados.txt
 Total de registros avaliados: 90
   - Formato valido (sim): 89
   - Formato invalido (nao): 1
@@ -19,13 +19,19 @@ Acuracia media: 77.22%
 Acuracia minima: 58.33%
 Acuracia maxima: 83.33%
 Execucoes 100% corretas: 0/30
-Atributos com acertos abaixo de 100%:
+Acertos por atributo:
   arquitetura_esperada: 0/30 (0.00%)
   tipo_autenticacao: 0/30 (0.00%)
   experiencia_usuario: 18/30 (60.00%)
   ciclo_desenvolvimento: 22/30 (73.33%)
   escala: 29/30 (96.67%)
   maturidade_equipe: 29/30 (96.67%)
+  tipo_projeto: 30/30 (100.00%)
+  dominio_negocio: 30/30 (100.00%)
+  persistencia: 30/30 (100.00%)
+  integracao: 30/30 (100.00%)
+  requisito_seguranca: 30/30 (100.00%)
+  ambiente_implantacao: 30/30 (100.00%)
 
 Modelo: llama3 | Caso de teste: 6
 Total de execucoes: 30 (validas: 29, invalidas: 1)
@@ -33,7 +39,7 @@ Acuracia media: 49.72%
 Acuracia minima: 0.00%
 Acuracia maxima: 66.67%
 Execucoes 100% corretas: 0/30
-Atributos com acertos abaixo de 100%:
+Acertos por atributo:
   integracao: 0/30 (0.00%)
   arquitetura_esperada: 0/30 (0.00%)
   experiencia_usuario: 0/30 (0.00%)
@@ -53,7 +59,7 @@ Acuracia media: 73.33%
 Acuracia minima: 58.33%
 Acuracia maxima: 83.33%
 Execucoes 100% corretas: 0/30
-Atributos com acertos abaixo de 100%:
+Acertos por atributo:
   experiencia_usuario: 0/30 (0.00%)
   ciclo_desenvolvimento: 0/30 (0.00%)
   escala: 4/30 (13.33%)
@@ -61,6 +67,11 @@ Atributos com acertos abaixo de 100%:
   tipo_autenticacao: 26/30 (86.67%)
   arquitetura_esperada: 29/30 (96.67%)
   ambiente_implantacao: 29/30 (96.67%)
+  tipo_projeto: 30/30 (100.00%)
+  dominio_negocio: 30/30 (100.00%)
+  persistencia: 30/30 (100.00%)
+  integracao: 30/30 (100.00%)
+  maturidade_equipe: 30/30 (100.00%)
 
 2) Acuracia consolidada por modelo
 

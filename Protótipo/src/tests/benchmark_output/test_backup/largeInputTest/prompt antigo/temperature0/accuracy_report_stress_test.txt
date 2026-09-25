@@ -1,6 +1,6 @@
 Relatorio de Acuracia vs. Gabarito — Estresse 2 — Prompt Antigo + Temp Zero
 Gabarito utilizado: C:\Users\emanu\OneDrive\Estudos\eng comp\PFC\Git\Protótipo\src\tests\results_templates\gabarito_pessoal_requisitos.json
-Fonte de dados: resultados_detalhados_fast_test.txt
+Fonte de dados: resultados_detalhados.txt
 Total de registros avaliados: 90
   - Formato valido (sim): 90
   - Formato invalido (nao): 0
@@ -19,9 +19,19 @@ Acuracia media: 83.33%
 Acuracia minima: 83.33%
 Acuracia maxima: 83.33%
 Execucoes 100% corretas: 0/30
-Atributos com acertos abaixo de 100%:
+Acertos por atributo:
   arquitetura_esperada: 0/30 (0.00%)
   tipo_autenticacao: 0/30 (0.00%)
+  tipo_projeto: 30/30 (100.00%)
+  dominio_negocio: 30/30 (100.00%)
+  persistencia: 30/30 (100.00%)
+  escala: 30/30 (100.00%)
+  integracao: 30/30 (100.00%)
+  experiencia_usuario: 30/30 (100.00%)
+  requisito_seguranca: 30/30 (100.00%)
+  ambiente_implantacao: 30/30 (100.00%)
+  maturidade_equipe: 30/30 (100.00%)
+  ciclo_desenvolvimento: 30/30 (100.00%)
 
 Modelo: llama3 | Caso de teste: 6
 Total de execucoes: 30 (validas: 30, invalidas: 0)
@@ -29,13 +39,19 @@ Acuracia media: 50.00%
 Acuracia minima: 50.00%
 Acuracia maxima: 50.00%
 Execucoes 100% corretas: 0/30
-Atributos com acertos abaixo de 100%:
+Acertos por atributo:
   integracao: 0/30 (0.00%)
   arquitetura_esperada: 0/30 (0.00%)
   experiencia_usuario: 0/30 (0.00%)
   requisito_seguranca: 0/30 (0.00%)
   tipo_autenticacao: 0/30 (0.00%)
   ciclo_desenvolvimento: 0/30 (0.00%)
+  tipo_projeto: 30/30 (100.00%)
+  dominio_negocio: 30/30 (100.00%)
+  persistencia: 30/30 (100.00%)
+  escala: 30/30 (100.00%)
+  ambiente_implantacao: 30/30 (100.00%)
+  maturidade_equipe: 30/30 (100.00%)
 
 Modelo: deepseek-r1:8b | Caso de teste: 6
 Total de execucoes: 30 (validas: 30, invalidas: 0)
@@ -43,10 +59,19 @@ Acuracia media: 75.00%
 Acuracia minima: 75.00%
 Acuracia maxima: 75.00%
 Execucoes 100% corretas: 0/30
-Atributos com acertos abaixo de 100%:
+Acertos por atributo:
   escala: 0/30 (0.00%)
   experiencia_usuario: 0/30 (0.00%)
   ciclo_desenvolvimento: 0/30 (0.00%)
+  tipo_projeto: 30/30 (100.00%)
+  dominio_negocio: 30/30 (100.00%)
+  persistencia: 30/30 (100.00%)
+  integracao: 30/30 (100.00%)
+  arquitetura_esperada: 30/30 (100.00%)
+  requisito_seguranca: 30/30 (100.00%)
+  ambiente_implantacao: 30/30 (100.00%)
+  maturidade_equipe: 30/30 (100.00%)
+  tipo_autenticacao: 30/30 (100.00%)
 
 2) Acuracia consolidada por modelo
 

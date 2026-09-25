@@ -377,10 +377,10 @@ def generate_accuracy_report():
                     for attr, correct in attr_results.items():
                         if correct: attr_correct[attr] += 1
                 total_entries = len(entries)
-                wrong_attrs = [(attr, attr_correct[attr], total_entries) for attr in EXPECTED_KEYS if attr_correct[attr] < total_entries]
-                if wrong_attrs:
-                    f.write("Atributos com acertos abaixo de 100%:\n")
-                    for attr, correct_n, total_n in sorted(wrong_attrs, key=lambda x: x[1]):
+                all_attrs = [(attr, attr_correct[attr], total_entries) for attr in EXPECTED_KEYS]
+                if all_attrs:
+                    f.write("Acertos por atributo:\n")
+                    for attr, correct_n, total_n in sorted(all_attrs, key=lambda x: x[1]):
                         f.write("  {}: {}/{} ({})\n".format(attr, correct_n, total_n, pct(correct_n / total_n)))
 
         f.write("\n2) Acuracia consolidada por modelo\n")
