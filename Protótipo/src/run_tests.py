@@ -13,9 +13,7 @@ if __name__ == "__main__":
     output_path = os.path.join(os.path.dirname(__file__), "test_results.txt")
 
     with open(output_path, "w", encoding="utf-8") as f:
-        # Save the original stdout so we can restore it later
         original_stdout = sys.stdout
-        # Redirect stdout to the file
         sys.stdout = f
 
         try:
