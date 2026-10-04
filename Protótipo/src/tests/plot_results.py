@@ -26,42 +26,42 @@ plt.rcParams.update({
 SCENARIOS = [
     {
         "folder_name": "1 - Prompt antigo + temperatura padrao",
-        "subtitle": "Prompt antigo + Temperatura padrão",
+        "subtitle": "Cenário 1: Prompt inicial + Temperatura padrão",
         "path": os.path.join(BACKUP_DIR, "standardtemperature", "prompt antigo"),
     },
     {
         "folder_name": "2 - Prompt antigo + temperatura 0",
-        "subtitle": "Prompt antigo + Temperatura 0",
+        "subtitle": "Cenário 2: Prompt inicial + Temperatura 0",
         "path": os.path.join(BACKUP_DIR, "temperature0", "prompt antigo"),
     },
     {
         "folder_name": "3 - Prompt novo + temperatura padrao",
-        "subtitle": "Prompt novo + Temperatura padrão",
+        "subtitle": "Cenário 3: Prompt novo + Temperatura padrão",
         "path": os.path.join(BACKUP_DIR, "standardtemperature", "prompt novo"),
     },
     {
         "folder_name": "4 - Prompt novo + temperatura 0",
-        "subtitle": "Prompt novo + Temperatura 0",
+        "subtitle": "Cenário 4: Prompt novo + Temperatura 0",
         "path": os.path.join(BACKUP_DIR, "temperature0", "prompt novo"),
     },
     {
         "folder_name": "5 - Teste de estresse prompt antigo + temperatura padrao",
-        "subtitle": "Teste de estresse (Caso 6) | Prompt antigo + Temp padrão",
+        "subtitle": "Cenário 5: Teste de estresse (Caso 6) | Prompt inicial + Temp. padrão",
         "path": os.path.join(BACKUP_DIR, "largeInputTest", "prompt antigo", "standardtemperature"),
     },
     {
         "folder_name": "6 - Teste de estresse prompt antigo + temperatura 0",
-        "subtitle": "Teste de estresse (Caso 6) | Prompt antigo + Temp 0",
+        "subtitle": "Cenário 6: Teste de estresse (Caso 6) | Prompt inicial + Temp. 0",
         "path": os.path.join(BACKUP_DIR, "largeInputTest", "prompt antigo", "temperature0"),
     },
     {
         "folder_name": "7 - Teste de estresse prompt novo + temperatura padrao",
-        "subtitle": "Teste de estresse (Caso 6) | Prompt novo + Temp padrão",
+        "subtitle": "Cenário 7: Teste de estresse (Caso 6) | Prompt novo + Temp. padrão",
         "path": os.path.join(BACKUP_DIR, "largeInputTest", "prompt novo", "standardtemperature"),
     },
     {
         "folder_name": "8 - Teste de estresse prompt novo + temperatura 0",
-        "subtitle": "Teste de estresse (Caso 6) | Prompt novo + Temp 0",
+        "subtitle": "Cenário 8: Teste de estresse (Caso 6) | Prompt novo + Temp. 0",
         "path": os.path.join(BACKUP_DIR, "largeInputTest", "prompt novo", "temperature0"),
     }
 ]
@@ -88,6 +88,7 @@ def parse_resumo(path):
             for chave, regex in [
                 ("tempo_medio", r"Tempo medio \(ms\):\s*([\d.]+)"),
                 ("taxa_sucesso", r"Taxa de sucesso:\s*([\d.]+)%"),
+                ("consistencia", r"Consistencia total:\s*([\d.]+)%"),
                 ("consistencia_validos", r"Consistencia somente validos:\s*([\d.]+)%"),
                 ("saidas_distintas", r"Saidas validas distintas:\s*(\d+)"),
             ]:
@@ -104,6 +105,7 @@ def parse_resumo(path):
                 for chave, regex in [
                     ("tempo_medio", r"Tempo medio \(ms\):\s*([\d.]+)"),
                     ("taxa_sucesso", r"Taxa de sucesso:\s*([\d.]+)%"),
+                    ("consistencia", r"Consistencia total:\s*([\d.]+)%"),
                     ("consistencia_validos", r"Consistencia somente validos:\s*([\d.]+)%"),
                     ("saidas_distintas", r"Saidas validas distintas:\s*(\d+)"),
                 ]:
@@ -116,6 +118,17 @@ def parse_resumo(path):
     if not por_caso:
         for modelo, dados in consolidado.items():
             por_caso[modelo]["6"] = dict(dados)
+    else:
+        # Consistência consolidada calculada como a média das consistências por caso sobre todas as execuções
+        for modelo in MODELOS_ORDEM:
+            if modelo in por_caso and por_caso[modelo]:
+                casos_m = por_caso[modelo]
+                cons_vals = [casos_m[c].get("consistencia", 0.0) for c in casos_m]
+                if cons_vals:
+                    consolidado[modelo]["consistencia"] = sum(cons_vals) / len(cons_vals)
+                cons_val_vals = [casos_m[c].get("consistencia_validos", 0.0) for c in casos_m]
+                if cons_val_vals:
+                    consolidado[modelo]["consistencia_validos"] = sum(cons_val_vals) / len(cons_val_vals)
 
     return por_caso, consolidado
 
@@ -172,14 +185,19 @@ def parse_tempos_detalhados(path):
 
 
 def configure_titles(fig, ax, main_title, subtitle):
-    # Usar pad no título principal garante o espaço, e centraliza nos eixos (não na figura inteira)
-    ax.set_title(main_title, fontsize=14, fontweight="bold", pad=28)
-    
-    # O subtítulo entra no espaço criado pelo pad, também centralizado exato no eixo
-    # Cor #222222 é um cinza muito escuro/chumbo
-    ax.annotate(subtitle, xy=(0.5, 1), xytext=(0, 10),
-                xycoords="axes fraction", textcoords="offset points",
-                ha="center", va="bottom", fontsize=11, color="#222222")
+    # Em eixos polares (radar), o topo (90°) contém o rótulo da variável.
+    # Aumentar o pad e o deslocamento vertical evita sobreposição com o subtítulo.
+    if getattr(ax, "name", None) == "polar":
+        ax.set_title(main_title, fontsize=14, fontweight="bold", pad=55)
+        ax.annotate(subtitle, xy=(0.5, 1), xytext=(0, 32),
+                    xycoords="axes fraction", textcoords="offset points",
+                    ha="center", va="bottom", fontsize=11, color="#222222")
+    else:
+        # Usar pad no título principal garante o espaço, e centraliza nos eixos (não na figura inteira)
+        ax.set_title(main_title, fontsize=14, fontweight="bold", pad=28)
+        ax.annotate(subtitle, xy=(0.5, 1), xytext=(0, 10),
+                    xycoords="axes fraction", textcoords="offset points",
+                    ha="center", va="bottom", fontsize=11, color="#222222")
 
 
 def salvar(fig, out_dir, nome):
@@ -378,7 +396,7 @@ def fig08_consistencia_por_caso(resumo_caso, casos, out_dir, subtitle):
     x = np.arange(len(casos))
     w = 0.25
     for i, modelo in enumerate(MODELOS_ORDEM):
-        vals = [resumo_caso[modelo][c].get("consistencia_validos", 0) for c in casos]
+        vals = [resumo_caso[modelo][c].get("consistencia", 0) for c in casos]
         bars = ax.bar(x + i * w, vals, w, label=modelo, color=CORES_MODELOS[modelo], edgecolor="white", linewidth=0.5)
         for bar in bars:
             h = bar.get_height()
@@ -387,10 +405,10 @@ def fig08_consistencia_por_caso(resumo_caso, casos, out_dir, subtitle):
     
     ax.set_xlabel("Caso de Teste")
     ax.set_ylabel("Consistência (%)")
-    configure_titles(fig, ax, "Consistência (Somente Válidos) por Caso de Teste e Modelo", subtitle)
+    configure_titles(fig, ax, "Consistência por Caso de Teste e Modelo", subtitle)
     ax.set_xticks(x + w)
     ax.set_xticklabels([f"Caso {c}" for c in casos])
-    max_val = max((resumo_caso[m][c].get("consistencia_validos", 0) for m in MODELOS_ORDEM for c in casos), default=0)
+    max_val = max((resumo_caso[m][c].get("consistencia", 0) for m in MODELOS_ORDEM for c in casos), default=0)
     ax.set_ylim(0, max(75, max_val + 15))
     ax.legend(loc="upper left", bbox_to_anchor=(1.01, 1), borderaxespad=0)
     salvar(fig, out_dir, "fig08_consistencia_por_caso.png")
@@ -399,19 +417,19 @@ def fig08_consistencia_por_caso(resumo_caso, casos, out_dir, subtitle):
 def fig09_consistencia_por_modelo(resumo_consolidado, out_dir, subtitle):
     fig, ax = plt.subplots(figsize=(7, 5.5))
     modelos = MODELOS_ORDEM
-    vals = [resumo_consolidado[m].get("consistencia_validos", 0) for m in modelos]
+    vals = [resumo_consolidado[m].get("consistencia", 0) for m in modelos]
     bars = ax.bar(modelos, vals, 0.5, color=[CORES_MODELOS[m] for m in modelos], edgecolor="white")
     for bar, val in zip(bars, vals):
         ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.3, f"{val:.2f}%", ha="center", va="bottom", fontweight="bold")
     
     ax.set_ylabel("Consistência (%)")
-    configure_titles(fig, ax, "Consistência Consolidada por Modelo (Somente Válidos)", subtitle)
+    configure_titles(fig, ax, "Consistência Média por Modelo", subtitle)
     ax.set_ylim(0, max(max(vals) + 15, 100))
     salvar(fig, out_dir, "fig09_consistencia_por_modelo.png")
 
 
 def fig10_radar(acc_consolidado, resumo_consolidado, out_dir, subtitle):
-    categorias = ["Acurácia", "Consistência\n(Válidos)", "Taxa Sucesso", "Velocidade"]
+    categorias = ["Acurácia", "Consistência", "Taxa Sucesso", "Velocidade"]
     N = len(categorias)
     angles = [n / float(N) * 2 * math.pi for n in range(N)]
     angles += angles[:1]
@@ -425,7 +443,7 @@ def fig10_radar(acc_consolidado, resumo_consolidado, out_dir, subtitle):
         vel = (t_min / tempos[modelo]) * 100 if tempos[modelo] > 0 else 0
         valores = [
             acc_consolidado[modelo].get("acuracia_media", 0),
-            resumo_consolidado[modelo].get("consistencia_validos", 0),
+            resumo_consolidado[modelo].get("consistencia", 0),
             resumo_consolidado[modelo].get("taxa_sucesso", 0),
             vel,
         ]
