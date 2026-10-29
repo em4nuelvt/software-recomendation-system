@@ -1,15 +1,5 @@
 # Sistema de Recomendação de Tecnologias de Software
 
-> **Título do Trabalho:** Modelos de Linguagem de Grande Escala como Classificadores de Requisitos de Software: Avaliação Experimental e Aplicação em Sistema de Recomendação Tecnológica  
-> **Trabalho de Conclusão de Curso (PFC II)** — Engenharia de Computação  
-> **Instituição:** Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG)  
-<<<<<<< HEAD
-> **Autor:** Emanuel Vieira Tavares  
-> **Orientador:** Prof. Dr. Tiago Alves de Oliveira  
-> **Coorientador:** Eng. Everton Vieira Tavares  
-=======
-> **Autor:** Emanuel Vieira Tavares
->>>>>>> 448c6827fbab3dd4fc4c7008c38d656d7c1476cb
 
 ---
 
