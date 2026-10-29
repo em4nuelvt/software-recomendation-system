@@ -85,8 +85,8 @@ Para executar o sistema, certifique-se de possuir em seu ambiente:
 
 ### 1. Clonar o Repositório
 ```bash
-git clone https://github.com/em4nuelvt/TCC-Emanuel.git
-cd TCC-Emanuel
+git clone https://github.com/em4nuelvt/software-recomendation-system
+cd software-recomendation-system
 ```
 
 ### 2. (Opcional, mas recomendado) Criar e Ativar Ambiente Virtual
