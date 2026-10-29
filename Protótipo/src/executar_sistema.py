@@ -6,9 +6,30 @@ from RecommendationEngine import RecommendationEngine
 from ResponseFormatter import ResponseFormatter
 import user_input
 
-def executar_fluxo_completo():
-    # Caso 6: Plataforma Acadêmica Integrada (Teste de Estresse)
-    USER_INPUT = user_input.inputs[5]
+def executar_fluxo_completo(texto_entrada=None):
+    import sys
+    
+    # Determina a entrada a ser processada
+    if texto_entrada:
+        USER_INPUT = texto_entrada
+    elif len(sys.argv) > 1:
+        arg = " ".join(sys.argv[1:]).strip()
+        if arg.isdigit() and 1 <= int(arg) <= len(user_input.inputs):
+            USER_INPUT = user_input.inputs[int(arg) - 1]
+        else:
+            USER_INPUT = arg
+    else:
+        print("Opções de entrada para execução:")
+        print("  - Pressione [ENTER] para executar o caso padrão (Caso 6 - Plataforma Acadêmica)")
+        print("  - Digite um número de 1 a 6 para escolher outro caso de teste da pesquisa")
+        print("  - Ou digite a descrição do software desejado:")
+        escolha = input("> ").strip()
+        if not escolha:
+            USER_INPUT = user_input.inputs[5]
+        elif escolha.isdigit() and 1 <= int(escolha) <= len(user_input.inputs):
+            USER_INPUT = user_input.inputs[int(escolha) - 1]
+        else:
+            USER_INPUT = escolha
     
     print("=== Iniciando Execução do Sistema de Recomendação de Tecnologias ===")
     print(f"Modelo de Linguagem: Qwen 2.5 (7B) | Temperatura: 0.0 | Prompt: Descritivo (PROMPT2)\n")
@@ -22,7 +43,14 @@ def executar_fluxo_completo():
     
     # 1. Validação da entrada
     print("[1/3] Validando pertinência da entrada textual...")
-    if not extractor.validateInput(USER_INPUT):
+    try:
+        valido = extractor.validateInput(USER_INPUT)
+    except Exception as e:
+        print(f"\n[ERRO DE CONEXÃO COM OLLAMA] Não foi possível comunicar com o Ollama: {e}")
+        print("Certifique-se de que o Ollama está em execução ('ollama serve') e o modelo 'qwen2.5' foi baixado.")
+        return
+        
+    if not valido:
         mensagem_erro = "Sou um sistema de recomendação de tecnologias de software. Não possuo capacidade de auxiliar sobre assuntos que fogem do meu escopo de atuação."
         print(mensagem_erro)
         return

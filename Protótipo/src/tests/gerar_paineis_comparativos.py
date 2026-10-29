@@ -91,6 +91,7 @@ def main():
     # 2. Painéis do Teste de Estresse (Cenários 5 a 8)
     estresse = [
         ("fig06_acuracia_por_atributo.png", "painel_estresse_acuracia_atributo.png"),
+        ("fig07_heatmap_atributo_modelo.png", "painel_estresse_heatmap_atributos.png"),
         ("fig10_radar_comparativo.png", "painel_estresse_radar.png"),
         ("fig03_taxa_sucesso.png", "painel_estresse_taxa_sucesso.png"),
         ("fig04_acuracia_por_modelo.png", "painel_estresse_acuracia_modelo.png"),
