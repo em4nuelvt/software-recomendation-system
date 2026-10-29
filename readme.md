@@ -3,7 +3,7 @@
 > **Trabalho de Conclusão de Curso (PFC II)**  
 > **Curso:** Engenharia de Computação  
 > **Instituição:** Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG)  
-> **Autor:** Emanuel Vítor  
+> **Autor:** Emanuel Vieira Tavares
 
 ---
 
