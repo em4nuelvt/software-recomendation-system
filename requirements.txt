@@ -1,9 +1,0 @@
-# Dependências principais para execução do sistema de recomendação
-ollama>=0.3.0
-networkx>=3.0
-pandas>=2.0.0
-
-# Dependências para geração de gráficos e análise de benchmarks (opcional)
-matplotlib>=3.8.0
-seaborn>=0.13.0
-
